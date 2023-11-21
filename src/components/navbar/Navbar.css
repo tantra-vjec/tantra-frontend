@@ -5,18 +5,17 @@
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 999;
 }
-.Navbar-bg{
-  background-color: rgba(0, 0, 0, 0.85);
+
+.Navbar-bg {
+  background-color: rgba(0, 0, 0, 1);
   transition: 0.5s;
 }
 
 .Navbar > .nav-logo {
-  height: 80px;
-  width: 100px;
-  margin-left: 40px;
-  margin-top: 15px;
+  height: 100px;
+  width: 120px;
   color: #ffffff;
 }
 
@@ -61,23 +60,35 @@
 
 @media (max-width: 700px) {
   .Navbar > .nav-items {
-    position: absolute;
-    top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateX(-100%);
-    transition: all .45s;
+    justify-content: flex-start;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+    z-index: 100;
+    box-sizing: border-box;
+    padding-top: 100px;
+    text-align: right;
+
   }
 
   .Navbar > .nav-items > a::before {
-      background: transparent;
+    background: transparent;
   }
-
+  .Navbar > .nav-items > a {
+    color: black;
+  }
   .Navbar > .nav-items.open {
-      transform: translateX(0);
+    transform: translateX(0);
+    
   }
 
   .Navbar > .nav-toggle {
@@ -95,6 +106,7 @@
     height: 2px;
     background: #ffffff;
     transition: all 0.45s ease-in-out;
+    z-index: 200;
   }
 
   .nav-toggle > .bar::before,
@@ -119,18 +131,18 @@
   }
 
   .nav-toggle.open > .bar {
-      transform: translateX(-40px);
-      background: transparent;
+    transform: translateX(-40px);
+    background: transparent;
   }
 
   .nav-toggle.open > .bar::before {
-      width: 32px;
-      transform: rotate(45deg) translate(26px, -26px);
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
+    background-color: black;
   }
 
   .nav-toggle.open > .bar::after {
     transform: rotate(-45deg) translate(26px, 26px);
+    background-color: black;
   }
-
-
 }

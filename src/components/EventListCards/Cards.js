@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import CARDGROUP from "../../assets/cards/front.svg";
-import DRAGON from "../../assets/cards/dragon.png";
 import INNER_BOX from "../../assets/cards/frame.svg";
 import PHONE from "../../assets/cards/phone.svg";
 import BUTTON from "../../assets/cards/button.svg";
@@ -9,7 +8,8 @@ import BACK from "../../assets/cards/back.svg";
 const GameCard = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const { name, time, venue, department, contact, desc, co_ord } = props.data;
+  const { name, time, venue, department, contact, desc, event_image, co_ord } =
+    props.data;
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
@@ -46,7 +46,7 @@ const GameCard = (props) => {
             className="absolute inset-0 w-full h-full object-cover z-10"
           />
           <img
-            src={DRAGON}
+            src={event_image}
             alt="Dragon"
             className="absolute top-[33%] left-[49%] w-[79%] h-[50%] z-20 transform -translate-x-1/2 -translate-y-1/2"
           />

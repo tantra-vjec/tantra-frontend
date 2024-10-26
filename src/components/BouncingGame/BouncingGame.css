@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes textGlow {
+    0% { text-shadow: 0px 0px 20px rgb(255, 255, 255); }
+    100% { text-shadow: 0px 0px 30px rgb(255, 255, 255); }
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

@@ -6,11 +6,28 @@ import Navbar from "../navbar/Navbar";
 
 function Events({ eventsData }) {
   const { pathname } = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  // Disable right-click context menu
+  useEffect(() => {
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
+
+    // Attach the event listener
+    document.addEventListener("contextmenu", handleContextMenu);
+
+    // Cleanup function to remove the event listener
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
+
   return (
-    <div className="event_cards text-[black] font-[Quicksand]">
+    <div className="event_cards text-[black] font-[Quicksand] bg-[#090E41] min-h-screen">
       <Navbar pg="ot" />
       <h1 className="text-center text-5xl text-gray-200 font-mono pt-24 sm:pt-20">
         Events

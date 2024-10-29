@@ -3,6 +3,8 @@ const MecahnicalEventData = [
   {
     name: "TERMINAL TREASURES",
     time: "03:00 PM",
+    price: "300",
+    event_type: "WORKSHOP",
     contact: "9961000000",
     co_ord: "Abhay K V",
     venue: "COMPUTER CENTER",
@@ -17,6 +19,8 @@ const MecahnicalEventData = [
     contact: "9961000000",
     co_ord: "SANGEETHA RAMAKRISHNAN",
     venue: "S5/S6 CSE C",
+    price: "300",
+    event_type: "WORKSHOP",
     department: "CSE",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
@@ -26,6 +30,8 @@ const MecahnicalEventData = [
     name: "ESCAPE FROM WONDERLAND",
     time: "02:00 PM",
     contact: "9961000000",
+    price: "300",
+    event_type: "WORKSHOP",
     co_ord: "AMAL ROY",
     venue: "ONLINE",
     department: "DEPT OF CSE",
@@ -42,6 +48,8 @@ const MecahnicalEventData = [
     department: "DEPT OF CSE",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    price: "300",
+    event_type: "WORKSHOP",
     event_image: DRAGON,
   },
 ];

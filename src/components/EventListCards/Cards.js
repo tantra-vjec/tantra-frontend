@@ -8,8 +8,16 @@ import BACK from "../../assets/cards/back.svg";
 const GameCard = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const { name, time, venue, department, contact, desc, event_image, co_ord } =
-    props.data;
+  const {
+    name,
+    time,
+    venue,
+    department,
+    contact,
+    description,
+    event_image,
+    co_ord,
+  } = props.data;
 
   // Toggle the flip state of the card
   const handleFlip = () => {
@@ -145,7 +153,7 @@ const GameCard = (props) => {
             >
               {name} {/* Event Name */}
             </div>
-            <div className="font-montserrat text-l mt-1">{desc}</div>{" "}
+            <div className="font-montserrat text-l mt-1">{description}</div>{" "}
             {/* Event Description */}
           </div>
 

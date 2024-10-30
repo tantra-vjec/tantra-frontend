@@ -12,23 +12,21 @@ function Home() {
     window.scrollTo(0, 0);
   });
   return (
-    <div>
-      <div className="bg-black text-[white] font-[Quicksand] home">
-        <Navbar />
+    <div className="bg-black text-[white] font-[Quicksand] home">
+      <Navbar />
 
-        <section id="home">
-          <Poster />
-        </section>
-        <section id="description">
-          <Description />
-        </section>
-        <section id="events">
-          <Cards />
-        </section>
-        <section id="footer">
-          <Footer />
-        </section>
-      </div>
+      <section id="home">
+        <Poster />
+      </section>
+      <section id="description">
+        <Description />
+      </section>
+      <section id="events">
+        <Cards />
+      </section>
+      <section id="footer">
+        <Footer />
+      </section>
     </div>
   );
 }

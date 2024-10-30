@@ -1,7 +1,8 @@
 import DRAGON from "../../assets/cards/dragon.png";
+import PLANE from "../../assets/cards/plane.jpeg";
 const MecahnicalEventData = [
   {
-    name: "TERMINAL TREASURES",
+    name: "TTERMINAL TREASURESERMINAL TREASURES",
     time: "03:00 PM",
     fee: "FREE",
     event_type: "WORKSHOP",
@@ -11,7 +12,7 @@ const MecahnicalEventData = [
     department: "DEPT OF CSE",
     description:
       "Dragon Comes to visit the hall every 10 minutes a horror room theme ",
-    event_image: DRAGON,
+    event_image: PLANE,
     is_active: false,
   },
   {
@@ -40,6 +41,7 @@ const MecahnicalEventData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     event_image: DRAGON,
+    is_active: false,
   },
   {
     name: "LEET CODING",

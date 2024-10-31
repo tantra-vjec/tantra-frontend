@@ -17,7 +17,7 @@ const MecahnicalEventData = [
   },
   {
     name: "DRAGONITE",
-    time: "10:00 AM",
+    time: "10:00 AM - 12:00PM",
     contact: "9961000000",
     co_ord: "SANGEETHA RAMAKRISHNAN",
     venue: "S5/S6 CSE C",

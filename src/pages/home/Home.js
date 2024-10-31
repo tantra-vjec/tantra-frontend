@@ -3,9 +3,7 @@ import Cards from "../../components/cards/Cards";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import Poster from "../../components/poster/Poster";
-import CountDown from "../../components/countDown/CountDown";
-import Marquee from "../../components/marquee/MarqueeComp";
-import Description from "../../components/description/Description";
+import BouncingGame from "../../components/BouncingGame/BouncingGame";
 
 function Home() {
   useEffect(() => {
@@ -20,7 +18,7 @@ function Home() {
           <Poster />
         </section>
         <section id="description">
-          <Description />
+          <BouncingGame />
         </section>
         <section id="events">
           <Cards />

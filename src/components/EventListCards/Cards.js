@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import CARD from "../../assets/cards/front.svg";
 import FRAME from "../../assets/cards/frame.svg";
 import PHONE from "../../assets/cards/phone.svg";
@@ -6,6 +7,9 @@ import BUTTON from "../../assets/cards/button.svg";
 import BACK from "../../assets/cards/back.svg";
 import TICKET from "../../assets/cards/ticket.svg";
 const GameCard = (props) => {
+  let navigate = useNavigate();
+  let eventData = props.data;
+  // console.log(eventData);
   const [isFlipped, setIsFlipped] = useState(false);
 
   const {
@@ -205,7 +209,10 @@ const GameCard = (props) => {
               alt="Flip Back Button"
               className="w-full h-full"
             />
-            <span className="absolute inset-0 flex items-center justify-center text-black font-arcade_classic text-sm">
+            <span
+              className="absolute inset-0 flex items-center justify-center text-black font-arcade_classic text-sm"
+              onClick={() => navigate("/register", { state: eventData })}
+            >
               REGISTER
             </span>
           </button>

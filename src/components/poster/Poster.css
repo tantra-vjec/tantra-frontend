@@ -1,45 +1,55 @@
-.part {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
 .fill {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
+  background-color: #090E41;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.intro_image {
+.intro-image {
   width: 100vw;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
   object-fit: cover;
 }
 
-.svg_logo {
-  max-width: 90%;
-  margin-left: calc(50% - 445px);
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.particle_div {
+.svg-logo {
+  max-width: 90%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bouncing-game-container {
   position: absolute;
-  top: 10px;
-  width: 100%;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.64); /* Adjust scale for fit within TV */
+  width: 60%; /* Adjust as needed to fit TV screen area */
+  height: 100%;
+  min-width: 765px;
+  min-height: 190px;
+  z-index: 0; /* Ensures game is behind CRT image */
 }
 
 @media screen and (max-width: 730px) {
-  .svg_logo {
-    max-width: 90%;
-    margin-left: 5%;
+  .svg-logo {
+    max-width: 80%;
   }
-  .particle_div {
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 90%;
-    height: 50vh;
+
+  .bouncing-game-container {
+    width: 70%;
+    height: 70%;
+    max-width: 200px;
+    max-height: 150px;
   }
 }

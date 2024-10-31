@@ -1,148 +1,121 @@
-.Navbar {
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
+@import url("https://fonts.cdnfonts.com/css/arcade-classic");
+.nav {
+  margin: 0;
+  font-family: "ArcadeClassic", sans-serif;
+}
+
+.nav {
+  height: 70px;
   width: 100%;
-  z-index: 999;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+  position: fixed;
+  top: 9px;
+  z-index: 12;
 }
 
-.Navbar-bg {
-  background-color: rgba(0, 0, 0, 1);
-  transition: 0.5s;
+.menu-and-logo {
+  margin-right: 4rem;
 }
 
-.Navbar > .nav-logo {
-  height: 100px;
-  width: 120px;
-  color: #ffffff;
+.menu-and-logo img {
+  height: 60px;
 }
 
-.Navbar > .nav-items > a {
-  color: #ffffff;
-  font-size: 16px;
-  text-decoration: none;
-  margin: 15px;
-  position: relative;
-  opacity: 0.9;
+.nav-drop {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: white;
+  position: fixed;
+  top: -100%;
+  z-index: 12;
+  transition: all 0.5s ease-in;
 }
 
-.Navbar > .nav-items > a:hover {
-  opacity: 1;
-  color: #ff0066;
+.toggle {
+  top: 0;
 }
 
-.Navbar > .nav-items > a::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: #ffffff;
-  transition: all 0.45s;
+.nav-close-btn {
+  background-color: #bbfdd1;
 }
 
-.Navbar > .nav-items > a:hover::before {
-  background-color: black;
-  height: 2px;
-  width: 70%;
-  background-color: #ff0066;
-  position: absolute;
-  bottom: -3px;
-  left: 1px;
+.nav-cont {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.Navbar > .nav-toggle {
-  display: none;
+.close-btn {
+  width: 97%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4rem;
 }
 
-@media (max-width: 700px) {
-  .Navbar > .nav-items {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px;
-    transform: translateX(100%);
-    transition: transform 0.3s;
-    z-index: 100;
-    box-sizing: border-box;
-    padding-top: 100px;
-    text-align: right;
+.close-btn img {
+  height: 65px;
+  margin-right: 2.5rem;
+  margin-top: 2rem;
+}
 
-  }
+.link-items {
+  width: 80%;
+  height: 350px;
+  gap: 3rem;
+  margin-left: 5rem;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  letter-spacing: 10px;
+  margin-top: 4rem;
+  box-shadow: -6px 6px;
+  transition: scale 0.5s ease;
+  box-shadow: -6px 6px black;
+}
+.link-items > h1 {
+  color: black;
+}
 
-  .Navbar > .nav-items > a::before {
-    background: transparent;
-  }
-  .Navbar > .nav-items > a {
-    color: black;
-  }
-  .Navbar > .nav-items.open {
-    transform: translateX(0);
-    
-  }
+.link-items:hover {
+  background-color: #578ff7;
+  color: white;
+  scale: 1.1;
+  box-shadow: -6px 6px black;
+}
 
-  .Navbar > .nav-toggle {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+@media screen and (min-width: 600px) {
+  .link-items > h1 {
+    font-size: 3rem;
   }
+}
 
-  .nav-toggle > .bar {
-    position: relative;
-    width: 32px;
-    height: 2px;
-    background: #ffffff;
-    transition: all 0.45s ease-in-out;
-    z-index: 200;
+@media screen and (max-width: 600px) {
+  .link-items > h1 {
+    font-size: 2rem;
   }
-
-  .nav-toggle > .bar::before,
-  .nav-toggle > .bar::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background: #ffffff;
-    border-radius: 2px;
-    transition: all 0.45s ease-in-out;
+  .close-btn {
+    margin-right: 0;
   }
-
-  .nav-toggle > .bar::before {
-    width: 25px;
-    transform: translateY(-8px);
-    right: 0;
+  .nav-drop {
+    grid-template-columns: 1fr;
   }
-
-  .nav-toggle > .bar::after {
-    width: 32px;
-    transform: translateY(8px);
+  .nav-close-btn {
+    display: none;
   }
-
-  .nav-toggle.open > .bar {
-    transform: translateX(-40px);
-    background: transparent;
+  .link-items {
+    margin-left: 10%;
   }
-
-  .nav-toggle.open > .bar::before {
-    width: 32px;
-    transform: rotate(45deg) translate(26px, -26px);
-    background-color: black;
+  .close-btn img {
+    height: 60px;
   }
-
-  .nav-toggle.open > .bar::after {
-    transform: rotate(-45deg) translate(26px, 26px);
-    background-color: black;
+  .menu-and-logo {
+    margin-right: 2rem;
   }
 }

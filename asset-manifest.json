@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tantra-frontend/static/css/main.01c9c4a4.css",
-    "main.js": "/tantra-frontend/static/js/main.cca6a1c5.js",
+    "main.css": "/tantra-frontend/static/css/main.e15c6cb7.css",
+    "main.js": "/tantra-frontend/static/js/main.6a8302c2.js",
     "static/media/mob.png": "/tantra-frontend/static/media/mob.0dfac75f61885526dab4.png",
     "static/media/24.png": "/tantra-frontend/static/media/24.12cbb5d15834136beda3.png",
     "static/media/des.png": "/tantra-frontend/static/media/des.7ab5b7f2d452d1481b7b.png",
@@ -29,7 +29,6 @@
     "static/media/11.png": "/tantra-frontend/static/media/11.6457f1459fed3132e818.png",
     "static/media/ticket.svg": "/tantra-frontend/static/media/ticket.89992583f70100b13bb4aaedf7e4e545.svg",
     "static/media/28.png": "/tantra-frontend/static/media/28.a02078afdbcbcca174c5.png",
-    "static/media/dragon.png": "/tantra-frontend/static/media/dragon.39564cd4f068a670bf21.png",
     "static/media/humanities.jpg": "/tantra-frontend/static/media/humanities.ddbc9e318615d213cb39.jpg",
     "static/media/communication.jpg": "/tantra-frontend/static/media/communication.05abe94a848cddd5338f.jpg",
     "static/media/games.jpg": "/tantra-frontend/static/media/games.611e71474c989edc1c39.jpg",
@@ -48,11 +47,11 @@
     "index.html": "/tantra-frontend/index.html",
     "static/media/Arrow.svg": "/tantra-frontend/static/media/Arrow.c4fec83188357033d771afb83a037d40.svg",
     "static/media/DropDownIcon.svg": "/tantra-frontend/static/media/DropDownIcon.3ba1ddb4652873871680.svg",
-    "main.01c9c4a4.css.map": "/tantra-frontend/static/css/main.01c9c4a4.css.map",
-    "main.cca6a1c5.js.map": "/tantra-frontend/static/js/main.cca6a1c5.js.map"
+    "main.e15c6cb7.css.map": "/tantra-frontend/static/css/main.e15c6cb7.css.map",
+    "main.6a8302c2.js.map": "/tantra-frontend/static/js/main.6a8302c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.01c9c4a4.css",
-    "static/js/main.cca6a1c5.js"
+    "static/css/main.e15c6cb7.css",
+    "static/js/main.6a8302c2.js"
   ]
 }

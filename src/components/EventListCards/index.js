@@ -1,7 +1,7 @@
 import Events from "./Events";
 import AdsEventData from "../../data/departmentEvents/AdsEventData";
 import AeiEventData from "../../data/departmentEvents/AeiEventData";
-import AshEventData from "../../data/departmentEvents/AshEventData";
+// import AshEventData from "../../data/departmentEvents/AshEventData";
 import CeEventData from "../../data/departmentEvents/CeEventData";
 import CommonEventData from "../../data/departmentEvents/CommonEventData";
 import CseEventData from "../../data/departmentEvents/CseEventData";

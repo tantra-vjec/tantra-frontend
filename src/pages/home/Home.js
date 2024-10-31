@@ -6,7 +6,6 @@ import Poster from "../../components/poster/Poster";
 import MusicBand from "../../components/musicBand/Musicband";
 import BouncingGame from "../../components/BouncingGame/BouncingGame";
 
-
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -17,9 +16,9 @@ function Home() {
       <section id="home">
         <Poster />
       </section>
-      <section id="description">
+      {/* <section id="description">
         <Description />
-      </section>
+      </section> */}
       <section id="musicBand">
         <MusicBand />
       </section>
@@ -29,7 +28,6 @@ function Home() {
       <section id="footer">
         <Footer />
       </section>
-      </div>
     </div>
   );
 }

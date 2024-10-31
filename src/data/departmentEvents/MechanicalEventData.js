@@ -1,3 +1,5 @@
+import DRAGON from "../../assets/cards/dragon.png";
+import PLANE from "../../assets/cards/plane.jpeg";
 import img8 from "../../assets/department_images/CSE/8.png";
 import img10 from "../../assets/department_images/CSE/10.png";
 import img15 from "../../assets/department_images/CSE/15.png";

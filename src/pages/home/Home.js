@@ -3,10 +3,9 @@ import Cards from "../../components/cards/Cards";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import Poster from "../../components/poster/Poster";
-import CountDown from "../../components/countDown/CountDown";
-import Marquee from "../../components/marquee/MarqueeComp";
-import Description from "../../components/description/Description";
 import MusicBand from "../../components/musicBand/Musicband";
+import BouncingGame from "../../components/BouncingGame/BouncingGame";
+
 
 function Home() {
   useEffect(() => {
@@ -15,7 +14,6 @@ function Home() {
   return (
     <div className="bg-black text-[white] font-[Quicksand] home">
       <Navbar />
-
       <section id="home">
         <Poster />
       </section>
@@ -31,6 +29,7 @@ function Home() {
       <section id="footer">
         <Footer />
       </section>
+      </div>
     </div>
   );
 }

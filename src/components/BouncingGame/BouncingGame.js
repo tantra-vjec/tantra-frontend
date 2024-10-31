@@ -1,11 +1,16 @@
 import React, { useEffect, useState, useRef } from "react";
+import backGround from '../../assets/background.jpg';
+import ball from '../../assets/ball.png';
+import block from '../../assets/block.png';
+import ground from '../../assets/ground.png'
 import './BouncingGame.css';
+
 
 function BouncingGame() {
     const GRAVITY = 0.5;
     const JUMP_STRENGTH = -10;
     const BALL_SIZE = 35;
-    const GROUND_HEIGHT = 400;
+    const GROUND_HEIGHT = 600;
     const OBSTACLE_SIZE = 50;
 
     const [ballY, setBallY] = useState(50);
@@ -19,11 +24,10 @@ function BouncingGame() {
     const [ballRotation, setBallRotation] = useState(0);
     const [ballSpeed, setSpeed] = useState(5);
     const [isJumping, setIsJumping] = useState(false);
-    const [coins, setCoins] = useState([ { x: 400, collected: false } ]);
+    const [coins, setCoins] = useState([ { x: 600, collected: false } ]);
 
     const gameAreaRef = useRef(null);
 
-    // Increase speed every 10 points
     useEffect(() => {
         if (!gameOver) {
             const speedIncreaseInterval = setInterval(() => {
@@ -33,7 +37,6 @@ function BouncingGame() {
         }
     }, [gameOver]);
 
-    // Handle ball rotation
     useEffect(() => {
         if (!gameOver) {
             const rotationInterval = setInterval(() => {
@@ -44,7 +47,6 @@ function BouncingGame() {
         }
     }, [gameOver, ballSpeed, ballVelocity]);
 
-    // Handle jump
     useEffect(() => {
         const handleKeyDown = (e) => {
             if (e.key === " " && !gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
@@ -67,7 +69,6 @@ function BouncingGame() {
         };
     }, [gameOver, isJumping]);
 
-    // Update ground and background position
     useEffect(() => {
         if (!gameOver) {
             const scrollInterval = setInterval(() => {
@@ -92,7 +93,6 @@ function BouncingGame() {
 
         setBallVelocity((prevVelocity) => prevVelocity + GRAVITY);
 
-        // Move obstacles and check for scoring
         setObstacles((prevObstacles) => {
             return prevObstacles.map((obstacle) => {
                 const newX = obstacle.x - ballSpeed;
@@ -105,7 +105,6 @@ function BouncingGame() {
             });
         });
 
-        // Check for collision with obstacles
         obstacles.forEach((obstacle) => {
             const obstacleTop = GROUND_HEIGHT - (obstacle.height * OBSTACLE_SIZE);
             if (
@@ -117,13 +116,11 @@ function BouncingGame() {
             }
         });
 
-        // Remove obstacles that have gone off-screen
         setObstacles((prevObstacles) =>
             prevObstacles.filter(obstacle => obstacle.x + OBSTACLE_SIZE > 0)
         );
     };
 
-    // Set game interval
     useEffect(() => {
         if (!gameOver) {
             const gameInterval = setInterval(() => {
@@ -134,7 +131,6 @@ function BouncingGame() {
         }
     }, [ballY, obstacles, gameOver]);
 
-    // Randomly add obstacles
     useEffect(() => {
         let lastTimeout;
         
@@ -186,7 +182,6 @@ function BouncingGame() {
         });
     }, [ballX, ballY, ballSpeed]);
     
-    // Add this new useEffect for coin generation
     useEffect(() => {
         let lastTimeout;
         
@@ -230,15 +225,13 @@ function BouncingGame() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                height: "100vh",
                 backgroundColor: "#f0f0f0",
             }}
         >
             <div
                 style={{
-                    width: "600px",
-                    height: "400px",
-                    border: "10px solid #333",
+                    width: "800px", 
+                    height: "600px",
                     overflow: "hidden",
                     position: "relative",
                 }}
@@ -264,7 +257,6 @@ function BouncingGame() {
                             setGroundX(0);
                             setBallRotation(0);
                             setSpeed(5);
-                            setCoins([]);
                         }
                     }}
                 >
@@ -276,7 +268,7 @@ function BouncingGame() {
                             left: backgroundX,
                             width: "1200px",
                             height: "100%",
-                            backgroundImage: "url('/assets/background.jpg')",
+                            backgroundImage: `url(${backGround})`,
                             backgroundRepeat: "repeat-x",
                             backgroundSize: "600px 100%",
                         }}
@@ -289,7 +281,7 @@ function BouncingGame() {
                             top: ballY,
                             width: BALL_SIZE,
                             height: BALL_SIZE,
-                            backgroundImage: "url('/assets/ball.png')",
+                            backgroundImage: `url(${ball})`,
                             backgroundSize: "contain",
                             backgroundRepeat: "no-repeat",
                             borderRadius: "50%",
@@ -298,30 +290,6 @@ function BouncingGame() {
                             transition: "transform 0.02s linear",
                         }}
                     />
-                    {/* Coins */}
-                    {coins.map((coin, index) => (
-                        !coin.collected && (
-                            <div
-                                key={index}
-                                style={{
-                                    position: "absolute",
-                                    left: coin.x,
-                                    top: coin.y,
-                                    width: 30,
-                                    height: 30,
-                                    // backgroundImage: "url('/assets/coin.png')", // You'll need a coin image
-                                    backgroundColor: "#FFD700",
-                                    borderRadius: "50%",
-                                    border: "2px solid #FFA500",
-                                    boxShadow: "0 0 10px rgba(255, 215, 0, 0.5)",
-                                    backgroundSize: "contain",
-                                    backgroundRepeat: "no-repeat",
-                                    zIndex: 2,
-                                    animation: "spin 1s linear infinite", // Add this animation in your CSS
-                                }}
-                            />
-                        )
-                    ))}
                     {/* Obstacles */}
                     {obstacles.map((obstacle, index) => (
                         <div key={index}>
@@ -333,7 +301,7 @@ function BouncingGame() {
                                     bottom: 10,
                                     width: OBSTACLE_SIZE,
                                     height: OBSTACLE_SIZE,
-                                    backgroundImage: "url('/assets/block.png')",
+                                    backgroundImage: `url(${block})`,
                                     backgroundSize: "contain",
                                     backgroundRepeat: "no-repeat",
                                     zIndex: 2,
@@ -348,7 +316,7 @@ function BouncingGame() {
                                         bottom: OBSTACLE_SIZE + 10,
                                         width: OBSTACLE_SIZE,
                                         height: OBSTACLE_SIZE,
-                                        backgroundImage: "url('/assets/block.png')",
+                                        backgroundImage: `url(${block})`,
                                         backgroundSize: "contain",
                                         backgroundRepeat: "no-repeat",
                                         zIndex: 2,
@@ -365,7 +333,7 @@ function BouncingGame() {
                             left: groundX,
                             width: "1200px",
                             height: "50px",
-                            backgroundImage: "url('/assets/ground.png')",
+                            backgroundImage: `url(${ground})`,
                             backgroundRepeat: "repeat-x",
                             backgroundSize: "600px 100%",
                             zIndex: 1,

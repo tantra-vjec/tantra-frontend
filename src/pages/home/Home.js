@@ -6,6 +6,7 @@ import Poster from "../../components/poster/Poster";
 import CountDown from "../../components/countDown/CountDown";
 import Marquee from "../../components/marquee/MarqueeComp";
 import Description from "../../components/description/Description";
+import MusicBand from "../../components/musicBand/Musicband";
 
 function Home() {
   useEffect(() => {
@@ -20,6 +21,9 @@ function Home() {
       </section>
       <section id="description">
         <Description />
+      </section>
+      <section id="musicBand">
+        <MusicBand />
       </section>
       <section id="events">
         <Cards />

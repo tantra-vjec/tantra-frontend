@@ -74,12 +74,16 @@ const GameCard = (props) => {
           {/* Event Name */}
           <div className="absolute flex w-[70%] h-[45%] top-[30%] left-[50%]  text-white font-arcade_classic text-xl z-40 transform -translate-x-1/2 -translate-y-1/2">
             <p className="mt-auto  relative rounded-br-[20px] w-[92%] break-words text-[17px]">
-              <p className="w-full h-fit pl-2 " style={{textShadow:
-                  "1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black"}}>{name}</p>
-              <div
-                className="absolute top-0 -z-10 w-[108%]  rounded-br-[46px] pl-4 h-full "
-                
-              ></div>{" "}
+              <p
+                className="w-full h-fit pl-2 "
+                style={{
+                  textShadow:
+                    "1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black",
+                }}
+              >
+                {name}
+              </p>
+              <div className="absolute top-0 -z-10 w-[108%]  rounded-br-[46px] pl-4 h-full "></div>{" "}
             </p>
           </div>
 
@@ -93,7 +97,7 @@ const GameCard = (props) => {
             />
             <span className="absolute inset-0 top-[1%] left-[95%] flex items-center justify-center text-black font-arcade_classic text-[11px]">
               {fee === "FREE" ? (
-                <p className=" text-lg">FREE</p>
+                <p className=" text-sm">FREE</p>
               ) : (
                 <>
                   <p className="font-sans text-lg">₹</p>

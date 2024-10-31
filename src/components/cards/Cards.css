@@ -1,8 +1,7 @@
-* {
+.container {
   margin: 0;
   font-family: "ArcadeClassic", sans-serif;
 }
-
 
 .container {
   width: 100%;
@@ -23,9 +22,8 @@
   transition: all 0.5s ease;
 }
 
-
 .container:hover .dep-card {
-  /* filter: blur(3px); */
+  filter: blur(3px);
 }
 
 .container:hover .dep-card:hover {
@@ -35,8 +33,8 @@
 .dep-card:hover {
   transform: scale(1.1);
 }
-.menu-and-logo{
-    z-index:2;
+.menu-and-logo {
+  z-index: 2;
 }
 
 .main-card {
@@ -72,9 +70,8 @@
   margin-right: 14rem;
 }
 
-
 @media screen and (min-width: 500px) {
-  .container{
+  .container {
     margin-left: 3rem;
   }
 }
@@ -95,7 +92,7 @@
   .dep-name {
     font-size: 1.3rem;
     margin-right: 1rem;
-  line-height: 1rem;
+    line-height: 1rem;
   }
 
   #gif {

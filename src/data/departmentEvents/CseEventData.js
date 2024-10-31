@@ -1,3 +1,12 @@
+import img8 from "../../assets/department_images/CSE/8.png";
+import img10 from "../../assets/department_images/CSE/10.png";
+import img15 from "../../assets/department_images/CSE/15.png";
+import img16 from "../../assets/department_images/CSE/16.png";
+import img17 from "../../assets/department_images/CSE/17.png";
+import img23 from "../../assets/department_images/CSE/23.png";
+import img24 from "../../assets/department_images/CSE/24.png";
+import img25 from "../../assets/department_images/CSE/25.png";
+import img5 from "../../assets/department_images/CSE/5.png";
 const CseEventData = [
     {
         event_id: 901,
@@ -78,6 +87,7 @@ const CseEventData = [
         group: false,
         venue: "2ND S3 CSE A",
         time: "Full day",
+        event_image: img5,
     },
     {
             event_id: 906,
@@ -126,6 +136,7 @@ const CseEventData = [
         group: false,
         venue: "2ND NET LAB",
         time: "1:30 PM - 2:45 PM",
+        event_image: img8,
     },
     {
         event_id: 909,
@@ -158,6 +169,7 @@ const CseEventData = [
         group: false,
         venue: "2ND Varikatt Hall",
         time: "1:00 PM - 2:00 PM",
+        event_image: img10,
     },
 
     {
@@ -239,6 +251,7 @@ const CseEventData = [
         group: true,
         venue: "2ND Hardware Lab",
         time: "1:00 PM - 3:30 PM",
+        event_image: img15,
     },
     {
         event_id: 916,
@@ -255,6 +268,7 @@ const CseEventData = [
         group: true,
         venue: "2ND S3 CSE D",
         time: "9:30 AM - 12:00 PM",
+        event_image: img16,
     },
     {
         event_id: 917,
@@ -271,6 +285,7 @@ const CseEventData = [
         group: false,
         venue: "2ND S3 CSE D",
         time: "12:30 PM - 3:30 PM",
+        event_image: img17,
     },
     {
         event_id: 918,
@@ -351,6 +366,7 @@ const CseEventData = [
         group: false,
         venue: "2ND S5 CSE A",
         time: "Full day",
+        event_image: img23
     },
     {
         event_id: 923,
@@ -367,6 +383,7 @@ const CseEventData = [
         group: false,
         venue: "2ND S5 CSE C",
         time: "Full day",
+        event_image: img24,
     },
     {
         event_id: 924,
@@ -383,6 +400,7 @@ const CseEventData = [
         group: false,
         venue: "GROUND Basket ball court",
         time: "Full day",
+        event_image: img25,
     }
     
 

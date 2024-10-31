@@ -1,3 +1,9 @@
+import img6 from "../../assets/department_images/CE/6.png";
+import img4 from "../../assets/department_images/CE/4.png";
+import img8 from "../../assets/department_images/CE/8.png";
+import img9 from "../../assets/department_images/CE/9.png";
+import img11 from "../../assets/department_images/CE/11.png";
+import img14 from "../../assets/department_images/CE/14.png";
 const CeEventData = [
     {
         event_id: 401,
@@ -30,6 +36,7 @@ const CeEventData = [
         group: true,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img4,
     },
     {
         event_id: 403,
@@ -62,6 +69,8 @@ const CeEventData = [
         group: true,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img6,
+
     },
     {
         event_id: 405,
@@ -94,6 +103,7 @@ const CeEventData = [
         group: false,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img8,
     },
     {
         event_id: 407,
@@ -110,6 +120,7 @@ const CeEventData = [
         group: false,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img9,
     },
     {
         event_id: 408,
@@ -142,6 +153,7 @@ const CeEventData = [
         group: true,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img11,
     },
     {
         event_id: 410,
@@ -190,6 +202,7 @@ const CeEventData = [
         group: false,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img14,
     }
     
 

@@ -1,3 +1,9 @@
+import img1 from "../../assets/department_images/CSBS/1.png";
+import img3 from "../../assets/department_images/CSBS/3.png";
+import img6 from "../../assets/department_images/CSBS/6.png";
+import img10 from "../../assets/department_images/CSBS/10.png";
+import img12 from "../../assets/department_images/CSBS/12.png";
+import img13 from "../../assets/department_images/CSBS/13.png";
 const CsbsEventData = [
         {
           event_id: 601,
@@ -14,6 +20,7 @@ const CsbsEventData = [
           group: true,
           venue: "Open Space",
           time: "10:00 - 15:00",
+          event_image: img1,
         },
         {
           event_id: 602,
@@ -50,6 +57,7 @@ const CsbsEventData = [
           group: true,
           venue: "Game Zone",
           time: "09:30 - 15:00",
+          event_image: img3,
         },
         {
           event_id: 604,
@@ -104,6 +112,7 @@ const CsbsEventData = [
           group: true,
           venue: "Game Zone",
           time: "10:00 - 15:00",
+          event_image: img6,
         },
         {
           event_id: 607,
@@ -174,6 +183,7 @@ const CsbsEventData = [
           group: false,
           venue: "Lab Room",
           time: "10:00 - 12:00",
+          event_image: img10,
         },
         {
           event_id: 611,
@@ -210,6 +220,8 @@ const CsbsEventData = [
           group: true,
           venue: "Game Zone",
           time: "10:00 - 15:00",
+          event_image: img12,
+
         },
         {
           event_id: 613,
@@ -228,6 +240,8 @@ const CsbsEventData = [
           group: false,
           venue: "Admin Block, Auditorium",
           time: "10:00 - 13:00",
+          event_image: img13,
+
         }
       ];
 export default CsbsEventData;

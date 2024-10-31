@@ -1,3 +1,10 @@
+import img1 from "../../assets/department_images/CSD/1.png";
+import img2 from "../../assets/department_images/CSD/2.png";
+import img3 from "../../assets/department_images/CSD/3.png";
+import img4 from "../../assets/department_images/CSD/4.png";
+import img5 from "../../assets/department_images/CSD/5.png";
+import img6 from "../../assets/department_images/CSD/6.png";
+
 const CsdEventData = [
     {
         event_id: 801,
@@ -14,6 +21,7 @@ const CsdEventData = [
         group: false,
         venue: "Admin Block, Ground Floor, S7 CSD Classroom",
         time: "09:30 - 15:30",
+        event_image: img1,
       },
       {
         event_id: 802,
@@ -30,6 +38,7 @@ const CsdEventData = [
         group: false,
         venue: "Admin Block, Ground Floor, S5 CSD Classroom",
         time: "10:00 - 11:30",
+        event_image: img2,
       },
       {
         event_id: 803,
@@ -46,6 +55,7 @@ const CsdEventData = [
         group: false,
         venue: "Admin Block, Second Floor, ACRC Lab",
         time: "09:30 - 11:30",
+        event_image: img3,
       },
       {
         event_id: 804,
@@ -62,6 +72,7 @@ const CsdEventData = [
         group: false,
         venue: "Admin Block, Ground Floor, S5 CSD Classroom",
         time: "09:30 - 15:30",
+        event_image: img4,
       },
       {
         event_id: 805,
@@ -78,6 +89,7 @@ const CsdEventData = [
         group: false,
         venue: "Admin Block, Second Floor, Language Lab",
         time: "09:30 - 11:00",
+        event_image: img5,
       },
       {
         event_id: 806,
@@ -94,6 +106,7 @@ const CsdEventData = [
         group: false,
         venue: "Not Provided",
         time: "Not Provided",
+        event_image: img6,
       },
       
 ]

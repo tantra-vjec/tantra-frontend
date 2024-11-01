@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 import image from "../../assets/footer/nintento.png"; // Ensure this path is correct
 import "./Footer.css"; // Ensure to import the CSS file
 
@@ -21,10 +22,19 @@ function Footer() {
             <a>EVENTS</a>
           </div>
           <div className="text-white w-full md:w-[60%] lg:w-[50%] text-right text-[8px] text-sm-custom sm:text-sm md:text-sm lg:text-lg">
-            <p className="leading-tight">
-              State Highway 59, Jyothi Nagar, Kannur District, Chemperi, Kerala
-              670632
-            </p>
+            <TypeAnimation
+              sequence={[
+                "State Highway 59, Jyothi Nagar, Kannur District, Chemperi, Kerala 670632",
+                1000, // Pause for 1 second after typing
+                "", // Clear the text
+                5, // Pause for 0.5 seconds before retyping
+              ]}
+              wrapper="p"
+              speed={40} // Typing speed in milliseconds
+              cursor={true}
+              repeat={Infinity} // Repeat indefinitely
+              className="leading-tight"
+            />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import "./Footer.css"; // Ensure to import the CSS file
 
 function Footer() {
   return (
-    <div className="w-screen h-fit flex bg-[#bec0bfff]">
+    <div className="w-full h-fit flex bg-[#bec0bfff]">
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');

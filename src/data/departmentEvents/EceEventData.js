@@ -1,3 +1,12 @@
+import img3 from "../../assets/department_images/ECE/3.png";
+import img4 from "../../assets/department_images/ECE/4.png";
+import img5 from "../../assets/department_images/ECE/5.png";
+import img6 from "../../assets/department_images/ECE/6.png";
+import img10 from "../../assets/department_images/ECE/10.png";
+import img12 from "../../assets/department_images/ECE/12.png";
+import img13 from "../../assets/department_images/ECE/13.png";
+import img14 from "../../assets/department_images/ECE/14.png";
+
 const EceEventData = [
     [
         {
@@ -53,6 +62,8 @@ const EceEventData = [
             "group": true,
             "venue": "Room F7A, ECE Block, 1st floor",
             "time": "11:00 - 13:00"
+            event_image: img3,
+
         },
         {
             "event_id": 1004,
@@ -71,6 +82,8 @@ const EceEventData = [
             "group": false,
             "venue": "Logic Circuit Lab, ECE Block, 2nd floor",
             "time": "09:30 - 10:30"
+            event_image: img4,
+
         },
         {
             "event_id": 1005,
@@ -89,6 +102,8 @@ const EceEventData = [
             "group": false,
             "venue": "Logic Circuit Lab, ECE Block, 2nd floor",
             "time": "11:15 - 13:15"
+            event_image: img5,
+
         },
         {
             "event_id": 1006,
@@ -107,6 +122,8 @@ const EceEventData = [
             "group": false,
             "venue": "Room T10, ECE Block, 3rd floor",
             "time": "11:30 - 12:30"
+            event_image: img6,
+
         },
         {
             "event_id": 1007,
@@ -179,6 +196,8 @@ const EceEventData = [
             "group": false,
             "venue": "Analog Integration Lab, ECE Block, 3rd floor",
             "time": "11:45 - 12:45"
+            event_image: img10,
+
         },
         {
             "event_id": 1011,
@@ -215,6 +234,8 @@ const EceEventData = [
             "group": false,
             "venue": "Room ECE S5, ECE Block, 2nd floor",
             "time": "09:30 - 15:30"
+            event_image: img12,
+
         },
         {
             "event_id": 1013,
@@ -233,6 +254,8 @@ const EceEventData = [
             "group": false,
             "venue": "Room ECE S7, ECE Block, 2nd floor",
             "time": "09:30 - 15:30"
+            event_image: img13,
+
         },
         {
             "event_id": 1014,
@@ -251,6 +274,8 @@ const EceEventData = [
             "group": false,
             "venue": "CSBS S5, ECE Block, 2nd floor",
             "time": "10:00 - 15:30"
+            event_image: img14,
+
         },
         {
             "event_id": 1015,

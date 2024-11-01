@@ -1,3 +1,13 @@
+import img1 from "../../assets/department_images/ADS/1.png";
+import img3 from "../../assets/department_images/ADS/3.png";
+import img6 from "../../assets/department_images/ADS/6.png";
+import img7 from "../../assets/department_images/ADS/7.png";
+import img9 from "../../assets/department_images/ADS/9.png";
+import img11 from "../../assets/department_images/ADS/11.png";
+import img12 from "../../assets/department_images/ADS/12.png";
+import img13 from "../../assets/department_images/ADS/13.png";
+import img15 from "../../assets/department_images/ADS/15.png";
+
 const AdsEventData = [
     [
         {
@@ -17,6 +27,8 @@ const AdsEventData = [
             "group": true,
             "venue": "PG Lab, Admin Block, 1st floor",
             "time": "09:30 AM - 11:00 AM"
+             event_image: img1,
+
         },
         {
             "event_id": 102,
@@ -53,6 +65,8 @@ const AdsEventData = [
             "group": false,
             "venue": "Admin Block",
             "time": "Starting Time"
+            event_image: img3,
+
         },
         {
             "event_id": 104,
@@ -107,6 +121,7 @@ const AdsEventData = [
             "group": true,
             "venue": "Admin Block",
             "time": "Starting Time"
+            event_image: img6,
         },
         {
             "event_id": 107,
@@ -125,6 +140,7 @@ const AdsEventData = [
             "group": true,
             "venue": "Admin Block",
             "time": "Starting Time"
+            event_image: img7,
         },
         {
             "event_id": 108,
@@ -143,6 +159,8 @@ const AdsEventData = [
             "group": false,
             "venue": "Admin Block",
             "time": "Starting Time"
+            event_image: img9,
+
         },
         {
             "event_id": 109,
@@ -197,6 +215,8 @@ const AdsEventData = [
             "group": true,
             "venue": "Admin Block",
             "time": "Starting Time"
+            event_image: img11,
+
         },
         {
             "event_id": 112,
@@ -215,6 +235,7 @@ const AdsEventData = [
             "group": false,
             "venue": "Admin Block",
             "time": "Starting Time"
+            event_image: img12,
         },
         {
             "event_id": 113,
@@ -233,6 +254,8 @@ const AdsEventData = [
             "group": false,
             "venue": "Admin Block",
             "time": "Starting Time"
+            event_image: img13,
+
         },
         {
             "event_id": 114,
@@ -269,6 +292,8 @@ const AdsEventData = [
             "group": false,
             "venue": "Admin Block",
             "time": "Starting Time"
+            event_image: img15,
+
         }
     ]
     

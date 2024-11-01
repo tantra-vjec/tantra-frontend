@@ -15,7 +15,7 @@ function Poster() {
 
   return (
     <div className="fill">
-      <div className="img-container">
+      <div className="img-container fade-up">
         <img src={crtImage} className="svg-logo" alt="crt image" />
         <div className="bouncing-game-container">
           <BouncingGame />

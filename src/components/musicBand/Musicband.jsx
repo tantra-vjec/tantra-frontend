@@ -5,7 +5,7 @@ import bg from "../../assets/music_band/bg.png";
 
 function MusicBand() {
   return (
-    <div className="bg-[#107800] box-border w-full h-fit flex items-center justify-center relative">
+    <div className="bg-[#107800] box-border w-full h-screen flex items-center justify-center relative">
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -35,7 +35,7 @@ function MusicBand() {
         <img
           src={date}
           alt="Animated Band"
-          className="bottom-[4%] w-[17%] absolute"
+          className="sm:bottom-[4%] bottom-[34%] w-[17%] absolute"
         />
       </div>
     </div>

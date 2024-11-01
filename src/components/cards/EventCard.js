@@ -26,7 +26,7 @@ const DepCard = (props) => {
           <img id="gif" src={mecht} alt="" />
           <h3 className="dep-name">{props.title}</h3>
         </div>
-        <img className="main-card" src={depmech} alt="" />
+        <img className="main-card" src={props.imgsrc} alt="" />
         <img src={arr} alt="" id="arrow" />
       </div>
     </div>

@@ -1,28 +1,28 @@
-import Mechanical from "../../assets/departments/mechanical.jpg";
-import Computer from "../../assets/departments/computer.jpg";
-import Civil from "../../assets/departments/civil.jpg";
-import ECE from "../../assets/departments/communication.jpg";
-import EEE from "../../assets/departments/electrical.jpg";
-import AEI from "../../assets/departments/instrumentation.jpg";
-import ASH from "../../assets/departments/humanities.jpg";
-import ADS from "../../assets/departments/artificial.jpg";
-import Games from "../../assets/departments/games.jpg";
+import AEI from "../../assets/departments/aei.svg";
+import CE from "../../assets/departments/ce.svg";
+import CS from "../../assets/departments/cs.svg";
+import CSBS from "../../assets/departments/csbs.svg";
+import CSCY from "../../assets/departments/cscy.svg";
+import CSD from "../../assets/departments/csd.svg";
+import ECE from "../../assets/departments/ec.svg";
+import EEE from "../../assets/departments/eee.svg";
+import ME from "../../assets/departments/mech.svg";
 
 const CardsData = [
   {
-    imgsrc: Computer,
+    imgsrc: CS,
     title: "Computer Science ",
     text: "Events conducted by Department of Computer Science and Engineering ",
     explore: "/cse-events",
   },
   {
-    imgsrc: Mechanical,
+    imgsrc: ME,
     title: "Mechanical",
     text: "Events conducted by Department of Mechanical Engineering",
     explore: "/me-events",
   },
   {
-    imgsrc: Civil,
+    imgsrc: CE,
     title: "Civil",
     text: "Events conducted by Department of Civil Engineering",
     explore: "/ce-events",
@@ -47,26 +47,26 @@ const CardsData = [
     explore: "/eee-events",
   },
   {
-    imgsrc: ADS,
+    imgsrc: ECE,
     // title: "Artificial Intelligence And Data Science",
     title: "Artificial Intelligence",
     text: "Events conducted by Department of Artificial Intelligence and Data Science",
     explore: "/ads-events",
   },
   {
-    imgsrc: ADS,
+    imgsrc: CSD,
     title: "Computer Science And Design",
     text: "Events conducted by Department of Computer Science And Design",
     explore: "/csd-events",
   },
   {
-    imgsrc: ADS,
+    imgsrc: CSBS,
     title: "Computer Science And Business",
     text: "Events conducted by Department of Computer Science And Business",
     explore: "/csbs-events",
   },
   {
-    imgsrc: ADS,
+    imgsrc: CSCY,
     // title: "Computer Science And Cyber Security",
     title: "Computer Science And Cyber",
     text: "Events conducted by Department of Computer Science And Cyber Secuirity",

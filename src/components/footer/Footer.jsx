@@ -21,10 +21,10 @@ function Footer() {
             <a style={{ color: "#A3FF5C" }}>HOME</a>
             <a>EVENTS</a>
           </div>
-          <div className="text-white w-full md:w-[60%] lg:w-[50%] text-right text-[8px] text-sm-custom sm:text-sm md:text-sm lg:text-lg">
+          <div className="text-white w-[50%] text-right text-[8px] text-sm-custom sm:text-sm md:text-sm lg:text-lg">
             <TypeAnimation
               sequence={[
-                "State Highway 59, Jyothi Nagar, Kannur District, Chemperi, Kerala 670632",
+                "State Highway 59 Jyothi Nagar, Kannur District Chemperi, Kerala 670632",
                 1000, // Pause for 1 second after typing
                 "", // Clear the text
                 5, // Pause for 0.5 seconds before retyping

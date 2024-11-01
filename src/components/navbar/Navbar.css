@@ -115,8 +115,10 @@
   }
   .close-btn img {
     height: 60px;
+    margin-top: 0.3rem;
+    margin-right: 0.1rem;
   }
   .menu-and-logo {
-    margin-right: 2rem;
+    margin-right: 0.8rem;
   }
 }

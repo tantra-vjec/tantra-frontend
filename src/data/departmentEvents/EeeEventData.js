@@ -1,3 +1,14 @@
+import img7 from "../../assets/department_images/EEE/7.png";
+import img8 from "../../assets/department_images/EEE/8.png";
+import img10 from "../../assets/department_images/EEE/10.png";
+import img11 from "../../assets/department_images/EEE/11.png";
+import img14 from "../../assets/department_images/EEE/14.png";
+import img16 from "../../assets/department_images/EEE/16.png";
+import img23 from "../../assets/department_images/EEE/23.png";
+import img26 from "../../assets/department_images/EEE/26.png";
+import img32 from "../../assets/department_images/EEE/32.png";
+import img38 from "../../assets/department_images/EEE/38.png";
+
 const EeeEventData = [
     
     [

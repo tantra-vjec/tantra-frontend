@@ -1,3 +1,10 @@
+import img3 from "../../assets/department_images/EI/3.png";
+import img7 from "../../assets/department_images/EI/7.png";
+import img9 from "../../assets/department_images/EI/9.png";
+import img10 from "../../assets/department_images/EI/10.png";
+import img11 from "../../assets/department_images/EI/11.png";
+import img13 from "../../assets/department_images/EI/13.png";
+
 const AeiEventData = [
   [
       {
@@ -53,6 +60,7 @@ const AeiEventData = [
           "group": false,
           "venue": "Admin Block",
           "time": "Starting Time"
+          event_image: img3,
       },
       {
           "event_id": 204,
@@ -125,6 +133,8 @@ const AeiEventData = [
           "group": false,
           "venue": "Admin Block",
           "time": "Starting Time"
+          event_image: img7,
+
       },
       {
           "event_id": 208,
@@ -161,6 +171,8 @@ const AeiEventData = [
           "group": false,
           "venue": "Admin Block",
           "time": "Starting Time"
+          event_image: img9,
+
       },
       {
           "event_id": 210,
@@ -179,6 +191,8 @@ const AeiEventData = [
           "group": false,
           "venue": "Admin Block",
           "time": "Starting Time"
+          event_image: img10,
+
       },
       {
           "event_id": 211,
@@ -197,6 +211,8 @@ const AeiEventData = [
           "group": false,
           "venue": "Admin Block",
           "time": "Starting Time"
+          event_image: img11,
+
       },
       {
           "event_id": 212,
@@ -233,6 +249,8 @@ const AeiEventData = [
           "group": false,
           "venue": "Admin Block",
           "time": "Starting Time"
+          event_image: img13,
+
       },
       {
           "event_id": 214,

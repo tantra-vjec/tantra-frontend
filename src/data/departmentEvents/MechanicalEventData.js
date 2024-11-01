@@ -1,14 +1,11 @@
-// import DRAGON from "../../assets/cards/dragon.png";
-// import PLANE from "../../assets/cards/plane.jpeg";
-// import img8 from "../../assets/department_images/CSE/8.png";
-// import img10 from "../../assets/department_images/CSE/10.png";
-// import img15 from "../../assets/department_images/CSE/15.png";
-// import img16 from "../../assets/department_images/CSE/16.png";
-// import img17 from "../../assets/department_images/CSE/17.png";
-// import img23 from "../../assets/department_images/CSE/23.png";
-// import img24 from "../../assets/department_images/CSE/24.png";
-// import img25 from "../../assets/department_images/CSE/25.png";
-// import img5 from "../../assets/department_images/CSE/5.png";
+import img2 from "../../assets/department_images/ME/2.png";
+import img3 from "../../assets/department_images/ME/3.png";
+import img7 from "../../assets/department_images/ME/7.png";
+import img8 from "../../assets/department_images/ME/8.png";
+import img10 from "../../assets/department_images/ME/10.png";
+import img15 from "../../assets/department_images/ME/15.png";
+
+
 const MecahnicalEventData = [
     {
       event_id: 1201,
@@ -45,6 +42,8 @@ const MecahnicalEventData = [
       group: false,
       venue: "Workshop Lab",
       time: "To Be Announced",
+      event_image: img2,
+
     },
     {
       event_id: 1203,
@@ -63,6 +62,8 @@ const MecahnicalEventData = [
       group: true,
       venue: "Open Area",
       time: "To Be Announced",
+      event_image: img3,
+
     },
     {
       event_id: 1204,
@@ -135,6 +136,8 @@ const MecahnicalEventData = [
       group: true,
       venue: "ME Block",
       time: "To Be Announced",
+      event_image: img7,
+
     },
     {
       event_id: 1208,
@@ -153,6 +156,8 @@ const MecahnicalEventData = [
       group: true,
       venue: "Outdoor Arena",
       time: "To Be Announced",
+      event_image: img8,
+
     },
     {
       event_id: 1209,
@@ -189,6 +194,8 @@ const MecahnicalEventData = [
       group: false,
       venue: "Tool Room",
       time: "To Be Announced",
+      event_image: img10,
+
     },
     {
       event_id: 1211,
@@ -243,6 +250,8 @@ const MecahnicalEventData = [
       group: true,
       venue: "Workshop Lab",
       time: "To Be Announced",
+      event_image: img15,
+
     }
   ];
 

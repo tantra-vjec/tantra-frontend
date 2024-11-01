@@ -20,6 +20,8 @@ const CeEventData = [
         group: true,
         venue: "Not Provided",
         time: "Not Provided",
+        event_image: img6,
+
     },
     {
         event_id: 402,
@@ -36,7 +38,7 @@ const CeEventData = [
         group: true,
         venue: "Auditorium",
         time: "Not Provided",
-        event_image: img4,
+        event_image: img14,
     },
     {
         event_id: 403,
@@ -53,6 +55,7 @@ const CeEventData = [
         group: false,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img9,
     },
     {
         event_id: 404,
@@ -87,6 +90,7 @@ const CeEventData = [
         group: false,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img4,
     },
     {
         event_id: 406,
@@ -137,6 +141,7 @@ const CeEventData = [
         group: false,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img14,
     },
     {
         event_id: 409,
@@ -170,6 +175,8 @@ const CeEventData = [
         group: false,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img8,
+
     },
     {
         event_id: 411,
@@ -186,6 +193,7 @@ const CeEventData = [
         group: false,
         venue: "Auditorium",
         time: "Not Provided",
+        event_image: img6,
     },
     {
         event_id: 412,

@@ -59,9 +59,12 @@
   margin-top: 2rem;
 }
 
+.arca {
+  font-family: "ArcadeClassic", sans-serif;
+}
 .link-items {
   width: 80%;
-  font-family: "ArcadeClassic", sans-serif;
+
   height: 350px;
   gap: 3rem;
   margin-left: 5rem;

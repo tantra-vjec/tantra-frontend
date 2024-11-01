@@ -67,7 +67,8 @@ const CardsData = [
   },
   {
     imgsrc: ADS,
-    title: "Computer Science And Cyber Security",
+    // title: "Computer Science And Cyber Security",
+    title: "Computer Science And Cyber",
     text: "Events conducted by Department of Computer Science And Cyber Secuirity",
     explore: "/cscy-events",
   },

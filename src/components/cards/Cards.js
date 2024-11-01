@@ -6,7 +6,7 @@ import CardsData from "../../data/cardsData/CardsMinimal";
 function Cards() {
   return (
     <div className="">
-      <h1 className="text-center font-mono font-bold text-gray-400 text-6xl sm:text-8xl">
+      <h1 className="text-center font-bold text-gray-400 text-6xl sm:text-8xl arca">
         Events
       </h1>
       <div className="flex flex-col my-14 mx-10 md:px-20 lg:px-40">

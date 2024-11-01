@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import ir from "./icon_real.png";
 import inv from "./invert.png";
 import navm from "./nav_menu.png";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [navOpen, setNavOpen] = useState(false);
   const [closeBtnSrc, setCloseBtnSrc] = useState(ir);
 
@@ -18,6 +21,21 @@ const Navbar = () => {
 
   const changeSrcReal = () => {
     setCloseBtnSrc(ir);
+  };
+
+  const handleEventsClick = (path) => {
+    navToggle();
+    if (location.pathname !== "/") {
+      // Navigate to home page first if not already there
+      navigate("/");
+      // Use a slight delay to scroll after navigation completes
+      setTimeout(() => {
+        document.getElementById(path)?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      // If already on the home page, scroll directly
+      document.getElementById(path)?.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -40,16 +58,22 @@ const Navbar = () => {
               onMouseLeave={changeSrcReal}
             />
           </div>
-          <a className="link-items" href="/">
+          <a className="link-items arca" href="/">
             <h1>HOME</h1>
           </a>
-          <a className="link-items" href="/">
+          <a
+            className="link-items arca"
+            onClick={() => handleEventsClick("events")}
+          >
             <h1>EVENTS</h1>
           </a>
-          <a className="link-items" href="/">
+          <a className="link-items arca" href="/">
             <h1>COMPETITION</h1>
           </a>
-          <a className="link-items" href="/">
+          <a
+            className="link-items arca"
+            onClick={() => handleEventsClick("footer")}
+          >
             <h1>CONTACT US</h1>
           </a>
         </div>

@@ -4,6 +4,7 @@ import "./Cards.css";
 import Arrow from "../../assets/icons/Arrow.svg";
 import mecht from "../../assets/nav/mechtrans_.gif";
 import depmech from "../../assets/nav/depcardmech.svg";
+import arr from "../../assets/nav/arrowpixel.svg";
 
 const DepCard = (props) => {
   useEffect(() => {
@@ -16,18 +17,19 @@ const DepCard = (props) => {
   let navigate = useNavigate();
 
   return (
-    <a className="cursor-pointer" onClick={() => navigate(props.explore)}>
-      <div className="event-container">
-        <div className="dep-card">
-          <div className="sec-cont">
-            <img id="gif" src={mecht} alt="" />
-            <h3 className="dep-name">{props.title}</h3>
-          </div>
-          <img className="main-card" src={depmech} alt="" />
-          <img src="/nav/arrowpixel.svg" alt="" id="arrow" />
+    <div
+      className="cursor-pointer event-container"
+      onClick={() => navigate(props.explore)}
+    >
+      <div className="dep-card">
+        <div className="sec-cont">
+          <img id="gif" src={mecht} alt="" />
+          <h3 className="dep-name">{props.title}</h3>
         </div>
+        <img className="main-card" src={depmech} alt="" />
+        <img src={arr} alt="" id="arrow" />
       </div>
-    </a>
+    </div>
   );
 };
 

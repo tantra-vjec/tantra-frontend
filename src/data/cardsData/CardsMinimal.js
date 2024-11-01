@@ -10,16 +10,16 @@ import Games from "../../assets/departments/games.jpg";
 
 const CardsData = [
   {
-    imgsrc: Mechanical,
-    title: "Mechanical",
-    text: "Events conducted by Department of Mechanical Engineering",
-    explore: "/me-events",
-  },
-  {
     imgsrc: Computer,
     title: "Computer Science ",
     text: "Events conducted by Department of Computer Science and Engineering ",
     explore: "/cse-events",
+  },
+  {
+    imgsrc: Mechanical,
+    title: "Mechanical",
+    text: "Events conducted by Department of Mechanical Engineering",
+    explore: "/me-events",
   },
   {
     imgsrc: Civil,
@@ -29,25 +29,27 @@ const CardsData = [
   },
   {
     imgsrc: ECE,
-    title: "Electronics & Communication",
+    title: "Electronics And Communication",
     text: "Events conducted by Department of Electronics and Communication Engineering",
     explore: "/ece-events",
   },
   {
     imgsrc: AEI,
-    title: "Applied Electronics & Instrumentation",
+    // title: "Applied Electronics And Instrumentation",
+    title: "Applied Electronics",
     text: "Events conducted by AEI Department",
     explore: "/aei-events",
   },
   {
     imgsrc: EEE,
-    title: "Electrical & Electronics",
+    title: "Electrical And Electronics",
     text: "Events conducted by EEE Department",
     explore: "/eee-events",
   },
   {
     imgsrc: ADS,
-    title: "Artificial Intelligence & Data Science",
+    // title: "Artificial Intelligence And Data Science",
+    title: "Artificial Intelligence",
     text: "Events conducted by Department of Artificial Intelligence and Data Science",
     explore: "/ads-events",
   },
@@ -68,13 +70,6 @@ const CardsData = [
     title: "Computer Science And Cyber Security",
     text: "Events conducted by Department of Computer Science And Cyber Secuirity",
     explore: "/cscy-events",
-  },
-
-  {
-    imgsrc: Games,
-    title: "Common Events",
-    text: "Events common for all...",
-    explore: "/com-events",
   },
 ];
 

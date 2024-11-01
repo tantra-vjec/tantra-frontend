@@ -1,32 +1,30 @@
-// Navbar.js
 import React, { useState } from "react";
 import "./Navbar.css";
+import ir from "./icon_real.png";
+import inv from "./invert.png";
+import navm from "./nav_menu.png";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [closeBtnSrc, setCloseBtnSrc] = useState(ir);
 
   const navToggle = () => {
     setNavOpen(!navOpen);
   };
 
   const changeSrcInvert = () => {
-    document.getElementById("close-btn-btn").src = "nav/invert.png";
+    setCloseBtnSrc(inv);
   };
 
   const changeSrcReal = () => {
-    document.getElementById("close-btn-btn").src = "nav/icon_real.png";
+    setCloseBtnSrc(ir);
   };
 
   return (
     <header>
       <nav className="nav">
         <div className="menu-and-logo cursor-pointer">
-          <img
-            id="nav-btn"
-            src="/nav/nav_menu.png"
-            alt="Menu"
-            onClick={navToggle}
-          />
+          <img id="nav-btn" src={navm} alt="Menu" onClick={navToggle} />
         </div>
       </nav>
       <div className={`nav-drop ${navOpen ? "toggle" : ""}`}>
@@ -35,7 +33,7 @@ const Navbar = () => {
           <div className="close-btn cursor-pointer">
             <img
               id="close-btn-btn"
-              src="/nav/icon_real.png"
+              src={closeBtnSrc}
               alt="Close"
               onClick={navToggle}
               onMouseEnter={changeSrcInvert}

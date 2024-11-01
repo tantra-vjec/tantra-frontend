@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";  // Import framer-motion
+import { motion } from "framer-motion"; // Import framer-motion
 import CARD from "../../assets/cards/front.svg";
 import FRAME from "../../assets/cards/frame.svg";
 import PHONE from "../../assets/cards/phone.svg";
@@ -54,8 +54,9 @@ const GameCard = (props) => {
       </style>
 
       <div
-        className={`relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] ${isFlipped ? "[transform:rotateY(180deg)]" : ""
-          }`}
+        className={`relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] ${
+          isFlipped ? "[transform:rotateY(180deg)]" : ""
+        }`}
       >
         {/* Front Face of the Card */}
         <div
@@ -69,7 +70,7 @@ const GameCard = (props) => {
             className="absolute inset-0 w-full h-full object-cover z-10"
           />
           {/* Event Image */}
-          <div className="relative w-[74%] h-[45%] absolute top-[30%] left-[49%] transform -translate-x-1/2 -translate-y-1/2 z-20">
+          <div className="relative w-[74%] h-[45%]  top-[30%] left-[49%] transform -translate-x-1/2 -translate-y-1/2 z-20">
             <img
               src={event_image}
               alt="Event"
@@ -93,9 +94,7 @@ const GameCard = (props) => {
             }}
             className="absolute flex w-[70%] h-[45%] top-[30%] left-[51%] text-white font-arcade_classic text-sm z-40 transform -translate-x-1/2 -translate-y-1/2"
           >
-            <p className="mt-auto w-[90%] break-words text-[17px]">
-              {name}
-            </p>
+            <p className="mt-auto w-[90%] break-words text-[17px]">{name}</p>
           </div>
 
           {/* Price Money */}
@@ -133,14 +132,15 @@ const GameCard = (props) => {
             <img
               src={PHONE}
               alt="Phone"
-              className={`absolute bottom-[-0%] right-[21%] w-[16%] h-[20%] z-40 transition-opacity duration-300 ${isFlipped ? "opacity-0" : "opacity-100"
-                }`}
+              className={`absolute bottom-[-0%] right-[21%] w-[16%] h-[20%] z-40 transition-opacity duration-300 ${
+                isFlipped ? "opacity-0" : "opacity-100"
+              }`}
             />
           </button>
 
           {/* Register Button */}
           <button
-            onClick={() => window.open("https://www.google.com", "_blank")}
+            onClick={() => navigate("/register", { state: eventData })}
             className="absolute top-[70%] left-[9%] w-[52%] z-40"
           >
             <img
@@ -154,8 +154,15 @@ const GameCard = (props) => {
           </button>
 
           {/* Inspect Button */}
-          <button onClick={handleFlip} className="absolute top-[83%] left-[9%] w-[52%] z-40">
-            <img src={BUTTON} alt="Inspect Button" className="w-full h-full object-cover" />
+          <button
+            onClick={handleFlip}
+            className="absolute top-[83%] left-[9%] w-[52%] z-40"
+          >
+            <img
+              src={BUTTON}
+              alt="Inspect Button"
+              className="w-full h-full object-cover"
+            />
             <span className="absolute inset-0 flex items-center justify-center text-black font-arcade_classic text-sm">
               INSPECT
             </span>
@@ -168,7 +175,11 @@ const GameCard = (props) => {
           style={{ backfaceVisibility: "hidden" }}
           onClick={handleFlip}
         >
-          <img src={BACK} alt="Back Face" className="absolute inset-0 w-full h-full object-cover z-10" />
+          <img
+            src={BACK}
+            alt="Back Face"
+            className="absolute inset-0 w-full h-full object-cover z-10"
+          />
 
           {/* Coordinator and Contact Information */}
           <div className="absolute top-[11%] left-[50%] w-[90%] flex flex-col text-white font-arcade_classic text-[11px] z-40 transform -translate-x-1/2 -translate-y-1/2">
@@ -182,7 +193,13 @@ const GameCard = (props) => {
 
           {/* Event Description */}
           <div className="absolute break-words top-[37%] left-[54%] w-[80%] z-40 transform -translate-x-1/2 -translate-y-1/2 flex flex-col text-white">
-            <div className="font-arcade_classic text-xl" style={{ textShadow: "2px 1px 0px black, -2px -1px 0px black, 2px -1px 0px black, -2px 1px 0px black" }}>
+            <div
+              className="font-arcade_classic text-xl"
+              style={{
+                textShadow:
+                  "2px 1px 0px black, -2px -1px 0px black, 2px -1px 0px black, -2px 1px 0px black",
+              }}
+            >
               {name}
             </div>
             <div className="font-montserrat sm:text-sm text-l mt-1">
@@ -201,18 +218,33 @@ const GameCard = (props) => {
           </div>
 
           {/* Register Button */}
-          <button onClick={() => window.open("https://www.google.com", "_blank")} className="relative overflow-hidden top-[75%] left-[9%] w-[52%] z-40">
-            <img src={BUTTON} alt="Register Button" className="w-full h-full object-cover" />
-            <span className="absolute inset-0 flex items-center justify-center text-black font-arcade_classic text-sm" onClick={() => navigate("/register", { state: eventData })}>
+          <button
+            onClick={() => navigate("/register", { state: eventData })}
+            className="relative overflow-hidden top-[75%] left-[9%] w-[52%] z-40"
+          >
+            <img
+              src={BUTTON}
+              alt="Register Button"
+              className="w-full h-full object-cover"
+            />
+            <span
+              className="absolute inset-0 flex items-center justify-center text-black font-arcade_classic text-sm"
+              onClick={() => navigate("/register", { state: eventData })}
+            >
               REGISTER
             </span>
             <div className="shine"></div>
           </button>
 
-
           {/* Phone Icon on Back Face */}
           <button>
-            <img src={PHONE} alt="Phone" className={`absolute bottom-[8%] right-[20%] w-[16%] h-[20%] z-40 transition-opacity duration-300 ${isFlipped ? "opacity-100" : "opacity-0"}`} />
+            <img
+              src={PHONE}
+              alt="Phone"
+              className={`absolute bottom-[8%] right-[20%] w-[16%] h-[20%] z-40 transition-opacity duration-300 ${
+                isFlipped ? "opacity-100" : "opacity-0"
+              }`}
+            />
           </button>
         </div>
       </div>

@@ -48,26 +48,32 @@ function BouncingGame() {
     }, [gameOver, ballSpeed, ballVelocity]);
 
     useEffect(() => {
-        const handleKeyDown = (e) => {
-            if (e.key === " " && !gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
-                jump();
-            }
-        };
+      const handleKeyDown = (e) => {
+        if (e.key === " " && !gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
+            jump();
+        }
+    };
 
-        const handleTap = () => {
-            if (!gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
-                jump();
-            }
-        };
+    const handleTap = () => {
+        if (!gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
+            jump();
+        }
+    };
 
         window.addEventListener("keydown", handleKeyDown);
-        gameAreaRef.current.addEventListener("click", handleTap);
+
+        // Ensure gameAreaRef is defined before adding listener
+        if (gameAreaRef.current) {
+            gameAreaRef.current.addEventListener("click", handleTap);
+        }
 
         return () => {
-            window.removeEventListener("keydown", handleKeyDown);
-            gameAreaRef.current.removeEventListener("click", handleTap);
+          window.removeEventListener("keydown", handleKeyDown);
+          if (gameAreaRef.current) {
+              gameAreaRef.current.removeEventListener("click", handleTap);
+          }
         };
-    }, [gameOver, isJumping]);
+    }, [gameOver, isJumping, ballY]);
 
     useEffect(() => {
         if (!gameOver) {
@@ -105,21 +111,22 @@ function BouncingGame() {
             });
         });
 
-        obstacles.forEach((obstacle) => {
-            const obstacleTop = GROUND_HEIGHT - (obstacle.height * OBSTACLE_SIZE);
-            if (
-                ballX + BALL_SIZE >= obstacle.x &&
-                ballX < obstacle.x + OBSTACLE_SIZE &&
-                ballY + BALL_SIZE >= obstacleTop
-            ) {
-                setGameOver(true);
-            }
-        });
-
         setObstacles((prevObstacles) =>
-            prevObstacles.filter(obstacle => obstacle.x + OBSTACLE_SIZE > 0)
-        );
-    };
+          prevObstacles.filter(obstacle => obstacle.x + OBSTACLE_SIZE > 0)
+      );
+
+      // Use up-to-date obstacles from state
+      obstacles.forEach((obstacle) => {
+          const obstacleTop = GROUND_HEIGHT - (obstacle.height * OBSTACLE_SIZE);
+          if (
+              ballX + BALL_SIZE >= obstacle.x &&
+              ballX < obstacle.x + OBSTACLE_SIZE &&
+              ballY + BALL_SIZE >= obstacleTop
+          ) {
+              setGameOver(true);
+          }
+      });
+  };
 
     useEffect(() => {
         if (!gameOver) {

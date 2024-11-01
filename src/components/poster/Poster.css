@@ -19,6 +19,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* overflow: hidden; */
 }
 
 .svg-logo {
@@ -51,5 +52,24 @@
     height: 70%;
     max-width: 200px;
     max-height: 150px;
+  }
+}
+.fade-up {
+  animation: fadeInUp 2s ease-out forwards; /* Apply animation */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); /* Start slightly below */
+    
+  }
+75%{
+  opacity:0.9;
+  transform: translateY(100px);
+}
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
   }
 }

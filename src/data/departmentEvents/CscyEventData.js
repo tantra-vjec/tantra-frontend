@@ -40,6 +40,7 @@ const CscyEventData = [
         group: false,
         venue: "Ground S5 CSCY",
         time: "09:30 am to 03:30 PM",
+        event_image: img17,
     },
     {
         event_id: 703,
@@ -56,6 +57,7 @@ const CscyEventData = [
         group: true,
         venue: "Ground S5 CSCY",
         time: "09:30 am to 03:30 PM",
+        event_image: img18,
     },
     {
         event_id: 704,
@@ -72,6 +74,7 @@ const CscyEventData = [
         group: false,
         venue: "2ND PG Lab",
         time: "10:30 AM to 11:30 AM",
+        event_image: img20,
     },
     {
         event_id: 705,
@@ -88,6 +91,7 @@ const CscyEventData = [
         group: false,
         venue: "2ND PG Lab",
         time: "09:30 AM to 10:30 AM",
+        event_image: img26,
     },
     {
         event_id: 706,
@@ -121,6 +125,7 @@ const CscyEventData = [
         group: false,
         venue: "Ground S3 CSCY",
         time: "09:30 am to 01:30 PM",
+        event_image: img17,
     },
     {
         event_id: 708,
@@ -137,6 +142,7 @@ const CscyEventData = [
         group: false,
         venue: "Ground S3 CSCY",
         time: "09:30 am to 01:30 PM",
+        event_image: img26,
     },
     {
         event_id: 709,
@@ -170,6 +176,7 @@ const CscyEventData = [
         group: false,
         venue: "Ground S3 CSCY",
         time: "10:00 AM to 11:00 AM",
+        event_image: img24,
     },
     {
         event_id: 711,
@@ -186,6 +193,7 @@ const CscyEventData = [
         group: false,
         venue: "Ground Lab 8",
         time: "01:30 PM to 02:30 PM",
+        event_image: img24,
     },
     {
         event_id: 712,
@@ -202,6 +210,7 @@ const CscyEventData = [
         group: false,
         venue: "1ST S3 ADS",
         time: "10:30 AM to 11:30 AM",
+        event_image: img9,
     },
     {
         event_id: 713,
@@ -218,6 +227,7 @@ const CscyEventData = [
         group: true,
         venue: "2ND PG Lab",
         time: "02:30 PM to 03:30 PM",
+        event_image: img1,
     },
     {
         event_id: 714,
@@ -234,6 +244,7 @@ const CscyEventData = [
         group: false,
         venue: "1ST S3 ADS",
         time: "12:30 PM to 03:30 PM",
+        event_image: img20,
     },
     {
         event_id: 715,
@@ -250,6 +261,7 @@ const CscyEventData = [
         group: true,
         venue: "Ground Lab 8",
         time: "09:30 AM to 10:30 AM",
+        event_image: img17,
     },
     {
         event_id: 716,
@@ -266,6 +278,7 @@ const CscyEventData = [
         group: false,
         venue: "2ND PG Lab",
         time: "11:30 AM to 12:30 PM",
+        event_image: img20,
     },
     {
         event_id: 717,
@@ -317,6 +330,7 @@ const CscyEventData = [
         group: false,
         venue: "Ground Lab 8",
         time: "12:30 PM to 01:30 PM",
+        event_image: img1,
     },
     {
         event_id: 720,
@@ -351,6 +365,7 @@ const CscyEventData = [
         group: false,
         venue: "Ground Lab 8",
         time: "11:30 AM to 12:30 PM",
+        event_image: img18,
     },
     {
         event_id: 722,
@@ -367,6 +382,7 @@ const CscyEventData = [
         group: true,
         venue: "Ground Lab 8",
         time: "12:30 PM to 01:30 PM",
+        event_image: img6,
     },
     {
         event_id: 723,
@@ -383,6 +399,7 @@ const CscyEventData = [
         group: false,
         venue: "Ground S5 CSCY",
         time: "09:30 am to 03:30 PM",
+        event_image: img18,
     },
     {
         event_id: 724,
@@ -451,6 +468,7 @@ const CscyEventData = [
         group: false,
         venue: "1ST S3 ADS",
         time: "09:30 am to 03:30 PM",
+        event_image: img20,
     },
     {
         event_id: 728,
@@ -485,6 +503,7 @@ const CscyEventData = [
         group: true,
         venue: "Ground S5 CSCY",
         time: "02:30 PM to 03:30 PM",
+        event_image: img1,
     },
     {
         event_id: 730,
@@ -501,6 +520,7 @@ const CscyEventData = [
         group: false,
         venue: "1ST S3 ADS",
         time: "09:30 am to 03:30 PM",
+        event_image: img6,
     },
     {
         event_id: 731,
@@ -517,6 +537,7 @@ const CscyEventData = [
         group: false,
         venue: "Ground S3 CSCY",
         time: "09:30 am to 01:00 PM",
+        event_image: img20,
     }
     
 ]

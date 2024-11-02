@@ -24,6 +24,8 @@ const MecahnicalEventData = [
       group: true,
       venue: "ME Block",
       time: "To Be Announced",
+      event_image: img2,
+
     },
     {
       event_id: 1202,
@@ -82,6 +84,7 @@ const MecahnicalEventData = [
       group: false,
       venue: "Conference Hall",
       time: "To Be Announced",
+      event_image: img15,
     },
     {
       event_id: 1205,
@@ -100,6 +103,8 @@ const MecahnicalEventData = [
       group: true,
       venue: "ME Block",
       time: "To Be Announced",
+      event_image: img3,
+
     },
     {
       event_id: 1206,
@@ -118,6 +123,7 @@ const MecahnicalEventData = [
       group: true,
       venue: "ME Block",
       time: "To Be Announced",
+      event_image: img2,
     },
     {
       event_id: 1207,
@@ -137,6 +143,7 @@ const MecahnicalEventData = [
       venue: "ME Block",
       time: "To Be Announced",
       event_image: img7,
+
 
     },
     {
@@ -176,6 +183,7 @@ const MecahnicalEventData = [
       group: false,
       venue: "Quiz Hall",
       time: "To Be Announced",
+      event_image: img7,
     },
     {
       event_id: 1210,
@@ -214,6 +222,7 @@ const MecahnicalEventData = [
       group: true,
       venue: "Outdoor Arena",
       time: "To Be Announced",
+      event_image: img10,
     },
     {
       event_id: 1212,
@@ -232,6 +241,7 @@ const MecahnicalEventData = [
       group: false,
       venue: "Exhibit Hall",
       time: "To Be Announced",
+      event_image: img3,
     },
     {
       event_id: 1213,

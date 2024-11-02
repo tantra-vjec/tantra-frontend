@@ -13,18 +13,21 @@ const GameCard = (props) => {
   let eventData = props.data;
   const [isFlipped, setIsFlipped] = useState(false);
 
+  const handleCall = () => {
+    window.location.href = `tel:${s1_phone}`;
+  };
   const {
     name,
     time,
     venue,
     fee,
     department,
-    contact,
+    s1_phone,
     is_active,
     event_type,
     description,
     event_image,
-    co_ord,
+    student1,
   } = props.data;
 
   // Toggle the flip state of the card
@@ -128,7 +131,7 @@ const GameCard = (props) => {
           </div>
 
           {/* Phone Button */}
-          <button>
+          <button onClick={handleCall}>
             <img
               src={PHONE}
               alt="Phone"
@@ -181,13 +184,13 @@ const GameCard = (props) => {
             className="absolute inset-0 w-full h-full object-cover z-10"
           />
 
-          {/* Coordinator and Contact Information */}
+          {/* Coordinator and s1_phone Information */}
           <div className="absolute top-[11%] left-[50%] w-[90%] flex flex-col text-white font-arcade_classic text-[11px] z-40 transform -translate-x-1/2 -translate-y-1/2">
             <div className="flex justify-between w-full">
               <div className="flex-1 ml-3 mr-4 overflow-hidden text-ellipsis">
-                {co_ord}
+                {student1}
               </div>
-              <div className="whitespace-nowrap mr-5">{contact}</div>
+              <div className="whitespace-nowrap mr-5">{s1_phone}</div>
             </div>
           </div>
 
@@ -218,10 +221,10 @@ const GameCard = (props) => {
           </div>
 
           {/* Register Button */}
-          <button
+          <button onClick={handleCall}>
             onClick={() => navigate("/register", { state: eventData })}
-            className="relative overflow-hidden top-[75%] left-[9%] w-[52%] z-40"
-          >
+            className="relative overflow-hidden top-[75%] left-[9%] w-[52%]
+            z-40" >
             <img
               src={BUTTON}
               alt="Register Button"

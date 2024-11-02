@@ -18,7 +18,7 @@ function BouncingGame() {
   const [ballVelocity, setBallVelocity] = useState(0);
   const [obstacles, setObstacles] = useState([]);
   const [score, setScore] = useState(0);
-  const [gameOver, setGameOver] = useState(false);
+  const [gameOver, setGameOver] = useState(true);
   const [backgroundX, setBackgroundX] = useState(0);
   const [groundX, setGroundX] = useState(0);
   const [ballRotation, setBallRotation] = useState(0);
@@ -266,7 +266,7 @@ function BouncingGame() {
             style={{
               position: "absolute",
               left: ballX,
-              top: ballY,
+              top: ballY - 10,
               width: BALL_SIZE,
               height: BALL_SIZE,
               backgroundImage: `url(${ball})`,
@@ -285,7 +285,7 @@ function BouncingGame() {
               style={{
                 position: "absolute",
                 left: obstacle.x,
-                bottom: 10,
+                bottom: 20,
                 width: OBSTACLE_SIZE,
                 height: OBSTACLE_SIZE,
                 backgroundImage: `url(${block})`,
@@ -299,7 +299,7 @@ function BouncingGame() {
           <div
             style={{
               position: "absolute",
-              bottom: 0,
+              bottom: 10,
               left: groundX,
               width: "1900px",
               height: "50px",
@@ -312,7 +312,7 @@ function BouncingGame() {
           <div
             style={{
               position: "absolute",
-              bottom: 0,
+              bottom: 10,
               left: groundX,
               width: "200px",
               height: "50px",

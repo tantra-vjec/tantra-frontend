@@ -194,7 +194,7 @@ const GameCard = (props) => {
           {/* Event Description */}
           <div className="absolute break-words top-[37%] left-[54%] w-[80%] z-40 transform -translate-x-1/2 -translate-y-1/2 flex flex-col text-white">
             <div
-              className="font-arcade_classic text-xl"
+              className="font-arcade_classic text-xl max-sm:text-base"
               style={{
                 textShadow:
                   "2px 1px 0px black, -2px -1px 0px black, 2px -1px 0px black, -2px 1px 0px black",

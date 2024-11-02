@@ -8,7 +8,7 @@ import "./BouncingGame.css";
 function BouncingGame() {
   const GRAVITY = 0.6;
   const JUMP_STRENGTH = -14;
-  const BALL_SIZE = 45;
+  const BALL_SIZE = 30;
   const GROUND_HEIGHT = 600;
   const OBSTACLE_SIZE = 70;
   const MIN_GAP = 10; // Minimum gap between obstacles
@@ -77,7 +77,7 @@ function BouncingGame() {
       const rotationInterval = setInterval(() => {
         setBallRotation(
           (prev) =>
-            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360
+            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360,
         );
       }, 20);
 
@@ -98,7 +98,7 @@ function BouncingGame() {
     };
 
     const handleTap = () => {
-      if (!gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
+      if (!gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT - 10) {
         jump();
       }
     };
@@ -131,9 +131,9 @@ function BouncingGame() {
     setBallY((prevY) => {
       const newY = prevY + ballVelocity;
 
-      if (newY + BALL_SIZE >= GROUND_HEIGHT) {
+      if (newY + BALL_SIZE >= GROUND_HEIGHT - 10) {
         setIsJumping(false);
-        return GROUND_HEIGHT - BALL_SIZE;
+        return GROUND_HEIGHT - BALL_SIZE - 10;
       }
       return newY;
     });
@@ -158,7 +158,7 @@ function BouncingGame() {
     }
 
     setObstacles((prevObstacles) =>
-      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0)
+      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0),
     );
 
     obstacles.forEach((obstacle) => {
@@ -209,6 +209,7 @@ function BouncingGame() {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#f0f0f0",
+        fontFamily: "'Pixelify Sans', sans-serif", // Add the font here
       }}
     >
       <div
@@ -239,8 +240,22 @@ function BouncingGame() {
               position: "absolute",
               top: 0,
               left: backgroundX,
-              width: "1200px",
+              width: "1900px",
               height: "100%",
+              backgroundImage: `url(${backGround})`,
+              backgroundRepeat: "repeat-x",
+              backgroundSize: "600px 100%",
+              zIndex: 1,
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: backgroundX + 1070,
+              width: "100px",
+              height: "100%",
+              zIndex: 0,
               backgroundImage: `url(${backGround})`,
               backgroundRepeat: "repeat-x",
               backgroundSize: "600px 100%",
@@ -286,7 +301,20 @@ function BouncingGame() {
               position: "absolute",
               bottom: 0,
               left: groundX,
-              width: "1200px",
+              width: "1900px",
+              height: "50px",
+              backgroundImage: `url(${ground})`,
+              backgroundRepeat: "repeat-x",
+              backgroundSize: "600px 100%",
+              zIndex: 1,
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: groundX,
+              width: "200px",
               height: "50px",
               backgroundImage: `url(${ground})`,
               backgroundRepeat: "repeat-x",
@@ -298,9 +326,9 @@ function BouncingGame() {
           <div
             style={{
               position: "absolute",
-              top: 10,
-              left: 10,
-              fontSize: "24px",
+              top: 29,
+              left: 26,
+              fontSize: "27px",
               zIndex: 3,
             }}
           >
@@ -314,7 +342,7 @@ function BouncingGame() {
                 top: "50%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
-                fontSize: "36px",
+                fontSize: "40px",
                 color: "red",
                 zIndex: 4,
               }}

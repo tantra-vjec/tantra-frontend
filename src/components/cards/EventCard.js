@@ -20,7 +20,7 @@ const DepCard = (props) => {
       className="w-full sm:w-4/6 mx-auto h-[130px] sm:h-auto flex flex-col justify-center items-center  sm:mt-12 md:gap-4 md:mt-4"
       onClick={() => navigate(props.explore)}
     >
-      <div className="relative h-full w-full sm:w-4/5 md:w-full overflow-hidden transition-all duration-500 transform hover:scale-110">
+      <div className="cursor-pointer relative h-full w-full sm:w-4/5 md:w-full overflow-hidden transition-all duration-500 transform hover:scale-110">
         <div className="absolute sm:top-[20%] left-[5%] flex items-center md:gap-2">
           <img
             className="w-[72px] h-[74px] sm:h-32 sm:w-32"

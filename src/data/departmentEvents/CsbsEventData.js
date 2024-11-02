@@ -39,6 +39,7 @@ const CsbsEventData = [
           group: true,
           venue: "G3, Admin Block, 1st floor",
           time: "10:00 - 11:00",
+          event_image: img10,
         },
         {
           event_id: 603,
@@ -76,6 +77,7 @@ const CsbsEventData = [
           group: true,
           venue: "Tech Lab",
           time: "11:00 - 12:00",
+          event_image: img12,
         },
         {
           event_id: 605,
@@ -94,6 +96,7 @@ const CsbsEventData = [
           group: true,
           venue: "Outdoor Space",
           time: "11:00 - 12:00",
+          event_image: img13,
         },
         {
           event_id: 606,
@@ -129,6 +132,7 @@ const CsbsEventData = [
           group: false,
           venue: "Maze Zone",
           time: "10:00 - 15:00",
+          event_image: img3,
         },
         {
           event_id: 608,
@@ -147,6 +151,7 @@ const CsbsEventData = [
           group: false,
           venue: "Online Platform",
           time: "Flexible",
+          event_image: img1,
         },
         {
           event_id: 609,
@@ -165,6 +170,7 @@ const CsbsEventData = [
           group: true,
           venue: "Admin Block",
           time: "10:00 - 12:00",
+          event_image: img6,
         },
         {
           event_id: 610,
@@ -202,6 +208,7 @@ const CsbsEventData = [
           group: false,
           venue: "Typing Lab",
           time: "12:00 - 13:00",
+          event_image: img13,
         },
         {
           event_id: 612,

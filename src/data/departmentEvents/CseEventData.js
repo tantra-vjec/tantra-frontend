@@ -24,6 +24,7 @@ const CseEventData = [
     group: true,
     venue: "2ND Hardware Lab",
     time: "9:30AM - 11:00 AM",
+    event_image: img8,
   },
   {
     event_id: 902,
@@ -41,6 +42,7 @@ const CseEventData = [
     group: true,
     venue: "2ND Varikatt Hall",
     time: "10:30 AM - 2:00 PM",
+    event_image: img10,
   },
   {
     event_id: 903,
@@ -58,6 +60,7 @@ const CseEventData = [
     group: false,
     venue: "2ND NET LAB",
     time: "9:30 AM - 10:30 PM",
+    event_image: img15,
   },
   {
     event_id: 904,
@@ -75,6 +78,7 @@ const CseEventData = [
     group: false,
     venue: "2ND NET LAB",
     time: "12:00 PM - 1:15 PM",
+    event_image: img24,
   },
   {
     event_id: 905,
@@ -110,6 +114,7 @@ const CseEventData = [
     group: false,
     venue: "2ND S3 CSE B",
     time: "12:30 PM - 2:30 PM",
+    event_image: img16,
   },
   {
     event_id: 907,
@@ -127,6 +132,7 @@ const CseEventData = [
     group: false,
     venue: "2ND S5 CSE A",
     time: "Full day",
+    event_image: img23,
   },
   {
     event_id: 908,
@@ -161,6 +167,7 @@ const CseEventData = [
     group: false,
     venue: "2ND NET LAB",
     time: "10:30 AM - 11:30 AM",
+    event_image: img5,
   },
   {
     event_id: 910,
@@ -196,6 +203,7 @@ const CseEventData = [
     group: false,
     venue: "2ND S15 MTECH",
     time: "1:00 PM - 2:30 PM",
+    event_image: img16,
   },
   {
     event_id: 912,
@@ -213,6 +221,7 @@ const CseEventData = [
     group: false,
     venue: "2ND S15 MTECH",
     time: "Full day",
+    event_image: img25,
   },
   {
     event_id: 913,
@@ -230,6 +239,7 @@ const CseEventData = [
     group: false,
     venue: "2ND Hardware Lab",
     time: "11:15 AM - 12:30 PM",
+    event_image: img17,
   },
   {
     event_id: 914,
@@ -247,6 +257,8 @@ const CseEventData = [
     group: false,
     venue: "2ND S3 CSE A",
     time: "Full day",
+    event_image: img17,
+    
   },
   {
     event_id: 915,
@@ -318,6 +330,8 @@ const CseEventData = [
     group: false,
     venue: "2ND S3 CSE B",
     time: "Full day",
+    event_image: img15,
+
   },
   {
     event_id: 919,
@@ -335,6 +349,8 @@ const CseEventData = [
     group: false,
     venue: "GROUND Basket ball court",
     time: "Full day",
+    event_image: img23,
+
   },
   {
     event_id: 920,
@@ -352,6 +368,7 @@ const CseEventData = [
     group: true,
     venue: "2ND S3 CSE C",
     time: "11:30 AM - 1:00 PM",
+    event_image: img17,
   },
   {
     event_id: 921,
@@ -369,6 +386,7 @@ const CseEventData = [
     group: true,
     venue: "2ND S3 CSE C",
     time: "Full day",
+    event_image: img5,
   },
   {
     event_id: 922,

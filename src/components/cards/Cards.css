@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
 .event-container {
   width: 100%;
   display: flex;
@@ -9,19 +10,19 @@
 }
 
 .dep-card {
-  margin: 0;
-  padding: 0;
-  width: 80%;
-  position: relative;
-  overflow: hidden;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* width: 80%; */
+  /* position: relative; */
+  /* overflow: hidden; */
   transition: all 0.5s ease;
 }
 
-.container:hover .dep-card {
+.cont-wrap:hover .dep-card {
   filter: blur(3px);
 }
 
-.container:hover .dep-card:hover {
+.cont-wrap:hover .dep-card:hover {
   filter: none;
 }
 
@@ -67,6 +68,9 @@
   padding-left: 15px;
 }
 
+.arca{
+  font-family: "ArcadeClassic", sans-serif;
+}
 @media screen and (max-width: 500px) {
   .dep-card {
     width: 100%;

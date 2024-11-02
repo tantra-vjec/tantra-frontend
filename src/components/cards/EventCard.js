@@ -17,7 +17,7 @@ const DepCard = (props) => {
 
   return (
     <div
-      className="w-full sm:w-4/6 mx-auto h-[130px] sm:h-auto flex flex-col justify-center items-center  sm:mt-12 md:gap-4 md:mt-4"
+      className="w-full sm:w-4/6 mx-auto h-[130px] sm:h-auto flex flex-col justify-center items-center  sm:mt-12 md:gap-4 md:mt-4 dep-card"
       onClick={() => navigate(props.explore)}
     >
       <div className="relative h-full w-full sm:w-4/5 md:w-full overflow-hidden transition-all duration-500 transform hover:scale-110">

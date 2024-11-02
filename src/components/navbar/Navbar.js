@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="nav w-32">
+      <nav className="nav">
         <div className="menu-and-logo cursor-pointer">
           <img id="nav-btn" src={navm} alt="Menu" onClick={navToggle} />
         </div>

@@ -20,6 +20,7 @@
   align-items: center;
   flex-direction: column;
   /* overflow: hidden; */
+  margin-top: 130px;
 }
 
 .svg-logo {
@@ -46,6 +47,10 @@
   .svg-logo {
     width: 80%;
   }
+  .img-container{
+    margin-top: 20vh;
+    scale: .9;
+  }
 
   .bouncing-game-container {
     position: relative;
@@ -59,6 +64,13 @@
     margin-top: -450px;
 
   }
+}
+
+@media screen and (max-width: 430px) {
+.img-container{
+  scale: .76;
+  margin-top: 53vw;
+}
 }
 .fade-up {
   animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards; /* Smoother easing function */

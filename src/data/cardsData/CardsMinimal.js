@@ -8,33 +8,47 @@ import ECE from "../../assets/departments/ec.svg";
 import EEE from "../../assets/departments/eee.svg";
 import ME from "../../assets/departments/mech.svg";
 
+import AG from "../../assets/departments/mechtrans_.gif";
+import BG from "../../assets/departments/adsgif.gif";
+import CG from "../../assets/departments/aeigif.gif";
+import DG from "../../assets/departments/cegif.gif";
+import EG from "../../assets/departments/csgif.gif";
+import FG from "../../assets/departments/csdgif.gif";
+import GG from "../../assets/departments/ecgif.gif";
+// import HG from "../../assets/departments/";
+
 const CardsData = [
   {
-    imgsrc: CS,
+    imgsrc: EEE,
+    gif: EG,
     title: "Computer Science ",
     text: "Events conducted by Department of Computer Science and Engineering ",
     explore: "/cse-events",
   },
   {
     imgsrc: ME,
+    gif: AG,
     title: "Mechanical",
     text: "Events conducted by Department of Mechanical Engineering",
     explore: "/me-events",
   },
   {
     imgsrc: CE,
+    gif: BG,
     title: "Civil",
     text: "Events conducted by Department of Civil Engineering",
     explore: "/ce-events",
   },
   {
     imgsrc: ECE,
+    gif: CG,
     title: "Electronics And Communication",
     text: "Events conducted by Department of Electronics and Communication Engineering",
     explore: "/ece-events",
   },
   {
     imgsrc: AEI,
+    gif: DG,
     // title: "Applied Electronics And Instrumentation",
     title: "Applied Electronics",
     text: "Events conducted by AEI Department",
@@ -42,12 +56,14 @@ const CardsData = [
   },
   {
     imgsrc: EEE,
+    gif: EG,
     title: "Electrical And Electronics",
     text: "Events conducted by EEE Department",
     explore: "/eee-events",
   },
   {
     imgsrc: ECE,
+    gif: FG,
     // title: "Artificial Intelligence And Data Science",
     title: "Artificial Intelligence",
     text: "Events conducted by Department of Artificial Intelligence and Data Science",
@@ -55,18 +71,21 @@ const CardsData = [
   },
   {
     imgsrc: CSD,
+    gif: GG,
     title: "Computer Science And Design",
     text: "Events conducted by Department of Computer Science And Design",
     explore: "/csd-events",
   },
   {
     imgsrc: CSBS,
+    gif: AG,
     title: "Computer Science And Business",
     text: "Events conducted by Department of Computer Science And Business",
     explore: "/csbs-events",
   },
   {
     imgsrc: CSCY,
+    gif: BG,
     // title: "Computer Science And Cyber Security",
     title: "Computer Science And Cyber",
     text: "Events conducted by Department of Computer Science And Cyber Secuirity",

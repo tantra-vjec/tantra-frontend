@@ -18,6 +18,7 @@ function Cards() {
               title={value.title}
               text={value.text}
               view={value.view}
+              gurl={value.gif}
               explore={value.explore}
             />
           );

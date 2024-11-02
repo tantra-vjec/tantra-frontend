@@ -21,13 +21,13 @@ const DepCard = (props) => {
       onClick={() => navigate(props.explore)}
     >
       <div className="relative h-full w-full sm:w-4/5 md:w-full overflow-hidden transition-all duration-500 transform hover:scale-110">
-        <div className="absolute top-[14%] sm:top-[26%] left-[5%] flex items-center md:gap-2">
+        <div className="absolute sm:top-[20%] left-[5%] flex items-center md:gap-2">
           <img
-            className="w-[70px] sm:w-[24%] md:w-[20%] lg:w-[140px]"
-            src={mecht}
+            className="w-[72px] h-[74px] sm:h-32 sm:w-32"
+            src={props.gurl}
             alt=""
           />
-          <h3 className="w-full text-white text-xl sm:text-lg md:text-xl lg:text-4xl sm:ml-5 font-bold text-left pl-4 sm:pl-2 pr-10 md:pr-4 arca">
+          <h3 className="w-full mt-5 text-white text-xl sm:text-lg md:text-xl lg:text-4xl sm:ml-5 font-bold text-left pl-4 sm:pl-2 pr-10 md:pr-4 arca">
             {props.title}
           </h3>
         </div>

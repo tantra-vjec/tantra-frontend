@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import "./style.css";
-
+import qr from "./DummyQR.png";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -259,15 +259,26 @@ function RegisterB() {
                       <div className="md:col-span-5">
                         {fee !== "FREE" && fee !== "" && event_id !== 36 ? (
                           <div>
-                            FEE: Rs. {fee}
-                            <div className="text-red-900">
-                              Transfer the amount to the account mentioned
-                              below: *
+                            <div className="flex max-sm:flex-col justify-between">
+                              <div>
+                                {" "}
+                                FEE: Rs. {fee}
+                                <div className="text-red-900">
+                                  Transfer the amount to the account mentioned
+                                  below: *
+                                </div>
+                                <div>Name: {AccountsData[dept].name}</div>
+                                <div>
+                                  A/c No: {AccountsData[dept].accountNo}
+                                </div>
+                                <div>IFSC: {AccountsData[dept].ifsc}</div>
+                                <div>BANK: {AccountsData[dept].bankName}</div>
+                              </div>
+                              <img
+                                src={qr}
+                                className="max-sm:w-24 self-center sm:h-32"
+                              />
                             </div>
-                            <div>Name: {AccountsData[dept].name}</div>
-                            <div>A/c No: {AccountsData[dept].accountNo}</div>
-                            <div>IFSC: {AccountsData[dept].ifsc}</div>
-                            <div>BANK: {AccountsData[dept].bankName}</div>
                             <div className="mt-2">
                               <label>Transaction ID: *</label>
                               <input

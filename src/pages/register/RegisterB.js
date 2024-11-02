@@ -78,7 +78,6 @@ function RegisterB() {
   const url = "https://tantra-backend.onrender.com/register";
   const navigate = useNavigate();
   const { state } = useLocation();
-  console.log(state);
   const { name, fee, dept, event_id, group } = state;
   const [disable, setDisable] = useState(false);
   const [netwarning, setNetWarning] = useState(false);
@@ -275,7 +274,7 @@ function RegisterB() {
                                 <div>BANK: {AccountsData[dept].bankName}</div>
                               </div>
                               <img
-                                src={qr}
+                                src={AccountsData[dept].qr}
                                 className="max-sm:w-24 self-center sm:h-32"
                               />
                             </div>

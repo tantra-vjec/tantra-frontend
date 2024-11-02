@@ -35,7 +35,7 @@ const DepCard = (props) => {
         <img
           src={arr}
           alt=""
-          className="absolute bottom-[15%] right-[8%] w-10 sm:w-8 md:w-10"
+          className="absolute bottom-[35%] right-[8%] w-10 sm:w-8 md:w-10"
         />
       </div>
     </div>

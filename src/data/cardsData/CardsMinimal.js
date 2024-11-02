@@ -15,7 +15,6 @@ import DG from "../../assets/departments/cegif.gif";
 import EG from "../../assets/departments/csgif.gif";
 import FG from "../../assets/departments/csdgif.gif";
 import GG from "../../assets/departments/ecgif.gif";
-// import HG from "../../assets/departments/";
 
 const CardsData = [
   {

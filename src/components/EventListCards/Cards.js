@@ -13,9 +13,6 @@ const GameCard = (props) => {
   let eventData = props.data;
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const handleCall = () => {
-    window.location.href = `tel:${s1_phone}`;
-  };
   const {
     name,
     time,
@@ -37,7 +34,7 @@ const GameCard = (props) => {
 
   return (
     <motion.div
-      className="relative w-[338px] h-[390px] mx-auto [perspective:1000px]"
+      className="relative max-sm:w-[290px] w-[338px] h-[390px] mx-auto [perspective:1000px]"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -73,7 +70,7 @@ const GameCard = (props) => {
             className="absolute inset-0 w-full h-full object-cover z-10"
           />
           {/* Event Image */}
-          <div className="relative w-[74%] h-[45%]  top-[30%] left-[49%] transform -translate-x-1/2 -translate-y-1/2 z-20">
+          <div className="relative w-[85%] h-[46%]  top-[30%] left-[49%] transform -translate-x-1/2 -translate-y-1/2 z-20">
             <img
               src={event_image}
               alt="Event"
@@ -131,7 +128,7 @@ const GameCard = (props) => {
           </div>
 
           {/* Phone Button */}
-          <button onClick={handleCall}>
+          <a href={`tel:${s1_phone}`}>
             <img
               src={PHONE}
               alt="Phone"
@@ -139,7 +136,7 @@ const GameCard = (props) => {
                 isFlipped ? "opacity-0" : "opacity-100"
               }`}
             />
-          </button>
+          </a>
 
           {/* Register Button */}
           <button
@@ -221,10 +218,11 @@ const GameCard = (props) => {
           </div>
 
           {/* Register Button */}
-          <button onClick={handleCall}>
+          <button
             onClick={() => navigate("/register", { state: eventData })}
             className="relative overflow-hidden top-[75%] left-[9%] w-[52%]
-            z-40" >
+            z-40"
+          >
             <img
               src={BUTTON}
               alt="Register Button"
@@ -240,7 +238,7 @@ const GameCard = (props) => {
           </button>
 
           {/* Phone Icon on Back Face */}
-          <button>
+          <a href={`tel:${s1_phone}`}>
             <img
               src={PHONE}
               alt="Phone"
@@ -248,7 +246,7 @@ const GameCard = (props) => {
                 isFlipped ? "opacity-100" : "opacity-0"
               }`}
             />
-          </button>
+          </a>
         </div>
       </div>
     </motion.div>

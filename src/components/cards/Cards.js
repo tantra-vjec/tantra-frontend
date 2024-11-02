@@ -14,7 +14,7 @@ function Cards() {
         Events
       </h1>
 
-      <div className="flex flex-col py-14 mx-5 md:px-20 lg:px-40">
+      <div className="flex flex-col py-14 mx-5 md:px-20 lg:px-40 cont-wrap">
         {CardsData.map((value, index) => {
           return (
             <DepCard

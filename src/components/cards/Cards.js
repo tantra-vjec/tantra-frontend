@@ -5,7 +5,7 @@ import CardsData from "../../data/cardsData/CardsMinimal";
 
 function Cards() {
   return (
-    <div className="bg-[#090E41] py-20">
+    <div className="bg-[#090E41] pt-20">
       <h1 className="text-center font-bold text-gray-400 text-6xl sm:text-8xl arca">
         Events
       </h1>

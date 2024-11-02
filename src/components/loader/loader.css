@@ -1,0 +1,27 @@
+/* loader.css */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    z-index: 999; /* Ensure it appears on top */
+    animation: fadeIn 0.5s; /* Fade-in effect */
+}
+
+.loader-gif {
+    width: 100px; /* Adjust size as needed */
+}
+
+.loader-text {
+    margin-top: 20px;
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+/* You can add animations for exit if needed */

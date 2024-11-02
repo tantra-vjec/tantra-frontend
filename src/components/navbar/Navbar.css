@@ -101,6 +101,9 @@
   .link-items > h1 {
     font-size: 2rem;
   }
+  .nav-drop {
+    height: 90vh;
+  }
   .close-btn {
     margin-right: 0;
   }

@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Poster from "../../components/poster/Poster";
 import MusicBand from "../../components/musicBand/Musicband";
 import BouncingGame from "../../components/BouncingGame/BouncingGame";
+import logo from "../../assets/logo/tantra.gif";
 
 function Home() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function Home() {
     <div className="bg-black text-[white] font-[Quicksand] home">
       <Navbar />
       <section id="home">
+        {/* <img src={logo} /> */}
         <Poster />
       </section>
       {/* <section id="description">

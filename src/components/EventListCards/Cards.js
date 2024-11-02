@@ -118,11 +118,11 @@ const GameCard = (props) => {
           </div>
 
           {/* Combined Event Info */}
-          <div className="relative top-[17%] left-[63%] w-full z-40 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="text-white font-arcade_classic text-[13px]">
+          <div className="relative top-[17%] left-[63%] max-sm:w-[200px] w-full z-40 transform -translate-x-1/2 -translate-y-1/2 max-sm:translate-x-0 max-sm:left-0 max-sm:ml-[12%]">
+            <div className="text-white font-arcade_classic text-[13px] w-max max-sm:w-[fit]">
               {time}
             </div>
-            <div className="text-white font-arcade_classic text-[17px] mt-1">
+            <div className="text-white font-arcade_classic text-[17px] mt-1 w-max ">
               {event_type}
             </div>
           </div>

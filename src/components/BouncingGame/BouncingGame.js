@@ -2,21 +2,21 @@ import React, { useEffect, useState, useRef } from "react";
 import backGround from '../../assets/background.jpg';
 import ball from '../../assets/ball.png';
 import block from '../../assets/block.png';
-import ground from '../../assets/ground.png'
+import ground from '../../assets/ground.png';
 import './BouncingGame.css';
 
-
 function BouncingGame() {
-    const GRAVITY = 0.5;
-    const JUMP_STRENGTH = -10;
-    const BALL_SIZE = 35;
+    const GRAVITY = 0.6;
+    const JUMP_STRENGTH = -14;
+    const BALL_SIZE = 45;
     const GROUND_HEIGHT = 600;
-    const OBSTACLE_SIZE = 50;
+    const OBSTACLE_SIZE = 70;
+    const MIN_GAP = 10; // Minimum gap between obstacles
 
-    const [ballY, setBallY] = useState(50);
+    const [ballY, setBallY] = useState(GROUND_HEIGHT - BALL_SIZE);
     const [ballX, setBallX] = useState(50);
     const [ballVelocity, setBallVelocity] = useState(0);
-    const [obstacles, setObstacles] = useState([{ x: 600, height: 1, passed: false }]);
+    const [obstacles, setObstacles] = useState([]);
     const [score, setScore] = useState(0);
     const [gameOver, setGameOver] = useState(false);
     const [backgroundX, setBackgroundX] = useState(0);
@@ -24,9 +24,44 @@ function BouncingGame() {
     const [ballRotation, setBallRotation] = useState(0);
     const [ballSpeed, setSpeed] = useState(5);
     const [isJumping, setIsJumping] = useState(false);
-    const [coins, setCoins] = useState([ { x: 600, collected: false } ]);
+    const [lastObstacleX, setLastObstacleX] = useState(0);
 
     const gameAreaRef = useRef(null);
+
+    // Function to check if new obstacle can be spawned
+    const canSpawnObstacle = () => {
+        return lastObstacleX === 0 || lastObstacleX < 300; // Decrease the limit for closer obstacles
+    };
+
+    // Modified random obstacle generation
+    useEffect(() => {
+        let spawnInterval;
+        
+        const trySpawnObstacle = () => {
+            if (!gameOver) {
+                // Random chance to spawn (60% chance each check for more frequent obstacles)
+                if (canSpawnObstacle() && Math.random() < 0.6) {
+                    const newObstacle = {
+                        x: 800,
+                        passed: false
+                    };
+                    setObstacles(prev => [...prev, newObstacle]);
+                    setLastObstacleX(800);
+                }
+
+                // Check more frequently than the original timer
+                spawnInterval = setTimeout(trySpawnObstacle, 300); // Spawn more frequently
+            }
+        };
+
+        spawnInterval = setTimeout(trySpawnObstacle, 300);
+        
+        return () => {
+            if (spawnInterval) {
+                clearTimeout(spawnInterval);
+            }
+        };
+    }, [gameOver, lastObstacleX]);
 
     useEffect(() => {
         if (!gameOver) {
@@ -48,30 +83,28 @@ function BouncingGame() {
     }, [gameOver, ballSpeed, ballVelocity]);
 
     useEffect(() => {
-      const handleKeyDown = (e) => {
-        if (e.key === " " && !gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
-            jump();
-        }
-    };
+        const handleKeyDown = (e) => {
+            if (e.key === " " && !gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
+                jump();
+            }
+        };
 
-    const handleTap = () => {
-        if (!gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
-            jump();
-        }
-    };
+        const handleTap = () => {
+            if (!gameOver && !isJumping && ballY + BALL_SIZE >= GROUND_HEIGHT) {
+                jump();
+            }
+        };
 
         window.addEventListener("keydown", handleKeyDown);
-
-        // Ensure gameAreaRef is defined before adding listener
         if (gameAreaRef.current) {
             gameAreaRef.current.addEventListener("click", handleTap);
         }
 
         return () => {
-          window.removeEventListener("keydown", handleKeyDown);
-          if (gameAreaRef.current) {
-              gameAreaRef.current.removeEventListener("click", handleTap);
-          }
+            window.removeEventListener("keydown", handleKeyDown);
+            if (gameAreaRef.current) {
+                gameAreaRef.current.removeEventListener("click", handleTap);
+            }
         };
     }, [gameOver, isJumping, ballY]);
 
@@ -92,9 +125,9 @@ function BouncingGame() {
 
             if (newY + BALL_SIZE >= GROUND_HEIGHT) {
                 setIsJumping(false);
-                return GROUND_HEIGHT - BALL_SIZE; 
+                return GROUND_HEIGHT - BALL_SIZE;
             }
-            return newY; 
+            return newY;
         });
 
         setBallVelocity((prevVelocity) => prevVelocity + GRAVITY);
@@ -111,22 +144,25 @@ function BouncingGame() {
             });
         });
 
-        setObstacles((prevObstacles) =>
-          prevObstacles.filter(obstacle => obstacle.x + OBSTACLE_SIZE > 0)
-      );
+        // Update lastObstacleX
+        if (obstacles.length > 0) {
+            setLastObstacleX(obstacles[obstacles.length - 1].x);
+        }
 
-      // Use up-to-date obstacles from state
-      obstacles.forEach((obstacle) => {
-          const obstacleTop = GROUND_HEIGHT - (obstacle.height * OBSTACLE_SIZE);
-          if (
-              ballX + BALL_SIZE >= obstacle.x &&
-              ballX < obstacle.x + OBSTACLE_SIZE &&
-              ballY + BALL_SIZE >= obstacleTop
-          ) {
-              setGameOver(true);
-          }
-      });
-  };
+        setObstacles((prevObstacles) =>
+            prevObstacles.filter(obstacle => obstacle.x + OBSTACLE_SIZE > 0)
+        );
+
+        obstacles.forEach((obstacle) => {
+            if (
+                ballX + BALL_SIZE >= obstacle.x &&
+                ballX < obstacle.x + OBSTACLE_SIZE &&
+                ballY + BALL_SIZE >= GROUND_HEIGHT - OBSTACLE_SIZE
+            ) {
+                setGameOver(true);
+            }
+        });
+    };
 
     useEffect(() => {
         if (!gameOver) {
@@ -138,92 +174,24 @@ function BouncingGame() {
         }
     }, [ballY, obstacles, gameOver]);
 
-    useEffect(() => {
-        let lastTimeout;
-        
-        const createObstacle = () => {
-            if (!gameOver) {
-                // Create new obstacle
-                const newObstacle = {
-                    x: 600 + Math.random() * 200,
-                    height: Math.random() < 0.5 ? 2 : 1,
-                    passed: false,
-                };
-                
-                setObstacles(prevObstacles => [...prevObstacles, newObstacle]);
-                
-                const minDelay = 1500;   
-                const maxDelay = 3000;   
-                const variableDelay = minDelay + (Math.random() * Math.random() * maxDelay);
-                
-                lastTimeout = setTimeout(createObstacle, variableDelay);
-            }
-        };
-        
-        createObstacle();
-        
-        return () => {
-            if (lastTimeout) {
-                clearTimeout(lastTimeout);
-            }
-        };
-    }, [gameOver]);
-
-
-    useEffect(() => {
-        setCoins((prevCoins) => {
-            return prevCoins.map(coin => {
-                const newX = coin.x - ballSpeed;
-                
-                // Check if coin is collected
-                if (!coin.collected && 
-                    ballX < coin.x + 30 && 
-                    ballX + BALL_SIZE > coin.x && 
-                    ballY < coin.y + 30 && 
-                    ballY + BALL_SIZE > coin.y) {
-                    setScore(prev => prev + 5); 
-                    return { ...coin, collected: true };
-                }
-                return { ...coin, x: newX };
-            }).filter(coin => coin.x > -30 && !coin.collected);
-        });
-    }, [ballX, ballY, ballSpeed]);
-    
-    useEffect(() => {
-        let lastTimeout;
-        
-        const createCoin = () => {
-            if (!gameOver) {
-                const newCoin = {
-                    x: 600 + Math.random() * 200,
-                    y: Math.random() * (GROUND_HEIGHT - 100) + 50, 
-                    collected: false
-                };
-                
-                setCoins(prevCoins => [...prevCoins, newCoin]);
-                
-                const minDelay = 2000;   
-                const maxDelay = 4000;   
-                const variableDelay = minDelay + Math.random() * (maxDelay - minDelay);
-                
-                lastTimeout = setTimeout(createCoin, variableDelay);
-            }
-        };
-        
-        createCoin();
-        
-        return () => {
-            if (lastTimeout) {
-                clearTimeout(lastTimeout);
-            }
-        };
-    }, [gameOver]);
-
-
-
     const jump = () => {
         setBallVelocity(JUMP_STRENGTH);
         setIsJumping(true);
+    };
+
+    // Reset function
+    const resetGame = () => {
+        setGameOver(false);
+        setScore(0);
+        setObstacles([]);
+        setBallY(GROUND_HEIGHT - BALL_SIZE);
+        setBallX(50);
+        setBallVelocity(0);
+        setBackgroundX(0);
+        setGroundX(0);
+        setBallRotation(0);
+        setSpeed(5);
+        setLastObstacleX(0);
     };
 
     return (
@@ -237,7 +205,7 @@ function BouncingGame() {
         >
             <div
                 style={{
-                    width: "800px", 
+                    width: "800px",
                     height: "600px",
                     overflow: "hidden",
                     position: "relative",
@@ -250,20 +218,10 @@ function BouncingGame() {
                         width: "100%",
                         height: "100%",
                         overflow: "hidden",
-                        
                     }}
                     onClick={() => {
                         if (gameOver) {
-                            setGameOver(false);
-                            setScore(0);
-                            setObstacles([{ x: 600, height: 1, passed: false }]);
-                            setBallY(GROUND_HEIGHT - BALL_SIZE);
-                            setBallX(50);
-                            setBallVelocity(0);
-                            setBackgroundX(0);
-                            setGroundX(0);
-                            setBallRotation(0);
-                            setSpeed(5);
+                            resetGame();
                         }
                     }}
                 >
@@ -299,38 +257,20 @@ function BouncingGame() {
                     />
                     {/* Obstacles */}
                     {obstacles.map((obstacle, index) => (
-                        <div key={index}>
-                            {/* Base block */}
-                            <div
-                                style={{
-                                    position: "absolute",
-                                    left: obstacle.x,
-                                    bottom: 10,
-                                    width: OBSTACLE_SIZE,
-                                    height: OBSTACLE_SIZE,
-                                    backgroundImage: `url(${block})`,
-                                    backgroundSize: "contain",
-                                    backgroundRepeat: "no-repeat",
-                                    zIndex: 2,
-                                }}
-                            />
-                            {/* Stacked block */}
-                            {obstacle.height === 2 && (
-                                <div
-                                    style={{
-                                        position: "absolute",
-                                        left: obstacle.x,
-                                        bottom: OBSTACLE_SIZE + 10,
-                                        width: OBSTACLE_SIZE,
-                                        height: OBSTACLE_SIZE,
-                                        backgroundImage: `url(${block})`,
-                                        backgroundSize: "contain",
-                                        backgroundRepeat: "no-repeat",
-                                        zIndex: 2,
-                                    }}
-                                />
-                            )}
-                        </div>
+                        <div
+                            key={index}
+                            style={{
+                                position: "absolute",
+                                left: obstacle.x,
+                                bottom: 10,
+                                width: OBSTACLE_SIZE,
+                                height: OBSTACLE_SIZE,
+                                backgroundImage: `url(${block})`,
+                                backgroundSize: "contain",
+                                backgroundRepeat: "no-repeat",
+                                zIndex: 2,
+                            }}
+                        />
                     ))}
                     {/* Scrolling Ground */}
                     <div
@@ -347,43 +287,28 @@ function BouncingGame() {
                         }}
                     />
                     {/* Score */}
-                    <div style={{ 
-                        position: "absolute", 
-                        top: 10, 
-                        left: 10, 
+                    <div style={{
+                        position: "absolute",
+                        top: 10,
+                        left: 10,
                         fontSize: "24px",
                         zIndex: 3,
-                        fontFamily: "'Pixelify Sans', sans-serif",
-                        textAlign: "center",
-                        animation: "float 3s ease-in-out 2s infinite alternate, textGlow 2s ease-in-out infinite alternate",
-                        textShadow: "0px 0px 20px rgb(255, 255, 255)",
-                        letterSpacing: "6px"
                     }}>
                         Score: {score}
                     </div>
-                    {/* Game Over Screen */}
+                    {/* Game Over Message */}
                     {gameOver && (
-                    <div
-                        style={{
+                        <div style={{
                             position: "absolute",
                             top: "50%",
                             left: "50%",
                             transform: "translate(-50%, -50%)",
                             fontSize: "36px",
-                            color: "#ff0033",
+                            color: "red",
                             zIndex: 4,
-                            fontFamily: "'Pixelify Sans', sans-serif",
-                            textAlign: "center",
-                            animation: "3s ease-in-out 2s infinite alternate, textGlow 2s ease-in-out infinite alternate",
-                            textShadow: "0px 0px 10px #cc00ff, 0px 0px 20px #cc00ff, 0px 0px 30px #cc00ff, 0px 0px 40px #ff00ff, 0px 0px 50px #ff00ff", // Purple neon glow effect
-                            letterSpacing: "6px"
-                        }}
-                    >
-                        Game Over
-                        <div style={{ fontSize: "24px", marginTop: "20px" }}>
-                            Tap to restart
+                        }}>
+                            Game Over
                         </div>
-                    </div>
                     )}
                 </div>
             </div>

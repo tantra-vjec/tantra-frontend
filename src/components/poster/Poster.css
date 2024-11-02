@@ -50,7 +50,7 @@
   .bouncing-game-container {
     position: relative;
     left: 40%;
-    top: 14%;
+    padding-top: 23px;
     scale: .8;
     width: 10%;
     height: 10%;
@@ -61,21 +61,24 @@
   }
 }
 .fade-up {
-  animation: fadeInUp 2s ease-out forwards; /* Apply animation */
+  animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards; /* Smoother easing function */
 }
 
 @keyframes fadeInUp {
   0% {
-    opacity: 0;
-    transform: translateY(100px); /* Start slightly below */
-    
+    opacity: 0.7;
+    transform: translateY(850px) scale(0.3); /* Start from a lower position */
   }
-75%{
-  opacity:0.9;
-  transform: translateY(100px);
-}
+  60% {
+    opacity: 0.9;
+    transform: translateY(50px); /* Move up faster */
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-10px); /* End just slightly above original position for smoothness */
+  }
   100% {
     opacity: 1;
-    transform: translateY(0); /* End at original position */
+    transform: translateY(0) scale(1); /* Final position and scale */
   }
 }

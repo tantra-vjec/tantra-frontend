@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.61b58020.css",
-    "main.js": "/static/js/main.79754465.js",
+    "main.css": "/static/css/main.360fc0f3.css",
+    "main.js": "/static/js/main.6e23192a.js",
     "static/media/ecgif.gif": "/static/media/ecgif.cddb797363d049097804.gif",
     "static/media/nintento.png": "/static/media/nintento.9aa56b7fc3800ffc944d.png",
     "static/media/mechtrans_.gif": "/static/media/mechtrans_.5b65c06d66b22bb85b2f.gif",
     "static/media/cegif.gif": "/static/media/cegif.ac3569100dd37d716b08.gif",
     "static/media/24.png": "/static/media/24.12cbb5d15834136beda3.png",
     "static/media/block.png": "/static/media/block.6e4bd1854823cc696077.png",
+    "static/media/26.png": "/static/media/26.5add234306224e525e49.png",
     "static/media/nav_logo.gif": "/static/media/nav_logo.abd2e32c174651ae1d7f.gif",
     "static/media/adsgif.gif": "/static/media/adsgif.3d0952a37c07e13558d1.gif",
     "static/media/aeigif.gif": "/static/media/aeigif.5a75129ede14c4ad8a05.gif",
@@ -83,11 +84,11 @@
     "index.html": "/index.html",
     "static/media/Arrow.svg": "/static/media/Arrow.c4fec83188357033d771afb83a037d40.svg",
     "static/media/DropDownIcon.svg": "/static/media/DropDownIcon.3ba1ddb4652873871680.svg",
-    "main.61b58020.css.map": "/static/css/main.61b58020.css.map",
-    "main.79754465.js.map": "/static/js/main.79754465.js.map"
+    "main.360fc0f3.css.map": "/static/css/main.360fc0f3.css.map",
+    "main.6e23192a.js.map": "/static/js/main.6e23192a.js.map"
   },
   "entrypoints": [
-    "static/css/main.61b58020.css",
-    "static/js/main.79754465.js"
+    "static/css/main.360fc0f3.css",
+    "static/js/main.6e23192a.js"
   ]
 }

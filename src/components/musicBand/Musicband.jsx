@@ -34,6 +34,7 @@ function MusicBand() {
     };
   }, []);
 
+  // Update isMobile on window resize
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener("resize", handleResize);
@@ -75,10 +76,9 @@ function MusicBand() {
         {/* Background Image */}
         <div className="absolute inset-0 flex justify-center items-center z-0 select-none">
           <img
-            ref={gifRef}
-            src={bandGif}
-            alt="Animated Band"
-            className={`w-full object-contain ${gifInView ? "animate-fadeIn" : ""}`}
+            src={isMobile ? mobilBg : bg}
+            alt="MUSIC BAND"
+            className="w-full h-auto"
           />
         </div>
 

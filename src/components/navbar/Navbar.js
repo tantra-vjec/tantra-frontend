@@ -4,6 +4,7 @@ import "./Navbar.css";
 import ir from "./icon_real.png";
 import inv from "./invert.png";
 import navm from "./nav_menu.png";
+import nav_logo from "./nav_logo.gif";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -41,6 +42,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="nav">
+        <img id="nav-logo" src={nav_logo} alt="Logo" />
         <div className="menu-and-logo cursor-pointer">
           <img id="nav-btn" src={navm} alt="Menu" onClick={navToggle} />
         </div>
@@ -58,7 +60,10 @@ const Navbar = () => {
               onMouseLeave={changeSrcReal}
             />
           </div>
-          <a className="link-items arca" href="/">
+          <a
+            className="link-items arca"
+            onClick={() => handleEventsClick("home")}
+          >
             <h1>HOME</h1>
           </a>
           <a

@@ -17,7 +17,8 @@
   bottom: 0vh; /* Adjust as needed to position it before .fill ends */
   text-align: center;
   transform: translateX(-100px); /* Start from left offset */
-  font-size: 3rem;
+  font-size: 2rem;
+  padding: 0 10px;
   color: white;
   opacity: 0;
   transition:

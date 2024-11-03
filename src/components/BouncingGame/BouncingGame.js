@@ -77,7 +77,7 @@ function BouncingGame() {
       const rotationInterval = setInterval(() => {
         setBallRotation(
           (prev) =>
-            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360
+            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360,
         );
       }, 20);
 
@@ -158,7 +158,7 @@ function BouncingGame() {
     }
 
     setObstacles((prevObstacles) =>
-      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0)
+      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0),
     );
 
     obstacles.forEach((obstacle) => {

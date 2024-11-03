@@ -19,7 +19,7 @@ const AdsEventData = [
     student1: "Rithin Dev",
     s1_phone: 9400227434,
     student2: "Aaron Mathew",
-    s2_phone: 8590926530,
+    s2_phone: "97787 09770",
     staff: "Ms Anit Thomas M",
     prize: true,
     dept: "ads",
@@ -279,7 +279,7 @@ const AdsEventData = [
     group: false,
     venue: "Admin Block",
     time: "9:15 AM",
-    event_image: img12,
+    event_image: img11,
   },
   {
     event_id: 115,

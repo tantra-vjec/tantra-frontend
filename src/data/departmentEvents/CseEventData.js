@@ -190,8 +190,8 @@ const CseEventData = [
     dept: "cse",
     reg: true,
     group: false,
-    venue: "3RD Floor LAB-9",
-    time: "--",
+    venue: "Project Lab, 3rd Floor",
+    time: "9:15 AM - 10:15 AM",
     event_image: img24,
   },
   {
@@ -270,8 +270,8 @@ const CseEventData = [
     event_id: 915,
     name: "Magnum - Valorant Tournament",
     description:
-      "Unrated Valorant tournament. Compete in teams to win the grand prize.",
-    event_type: "Game",
+      "Unrated Valorant tournament. Compete in teams to win the grand prize. ** Team Leader registration **",
+    event_type: "Gaming",
     fee: "300",
     student1: "Sharon Dawson",
     s1_phone: "9074475521",
@@ -289,7 +289,7 @@ const CseEventData = [
     name: "Trinity Showdown - BGMI",
     description:
       "Battle Royale game (BGMI) with up to 100 players. Enter as individuals or groups of up to four.",
-    event_type: "Game",
+    event_type: "Gaming",
     fee: "300",
     student1: "Abhinav PP",
     s1_phone: "8891405149",
@@ -298,8 +298,8 @@ const CseEventData = [
     dept: "cse",
     reg: true,
     group: true,
-    venue: "3RD - LAB 9",
-    time: "--",
+    venue: "Project Lab, 3rd Floor",
+    time: "10:15 AM",
     event_image: img4,
   },
   {
@@ -307,7 +307,7 @@ const CseEventData = [
     name: "eFútbol - Mobile Tournament",
     description:
       "Compete in the eFootball 2024 mobile tournament. Physical presence at the venue is mandatory.",
-    event_type: "Game",
+    event_type: "Gaming",
     fee: "30",
     student1: "Aswin Udayan",
     s1_phone: "9074301121",
@@ -316,8 +316,8 @@ const CseEventData = [
     dept: "cse",
     reg: true,
     group: false,
-    venue: "3RD - Lab 9",
-    time: "--",
+    venue: "Project Lab, 3rd Floor",
+    time: "11:15 AM",
     event_image: img5,
   },
   {

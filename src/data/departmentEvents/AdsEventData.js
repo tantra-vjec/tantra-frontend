@@ -11,7 +11,7 @@ import img15 from "../../assets/department_images/ADS/15.png";
 const AdsEventData = [
   {
     event_id: 101,
-    name: "PIXEL PERFECT",
+    name: "PIXEL PERFECT [CSE Colab]",
     description:
       "Teams of two compete to create images similar to the provided text description.",
     event_type: "Group",
@@ -22,7 +22,7 @@ const AdsEventData = [
     s2_phone: "97787 09770",
     staff: "Ms Anit Thomas M",
     prize: true,
-    dept: "ads",
+    dept: "cse",
     reg: true,
     group: true,
     venue: "Project Lab, Admin Block, 3rd floor",
@@ -185,7 +185,7 @@ const AdsEventData = [
   },
   {
     event_id: 110,
-    name: "E-Football",
+    name: "E-Football [CSE Colab]",
     description:
       "E-Football tournament (team play) in collaboration with CSE and ADS.",
     event_type: "Individual",
@@ -196,7 +196,7 @@ const AdsEventData = [
     s2_phone: 7994848962,
     staff: "Ms Sreesha M",
     prize: true,
-    dept: "ads",
+    dept: "cse",
     reg: true,
     group: false,
     venue: "Project Lab, Admin Block ,3rd Floor",
@@ -205,7 +205,7 @@ const AdsEventData = [
   },
   {
     event_id: 111,
-    name: "BGMI Trinity Showdown",
+    name: "BGMI Trinity Showdown - [CSE Colab]",
     description:
       "Battle Ground Mobile India tournament (team of 4) in collaboration with CSE and ADS.",
     event_type: "Group",
@@ -216,7 +216,7 @@ const AdsEventData = [
     s2_phone: 7594918259,
     staff: "Ms Cincy Baby",
     prize: true,
-    dept: "ads",
+    dept: "cse",
     reg: true,
     group: true,
     venue: "Project Lab, Admin Block ,3rd Floor",

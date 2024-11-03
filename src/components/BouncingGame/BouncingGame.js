@@ -95,7 +95,7 @@ function BouncingGame() {
       const rotationInterval = setInterval(() => {
         setBallRotation(
           (prev) =>
-            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360
+            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360,
         );
       }, 20);
 
@@ -176,7 +176,7 @@ function BouncingGame() {
     }
 
     setObstacles((prevObstacles) =>
-      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0)
+      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0),
     );
 
     obstacles.forEach((obstacle) => {
@@ -276,7 +276,7 @@ function BouncingGame() {
               left: backgroundX,
               width: "1900px",
               height: "100%",
-              backgroundImage: url(${backGround}),
+              backgroundImage: `url(${backGround})`,
               backgroundRepeat: "repeat-x",
               backgroundSize: "600px 100%",
               zIndex: 1,
@@ -290,7 +290,7 @@ function BouncingGame() {
               width: "100px",
               height: "100%",
               zIndex: 0,
-              backgroundImage: url(${backGround}),
+              backgroundImage: `url(${backGround})`,
               backgroundRepeat: "repeat-x",
               backgroundSize: "600px 100%",
             }}
@@ -303,12 +303,12 @@ function BouncingGame() {
               top: ballY - 10,
               width: BALL_SIZE,
               height: BALL_SIZE,
-              backgroundImage: url(${ball}),
+              backgroundImage: `url(${ball})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               borderRadius: "50%",
               zIndex: 2,
-              transform: rotate(${ballRotation}deg),
+              transform: `rotate(${ballRotation}deg)`,
               transition: "transform 0.02s linear",
             }}
           />
@@ -322,7 +322,7 @@ function BouncingGame() {
                 bottom: 39,
                 width: OBSTACLE_SIZE,
                 height: OBSTACLE_SIZE,
-                backgroundImage: url(${block}),
+                backgroundImage: `url(${block})`,
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 zIndex: 2,
@@ -337,7 +337,7 @@ function BouncingGame() {
               left: groundX,
               width: "1900px",
               height: "100px",
-              backgroundImage: url(${ground}),
+              backgroundImage: `url(${ground})`,
               backgroundRepeat: "repeat-x",
               backgroundSize: "600px 100%",
               zIndex: 1,
@@ -350,7 +350,7 @@ function BouncingGame() {
               left: groundX,
               width: "200px",
               height: "100px",
-              backgroundImage: url(${ground}),
+              backgroundImage: `url(${ground})`,
               backgroundRepeat: "repeat-x",
               backgroundSize: "600px 100%",
               zIndex: 1,

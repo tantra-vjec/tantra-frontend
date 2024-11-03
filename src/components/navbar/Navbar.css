@@ -20,7 +20,22 @@ nav {
 .menu-and-logo img {
   height: 60px;
 }
+#nav-logo {
+  position: absolute !important;
+  width: 90px;
+  top: -15px;
+  left: 20px;
+  border-radius: 20px;
+}
 
+@media screen and (min-width: 500px) {
+  #nav-logo {
+    width: 75px;
+    left: 50px;
+    transform: scale(1.4);
+    top: 0;
+  }
+}
 .nav-drop {
   /* background-image: url("../public/tech_assets/87407.jpg"); */
   background-repeat: cover;
@@ -62,6 +77,7 @@ nav {
   font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: 10px;
+  cursor: pointer;
   margin-top: 4rem;
   box-shadow: -10px 10px;
   transition: transform 0.5s ease;

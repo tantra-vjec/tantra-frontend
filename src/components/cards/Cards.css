@@ -19,7 +19,7 @@
 }
 
 .cont-wrap:hover .dep-card {
-  filter: blur(0.5px);
+  filter: blur(1px);
 }
 
 .cont-wrap:hover .dep-card:hover {

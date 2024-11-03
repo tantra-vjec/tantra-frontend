@@ -14,7 +14,7 @@ function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false); // Set loading to false after 3 seconds
-    }, 1000); // Adjust the timeout as needed
+    }, 5000); // Adjust the timeout as needed
 
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);

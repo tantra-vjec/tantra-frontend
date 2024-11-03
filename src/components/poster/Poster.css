@@ -3,8 +3,9 @@
   justify-content: center;
   align-items: center;
   background-color: #090E41;
-  height: 100vh;
-  overflow: hidden;
+  height: 110vh;
+  overflow-y: auto; /* Changed to allow scrolling */
+  overflow-x: hidden;
 }
 
 .intro-image {
@@ -19,7 +20,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* overflow: hidden; */
+  /* margin-top: 40px; */
+  bottom:-150px;
+  transform-origin: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  will-change: transform, opacity;
+}
+
+/* Add scroll animation class */
+.img-container.scale-up {
+  transform: scale(2);
+  opacity: 0.5;
 }
 
 .svg-logo {
@@ -34,51 +45,92 @@
   position: absolute;
   top: 46%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.64); /* Adjust scale for fit within TV */
-  width: 60%; /* Adjust as needed to fit TV screen area */
+  transform: translate(-50%, -50%) scale(0.64);
+  width: 60%;
   height: 100%;
   min-width: 765px;
   min-height: 190px;
-  z-index: 0; /* Ensures game is behind CRT image */
+  z-index: 0;
 }
 
 @media screen and (max-width: 730px) {
   .svg-logo {
     width: 80%;
   }
-
+  
+  .img-container {
+    margin-top: 100vh;
+    scale: 0.9;
+  }
+  
   .bouncing-game-container {
     position: relative;
     left: 40%;
     padding-top: 23px;
-    scale: .8;
+    scale: 0.8;
     width: 10%;
     height: 10%;
     max-width: 200px;
     max-height: 150px;
     margin-top: -450px;
-
   }
 }
+
+@media screen and (max-width: 430px) {
+  .img-container {
+    scale: 0.76;
+    margin-top: 53vw;
+  }
+}
+
 .fade-up {
-  animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards; /* Smoother easing function */
+  animation: fadeInUp 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes fadeInUp {
   0% {
     opacity: 0.7;
-    transform: translateY(850px) scale(0.3); /* Start from a lower position */
+    transform: translateY(850px) scale(0.3);
   }
   60% {
     opacity: 0.9;
-    transform: translateY(50px); /* Move up faster */
+    transform: translateY(50px);
   }
   80% {
     opacity: 1;
-    transform: translateY(-10px); /* End just slightly above original position for smoothness */
+    transform: translateY(-10px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1); /* Final position and scale */
+    transform: translateY(0) scale(1);
   }
+}
+/* Add these new classes to your existing CSS file */
+
+/* Make sure the fill div is scrollable */
+.fill {
+  min-height: 120vh; /* Added to allow scrolling */
+}
+
+/* New scale animation class - this won't interfere with fade-up */
+.scale-on-scroll {
+  animation: scaleUp 0.5s forwards;
+}
+
+/* New keyframes for scale animation */
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/* Ensure the img-container can handle both animations */
+.img-container {
+  will-change: transform, opacity;
+  margin-top: -150px;
 }

@@ -11,17 +11,15 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const handleLoad = () => {
-      setLoading(false);
-    };
+    const timer = setTimeout(() => {
+      setLoading(false); // Set loading to false after 3 seconds
+    }, 5000); // Adjust the timeout as needed
 
-    window.addEventListener("load", handleLoad);
-
-    return () => window.removeEventListener("load", handleLoad);
+    return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  });
 
   return (
     <>

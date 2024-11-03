@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.7763b2ac.css",
-    "main.js": "/static/js/main.90b5459a.js",
+    "main.css": "/static/css/main.64944d34.css",
+    "main.js": "/static/js/main.69a0c2f1.js",
     "static/media/ecgif.gif": "/static/media/ecgif.cddb797363d049097804.gif",
     "static/media/nintento.png": "/static/media/nintento.9aa56b7fc3800ffc944d.png",
     "static/media/mechtrans_.gif": "/static/media/mechtrans_.5b65c06d66b22bb85b2f.gif",
     "static/media/cegif.gif": "/static/media/cegif.ac3569100dd37d716b08.gif",
     "static/media/24.png": "/static/media/24.12cbb5d15834136beda3.png",
     "static/media/block.png": "/static/media/block.6e4bd1854823cc696077.png",
+    "static/media/nav_logo.gif": "/static/media/nav_logo.abd2e32c174651ae1d7f.gif",
     "static/media/adsgif.gif": "/static/media/adsgif.3d0952a37c07e13558d1.gif",
     "static/media/aeigif.gif": "/static/media/aeigif.5a75129ede14c4ad8a05.gif",
     "static/media/crt_land.png": "/static/media/crt_land.1aba7b89469190131c72.png",
+    "static/media/14.jpg": "/static/media/14.eeddf9384b354354a101.jpg",
     "static/media/background.jpg": "/static/media/background.f1870006d6f324a650c3.jpg",
     "static/media/csgif.gif": "/static/media/csgif.19e5718efdc51143ad0e.gif",
     "static/media/csdgif.gif": "/static/media/csdgif.3636f26cc96293fb42cc.gif",
@@ -36,6 +38,7 @@
     "static/media/5.png": "/static/media/5.26c6e904366a0e58a32a.png",
     "static/media/32.jpeg": "/static/media/32.e24fbc9954b8cfe620bd.jpeg",
     "static/media/16.png": "/static/media/16.d42ea1fedcfcbb9ea680.png",
+    "static/media/14.jpeg": "/static/media/14.43b09ae6ae24711d9b98.jpeg",
     "static/media/13.png": "/static/media/13.51bfd24e3daab37bc801.png",
     "static/media/3.png": "/static/media/3.c1886ab58955b2cad926.png",
     "static/media/2.png": "/static/media/2.5dc5ed44f03e84b1550c.png",
@@ -80,11 +83,11 @@
     "index.html": "/index.html",
     "static/media/Arrow.svg": "/static/media/Arrow.c4fec83188357033d771afb83a037d40.svg",
     "static/media/DropDownIcon.svg": "/static/media/DropDownIcon.3ba1ddb4652873871680.svg",
-    "main.7763b2ac.css.map": "/static/css/main.7763b2ac.css.map",
-    "main.90b5459a.js.map": "/static/js/main.90b5459a.js.map"
+    "main.64944d34.css.map": "/static/css/main.64944d34.css.map",
+    "main.69a0c2f1.js.map": "/static/js/main.69a0c2f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.7763b2ac.css",
-    "static/js/main.90b5459a.js"
+    "static/css/main.64944d34.css",
+    "static/js/main.69a0c2f1.js"
   ]
 }

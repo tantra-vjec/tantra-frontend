@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+@import url("https://fonts.cdnfonts.com/css/arcade-classic");
 nav {
   height: 70px;
   width: 100%;
@@ -14,8 +14,8 @@ nav {
   margin-right: 4rem;
 }
 
-#nav-btn{
-   z-index: 2; 
+#nav-btn {
+  z-index: 2;
 }
 .menu-and-logo img {
   height: 60px;
@@ -76,9 +76,9 @@ nav {
 }
 
 /*@media screen and (min-width: 700px){*/
-    /*.link-items:hover{*/
-      /*transform: scale(1.1);*/
-    /*}*/
+/*.link-items:hover{*/
+/*transform: scale(1.1);*/
+/*}*/
 /*}*/
 
 .close-btn {
@@ -138,15 +138,16 @@ nav {
   .menu-and-logo {
     margin-right: 2rem;
   }
-  .nav-drop{
+  .nav-drop {
+    top: -110%;
   }
-  .close-btn{
-      padding-left: 3rem;
+  .close-btn {
+    padding-left: 3rem;
   }
-  .close-btn img{
-      margin-left: 15rem;
-      margin-right: -3rem;
-      margin-top: 10px;
+  .close-btn img {
+    margin-left: 15rem;
+    margin-right: -3rem;
+    margin-top: 10px;
   }
 }
 

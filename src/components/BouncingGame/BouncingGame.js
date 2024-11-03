@@ -77,7 +77,7 @@ function BouncingGame() {
       const rotationInterval = setInterval(() => {
         setBallRotation(
           (prev) =>
-            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360,
+            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360
         );
       }, 20);
 
@@ -158,7 +158,7 @@ function BouncingGame() {
     }
 
     setObstacles((prevObstacles) =>
-      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0),
+      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0)
     );
 
     obstacles.forEach((obstacle) => {
@@ -211,6 +211,7 @@ function BouncingGame() {
         backgroundColor: "#f0f0f0",
         fontFamily: "'Pixelify Sans', sans-serif", // Add the font here
       }}
+      className="max-sm:scale-75"
     >
       <div
         style={{
@@ -219,6 +220,7 @@ function BouncingGame() {
           overflow: "hidden",
           position: "relative",
         }}
+        className="max-sm:scale-y-100 max-sm:mt-5"
       >
         <div
           ref={gameAreaRef}
@@ -331,6 +333,7 @@ function BouncingGame() {
               fontSize: "27px",
               zIndex: 3,
             }}
+            className="max-sm:mt-10 max-sm:ml-5"
           >
             Score: {score}
           </div>

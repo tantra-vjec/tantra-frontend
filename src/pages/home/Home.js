@@ -10,17 +10,18 @@ import logo from "../../assets/logo/tantra.gif";
 function Home() {
   const [loading, setLoading] = useState(true);
 
-  // Simulate an API call or some loading process
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false); // Set loading to false after 3 seconds
-    }, 5000); // Adjust the timeout as needed
+    const handleLoad = () => {
+      setLoading(false);
+    };
 
-    return () => clearTimeout(timer); // Cleanup timer on unmount
+    window.addEventListener("load", handleLoad);
+
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
   return (
     <>

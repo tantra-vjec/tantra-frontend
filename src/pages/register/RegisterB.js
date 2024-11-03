@@ -266,6 +266,9 @@ function RegisterB() {
                                   Transfer the amount to the account mentioned
                                   below: *
                                 </div>
+                                <p className="text-red-600 font-medium">
+                                  * Only for event registration purpose *
+                                </p>
                                 <div>Name: {AccountsData[dept].name}</div>
                                 <div>
                                   A/c No: {AccountsData[dept].accountNo}

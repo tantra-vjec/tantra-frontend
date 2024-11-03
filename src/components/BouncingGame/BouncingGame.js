@@ -25,6 +25,7 @@ function BouncingGame() {
   const [ballSpeed, setSpeed] = useState(5);
   const [isJumping, setIsJumping] = useState(false);
   const [lastObstacleX, setLastObstacleX] = useState(0);
+  const [tapToPlay, setTapToPlay] = useState(true);
 
   const gameAreaRef = useRef(null);
 
@@ -33,6 +34,20 @@ function BouncingGame() {
     return lastObstacleX === 0 || lastObstacleX < 300; // Decrease the limit for closer obstacles
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setTapToPlay(false);
+    };
+
+    if (tapToPlay) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [tapToPlay]);
+  // Modified random obstacle generation
   useEffect(() => {
     let spawnInterval;
     const MIN_TIME_BETWEEN_OBSTACLES = 1200; 
@@ -218,6 +233,33 @@ function BouncingGame() {
       }}
       className="max-sm:scale-75"
     >
+      {/* Tap to Play Overlay */}
+      {tapToPlay && (
+        <div
+          style={{
+            position: "absolute",
+            top: 50,
+            left: 0,
+            width: "800px",
+            height: "600px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "rgba(0, 0, 100, 1)",
+            color: "white",
+            fontSize: "80px",
+            zIndex: 5,
+          }}
+          onClick={() => {
+            setTapToPlay(false);
+            if (gameOver) {
+              resetGame();
+            }
+          }}
+        >
+          Tap to Play
+        </div>
+      )}
       <div
         style={{
           width: "800px",

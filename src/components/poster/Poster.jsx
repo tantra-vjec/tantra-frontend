@@ -62,7 +62,7 @@ function Poster() {
         playsInline
         src={isMobileDevice ? mobileVideo : desktopVideo}
       ></video>
-      <img src={Tantratitle} className="Tantratitle" alt="Above CRT" />
+      <img src={Tantratitle} id="Tantratitle" alt="Above CRT" />
       <div className="img-container fade-up max-sm:pb-60">
         <img
           src={crtImage}

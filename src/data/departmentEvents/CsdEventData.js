@@ -26,12 +26,8 @@ const csdEventData = [
   {
     event_id: 802,
     name: "AR Treasure Hunt - The Quest",
-<<<<<<< HEAD
-    description: "A treasure hunt using augmented reality (AR) conducted throughout the college campus.",
-=======
     description:
       "A treasure hunt using augmented reality (AR) conducted throughout the college campus.",
->>>>>>> 2a2c60ef748dacb734c05184c153a0a130e7ee30
     event_type: "Competition",
     fee: "50",
     student1: "Ujwel C",
@@ -65,23 +61,15 @@ const csdEventData = [
   {
     event_id: 804,
     name: "Next Dimension",
-<<<<<<< HEAD
-    description: "Step into a new dimension with our virtual reality experience.",
-=======
     description:
       "Step into a new dimension with our virtual reality experience.",
->>>>>>> 2a2c60ef748dacb734c05184c153a0a130e7ee30
     event_type: "Experience",
     fee: "20",
     student1: "Sidharth Ram",
     s1_phone: "8921121988",
     staff: "Ms Shruthi",
     prize: false,
-<<<<<<< HEAD
-    dept: "CSD",
-=======
     dept: "csd",
->>>>>>> 2a2c60ef748dacb734c05184c153a0a130e7ee30
     reg: true,
     group: false,
     venue: "Admin Block, Ground Floor, S5 CSD Classroom",
@@ -91,12 +79,8 @@ const csdEventData = [
   {
     event_id: 805,
     name: "Cutting Edge",
-<<<<<<< HEAD
-    description: "Participants create a corporate video based on a company or institution.",
-=======
     description:
       "Participants create a corporate video based on a company or institution.",
->>>>>>> 2a2c60ef748dacb734c05184c153a0a130e7ee30
     event_type: "Competition",
     fee: "20",
     student1: "Alok Soman K",
@@ -137,11 +121,7 @@ const csdEventData = [
     s1_phone: "8891251199",
     staff: "Mr akhil kk",
     prize: true,
-<<<<<<< HEAD
-    dept: "CSD",
-=======
     dept: "csd",
->>>>>>> 2a2c60ef748dacb734c05184c153a0a130e7ee30
     reg: false,
     group: false,
     venue: "S5 csd",
@@ -158,11 +138,7 @@ const csdEventData = [
     s1_phone: "9895713324",
     staff: "Ms Athria CV",
     prize: true,
-<<<<<<< HEAD
-    dept: "CSD",
-=======
     dept: "csd",
->>>>>>> 2a2c60ef748dacb734c05184c153a0a130e7ee30
     reg: false,
     group: false,
     venue: "S5 csd",

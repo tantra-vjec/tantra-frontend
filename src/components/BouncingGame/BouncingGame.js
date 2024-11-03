@@ -9,7 +9,7 @@ function BouncingGame() {
   const GRAVITY = 0.6;
   const JUMP_STRENGTH = -14;
   const BALL_SIZE = 30;
-  const GROUND_HEIGHT = 600;
+  const GROUND_HEIGHT = 600 - 22;
   const OBSTACLE_SIZE = 70;
   const MIN_GAP = 10; // Minimum gap between obstacles
 
@@ -25,6 +25,7 @@ function BouncingGame() {
   const [ballSpeed, setSpeed] = useState(5);
   const [isJumping, setIsJumping] = useState(false);
   const [lastObstacleX, setLastObstacleX] = useState(0);
+  const [tapToPlay, setTapToPlay] = useState(true);
 
   const gameAreaRef = useRef(null);
 
@@ -33,35 +34,52 @@ function BouncingGame() {
     return lastObstacleX === 0 || lastObstacleX < 300; // Decrease the limit for closer obstacles
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setTapToPlay(false);
+    };
+
+    if (tapToPlay) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [tapToPlay]);
   // Modified random obstacle generation
   useEffect(() => {
     let spawnInterval;
+    const MIN_TIME_BETWEEN_OBSTACLES = 1200;
+    let lastObstacleSpawnTime = Date.now();
 
     const trySpawnObstacle = () => {
       if (!gameOver) {
-        // Random chance to spawn (60% chance each check for more frequent obstacles)
-        if (canSpawnObstacle() && Math.random() < 0.6) {
+        const currentTime = Date.now();
+
+        if (
+          canSpawnObstacle() &&
+          Math.random() < 0.6 &&
+          currentTime - lastObstacleSpawnTime >= MIN_TIME_BETWEEN_OBSTACLES
+        ) {
           const newObstacle = {
             x: 800,
             passed: false,
           };
           setObstacles((prev) => [...prev, newObstacle]);
-          setLastObstacleX(800);
+          lastObstacleSpawnTime = currentTime;
         }
-
-        // Check more frequently than the original timer
-        spawnInterval = setTimeout(trySpawnObstacle, 300); // Spawn more frequently
+        spawnInterval = setTimeout(trySpawnObstacle, 300);
       }
     };
-
+    // Initial spawn check
     spawnInterval = setTimeout(trySpawnObstacle, 300);
-
     return () => {
       if (spawnInterval) {
         clearTimeout(spawnInterval);
       }
     };
-  }, [gameOver, lastObstacleX]);
+  }, [gameOver]);
 
   useEffect(() => {
     if (!gameOver) {
@@ -77,7 +95,7 @@ function BouncingGame() {
       const rotationInterval = setInterval(() => {
         setBallRotation(
           (prev) =>
-            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360
+            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360,
         );
       }, 20);
 
@@ -158,7 +176,7 @@ function BouncingGame() {
     }
 
     setObstacles((prevObstacles) =>
-      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0)
+      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0),
     );
 
     obstacles.forEach((obstacle) => {
@@ -198,7 +216,7 @@ function BouncingGame() {
     setBackgroundX(0);
     setGroundX(0);
     setBallRotation(0);
-    setSpeed(5);
+    setSpeed(8);
     setLastObstacleX(0);
   };
 
@@ -213,6 +231,20 @@ function BouncingGame() {
       }}
       className="max-sm:scale-75"
     >
+      {/* Tap to Play Overlay */}
+      {tapToPlay && (
+        <div
+          className="mobile-only sm:hidden"
+          onClick={() => {
+            setTapToPlay(false);
+            if (gameOver) {
+              resetGame();
+            }
+          }}
+        >
+          Tap to Play
+        </div>
+      )}
       <div
         style={{
           width: "800px",
@@ -287,7 +319,7 @@ function BouncingGame() {
               style={{
                 position: "absolute",
                 left: obstacle.x,
-                bottom: 20,
+                bottom: 39,
                 width: OBSTACLE_SIZE,
                 height: OBSTACLE_SIZE,
                 backgroundImage: `url(${block})`,
@@ -304,7 +336,7 @@ function BouncingGame() {
               bottom: 10,
               left: groundX,
               width: "1900px",
-              height: "50px",
+              height: "100px",
               backgroundImage: `url(${ground})`,
               backgroundRepeat: "repeat-x",
               backgroundSize: "600px 100%",
@@ -317,7 +349,7 @@ function BouncingGame() {
               bottom: 10,
               left: groundX,
               width: "200px",
-              height: "50px",
+              height: "100px",
               backgroundImage: `url(${ground})`,
               backgroundRepeat: "repeat-x",
               backgroundSize: "600px 100%",
@@ -351,6 +383,21 @@ function BouncingGame() {
               }}
             >
               Game Over
+            </div>
+          )}
+          {gameOver && (
+            <div
+              style={{
+                position: "absolute",
+                top: "60%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                fontSize: "25px",
+                color: "red",
+                zIndex: 4,
+              }}
+            >
+              Tap to Start
             </div>
           )}
         </div>

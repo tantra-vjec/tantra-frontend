@@ -62,7 +62,7 @@ function Poster() {
         playsInline
         src={isMobileDevice ? mobileVideo : desktopVideo}
       ></video>
-      <img src={Tantratitle} className="Tantratitle" alt="Above CRT" />
+      <img src={Tantratitle} id="Tantratitle" alt="Above CRT" />
       <div className="img-container fade-up max-sm:pb-60">
         <img
           src={crtImage}
@@ -73,7 +73,9 @@ function Poster() {
           <BouncingGame />
         </div>
       </div>
-      <div className="fade-text">Meet you on 8 Nov</div>
+      <div className="fade-text">
+        Meet you on <span className="text-gray-300 animate-pulse">8 Nov</span>
+      </div>
     </div>
   );
 }

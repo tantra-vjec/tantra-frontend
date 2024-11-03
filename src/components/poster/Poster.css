@@ -17,7 +17,8 @@
   bottom: 0vh; /* Adjust as needed to position it before .fill ends */
   text-align: center;
   transform: translateX(-100px); /* Start from left offset */
-  font-size: 3rem;
+  font-size: 2rem;
+  padding: 0 10px;
   color: white;
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -43,11 +44,12 @@
   object-fit: cover;
   z-index: 0;
 }
-.Tantratitle {
+#Tantratitle {
   position: absolute;
-  top: -8vw;
+  top: -650px;
   left: 0;
-  scale: 0.45;
+  scale: 0.4;
+  /* z-index: 5; */
 }
 
 .img-container {
@@ -109,11 +111,9 @@
     max-height: 150px;
     margin-top: -430px;
   }
-  .Tantratitle {
-    position: absolute;
-    top: 30vw;
-    left: 0;
-    scale: 0.1;
+  #Tantratitle {
+    top: -10px;
+    scale: 0.8;
   }
 }
 

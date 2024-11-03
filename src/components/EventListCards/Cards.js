@@ -94,7 +94,7 @@ const GameCard = (props) => {
             }}
             className="absolute flex w-[70%] h-[45%] top-[30%] left-[51%] text-white font-arcade_classic text-sm z-40 transform -translate-x-1/2 -translate-y-1/2"
           >
-            <p className="mt-auto w-[90%] break-words text-[17px]">{name}</p>
+            <p className="mt-auto w-[90%] break-words text-[15px]">{name}</p>
           </div>
 
           {/* Price Money */}
@@ -118,11 +118,20 @@ const GameCard = (props) => {
           </div>
 
           {/* Combined Event Info */}
-          <div className="relative top-[17%] left-[63%] max-sm:w-[200px] w-full z-40 transform -translate-x-1/2 -translate-y-1/2 max-sm:translate-x-0 max-sm:left-0 max-sm:ml-[12%]">
-            <div className="text-white font-arcade_classic text-[13px] w-max max-sm:w-[fit]">
+          <div className="relative top-[17%] left-[63%] max-sm:w-[220px] w-full z-40 transform -translate-x-1/2 -translate-y-1/2 max-sm:translate-x-0 max-sm:left-0 max-sm:ml-[12%]">
+            {/* Time */}
+            <div className="text-white font-arcade_classic text-[13px] w-max ">
               {time}
             </div>
-            <div className="text-white font-arcade_classic text-[17px] mt-1 w-max ">
+
+            {/* Event Type with conditional font size */}
+            <div
+              style={{
+                fontSize: event_type.length > 15 ? "12px" : "17px", // Adjust font size based on event_type length
+                width: "85%",
+              }}
+              className="text-white font-arcade_classic break-words mt-1 w-full text-sm"
+            >
               {event_type}
             </div>
           </div>

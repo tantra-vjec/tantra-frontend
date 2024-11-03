@@ -4,6 +4,7 @@ import "./Navbar.css";
 import ir from "./icon_real.png";
 import inv from "./invert.png";
 import navm from "./nav_menu.png";
+import nav_logo from "./nav_logo.gif";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -38,9 +39,26 @@ const Navbar = () => {
     }
   };
 
+  setTimeout(()=>{
+    const toggleButton = document.getElementById('nav-logo');
+    const wheth = window.location.href.split("/");
+    if( wheth.length == 4){
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > window.innerHeight && window.scrollY < (window.innerHeight * 2.8)) {
+        toggleButton.style.display = 'none'; // Hide the button
+      } else {
+        toggleButton.style.display = 'block'; // Show the button
+      }
+    });
+    }
+
+  },500);
+
+
   return (
     <header>
       <nav className="nav">
+        <img id="nav-logo" src={nav_logo} alt="Logo" />
         <div className="menu-and-logo cursor-pointer">
           <img id="nav-btn" src={navm} alt="Menu" onClick={navToggle} />
         </div>
@@ -58,7 +76,10 @@ const Navbar = () => {
               onMouseLeave={changeSrcReal}
             />
           </div>
-          <a className="link-items arca" href="/">
+          <a
+            className="link-items arca"
+            onClick={() => handleEventsClick("home")}
+          >
             <h1>HOME</h1>
           </a>
           <a
@@ -67,8 +88,11 @@ const Navbar = () => {
           >
             <h1>EVENTS</h1>
           </a>
-          <a className="link-items arca" href="/">
-            <h1>COMPETITION</h1>
+          <a
+            className="link-items arca"
+            onClick={() => handleEventsClick("musicBand")}
+          >
+            <h1>SHOWS</h1>
           </a>
           <a
             className="link-items arca"

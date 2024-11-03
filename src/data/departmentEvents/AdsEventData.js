@@ -279,7 +279,7 @@ const AdsEventData = [
     group: false,
     venue: "Admin Block",
     time: "9:15 AM",
-    event_image: img11,
+    event_image: img12,
   },
   {
     event_id: 115,

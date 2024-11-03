@@ -23,7 +23,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S5 CSCY",
-    time: "09:30 am to 03:30 PM",
+    time: "09:30 AM - 03:30 PM",
     event_image: img1,
   },
   {
@@ -41,7 +41,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S5 CSCY",
-    time: "09:30 am to 03:30 PM",
+    time: "09:30 am - 03:30 PM",
   },
   {
     event_id: 703,
@@ -58,7 +58,7 @@ const CscyEventData = [
     reg: true,
     group: true,
     venue: "Ground S5 CSCY",
-    time: "09:30 am to 03:30 PM",
+    time: "09:30 am - 03:30 PM",
   },
   {
     event_id: 704,
@@ -75,7 +75,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "2ND PG Lab",
-    time: "10:30 AM to 11:30 AM",
+    time: "10:30 AM - 11:30 AM",
   },
   {
     event_id: 705,
@@ -92,7 +92,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "2ND PG Lab",
-    time: "09:30 AM to 10:30 AM",
+    time: "09:30 AM - 10:30 AM",
   },
   {
     event_id: 706,
@@ -109,7 +109,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S3 CSCY",
-    time: "09:30 am to 01:30 PM",
+    time: "09:30 am - 01:30 PM",
     event_image: img6,
   },
   {
@@ -127,7 +127,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S3 CSCY",
-    time: "09:30 am to 01:30 PM",
+    time: "09:30 am - 01:30 PM",
   },
   {
     event_id: 708,
@@ -144,7 +144,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S3 CSCY",
-    time: "09:30 am to 01:30 PM",
+    time: "09:30 am - 01:30 PM",
   },
   {
     event_id: 709,
@@ -161,7 +161,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground Lab 8",
-    time: "02:30 PM to 03:30 PM",
+    time: "02:30 PM - 03:30 PM",
     event_image: img9,
   },
   {
@@ -178,7 +178,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S3 CSCY",
-    time: "10:00 AM to 11:00 AM",
+    time: "10:00 AM - 11:00 AM",
   },
   {
     event_id: 711,
@@ -194,7 +194,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground Lab 8",
-    time: "01:30 PM to 02:30 PM",
+    time: "01:30 PM - 02:30 PM",
   },
   {
     event_id: 712,
@@ -210,7 +210,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S5 CSCY",
-    time: "10:30 AM to 11:30 AM",
+    time: "10:30 AM - 11:30 AM",
   },
   {
     event_id: 713,
@@ -226,7 +226,7 @@ const CscyEventData = [
     reg: true,
     group: true,
     venue: "2ND PG Lab",
-    time: "02:30 PM to 03:30 PM",
+    time: "02:30 PM - 03:30 PM",
   },
   {
     event_id: 714,
@@ -242,7 +242,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S5 CSCY",
-    time: "12:30 PM to 03:30 PM",
+    time: "12:30 PM - 03:30 PM",
   },
   {
     event_id: 715,
@@ -259,7 +259,7 @@ const CscyEventData = [
     reg: true,
     group: true,
     venue: "Ground Lab 8",
-    time: "09:30 AM to 10:30 AM",
+    time: "09:30 AM - 10:30 AM",
   },
   {
     event_id: 716,
@@ -276,7 +276,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "2ND PG Lab",
-    time: "11:30 AM to 12:30 PM",
+    time: "11:30 AM - 12:30 PM",
   },
   {
     event_id: 717,
@@ -293,7 +293,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S5 CSCY",
-    time: "09:30 am to 03:30 PM",
+    time: "09:30 am - 03:30 PM",
     event_image: img17,
   },
   {
@@ -311,7 +311,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "NBA",
-    time: "09:30 AM to 12:30 PM",
+    time: "09:30 AM - 12:30 PM",
     event_image: img18,
   },
   {
@@ -329,7 +329,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground Lab 8",
-    time: "12:30 PM to 01:30 PM",
+    time: "12:30 PM - 01:30 PM",
   },
   {
     event_id: 720,
@@ -346,7 +346,7 @@ const CscyEventData = [
     reg: true,
     group: true,
     venue: "Ground S5 CSCY",
-    time: "09:30 AM to 11:30 AM",
+    time: "09:30 AM - 11:30 AM",
     event_image: img20,
   },
   {
@@ -364,7 +364,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground Lab 8",
-    time: "11:30 AM to 12:30 PM",
+    time: "11:30 AM - 12:30 PM",
   },
   {
     event_id: 722,
@@ -381,7 +381,7 @@ const CscyEventData = [
     reg: true,
     group: true,
     venue: "Ground Lab 8",
-    time: "12:30 PM to 01:30 PM",
+    time: "12:30 PM - 01:30 PM",
   },
   {
     event_id: 723,
@@ -398,7 +398,7 @@ const CscyEventData = [
     reg: false,
     group: false,
     venue: "Ground S5 CSCY",
-    time: "09:30 am to 03:30 PM",
+    time: "09:30 am - 03:30 PM",
   },
   {
     event_id: 724,
@@ -415,7 +415,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "2ND PG Lab",
-    time: "12:30 PM to 01:30 PM",
+    time: "12:30 PM - 01:30 PM",
     event_image: img24,
   },
   {
@@ -433,7 +433,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "2ND PG Lab",
-    time: "01:30 PM to 02:30 PM",
+    time: "01:30 PM - 02:30 PM",
   },
   {
     event_id: 726,
@@ -450,7 +450,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground Lab 8",
-    time: "10:30 AM to 11:30 AM",
+    time: "10:30 AM - 11:30 AM",
     event_image: img26,
   },
   {
@@ -468,7 +468,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S5 CSCY",
-    time: "09:30 am to 03:30 PM",
+    time: "09:30 am - 03:30 PM",
   },
   {
     event_id: 728,
@@ -485,7 +485,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S5 CSCY",
-    time: "09:30 am to 03:30 PM",
+    time: "09:30 am - 03:30 PM",
     event_image: img28,
   },
   {
@@ -503,7 +503,7 @@ const CscyEventData = [
     reg: true,
     group: true,
     venue: "Ground S5 CSCY",
-    time: "02:30 PM to 03:30 PM",
+    time: "02:30 PM - 03:30 PM",
   },
   {
     event_id: 730,
@@ -520,7 +520,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S5 CSCY",
-    time: "09:30 am to 03:30 PM",
+    time: "09:30 am - 03:30 PM",
   },
   {
     event_id: 731,
@@ -537,8 +537,7 @@ const CscyEventData = [
     reg: true,
     group: false,
     venue: "Ground S3 CSCY",
-    time: "09:30 am to 01:00 PM",
+    time: "09:30 am - 01:00 PM",
   },
 ];
 export default CscyEventData;
-

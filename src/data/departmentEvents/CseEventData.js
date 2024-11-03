@@ -6,28 +6,15 @@ import img5 from "../../assets/department_images/CSE/17.png";
 import img6 from "../../assets/department_images/CSE/23.png";
 import img7 from "../../assets/department_images/CSE/24.png";
 import img8 from "../../assets/department_images/CSE/25.png";
+import img26 from "../../assets/department_images/CSE/26.png";
 import img9 from "../../assets/department_images/CSE/5.png";
 import img14 from "../../assets/department_images/CSE/14.jpg";
+import img21 from "../../assets/department_images/CSD/2.png";
+import img22 from "../../assets/department_images/CSD/3.png";
+import img23 from "../../assets/department_images/ADS/3.png";
+import img24 from "../../assets/department_images/ADS/1.png";
 
 const CseEventData = [
-  {
-    event_id: 901,
-    name: "Capture The Flag - Terminal Treasures",
-    description:
-      "Explore Linux systems through terminals and capture flag clues to reach the final destination.",
-    event_type: "Competition",
-    fee: "50",
-    student1: "Abhay KV",
-    s1_phone: "9995008670",
-    staff: "Divya K",
-    prize: true,
-    dept: "cse",
-    reg: true,
-    group: true,
-    venue: "2ND floor Hardware Lab",
-    time: "12:30PM - 1:30 PM",
-    event_image: img1,
-  },
   {
     event_id: 902,
     name: "TechWiz - Quiz Competition",
@@ -44,7 +31,7 @@ const CseEventData = [
     group: true,
     venue: "1st floor Varikatt Hall",
     time: "10:00 AM - 11:30 AM",
-    event_image: img2,
+    event_image: img1,
   },
   {
     event_id: 903,
@@ -61,8 +48,43 @@ const CseEventData = [
     reg: true,
     group: false,
     venue: "2ND NET LAB",
-    time: "9:30 AM - 10:30 PM",
-    event_image: img3,
+    time: "9:30 AM - 10:30 AM",
+    event_image: img22,
+  },
+  {
+    event_id: 910,
+    name: "Logo Identification Quiz",
+    description: "Test your knowledge of popular tech company logos.",
+    event_type: "Competition",
+    fee: "20",
+    student1: "Anagha Nagesh",
+    s1_phone: "9495207775",
+    staff: "Sreeraji N",
+    prize: true,
+    dept: "cse",
+    reg: true,
+    group: true,
+    venue: "1ST Varikatt Hall",
+    time: "11:30 AM - 1:00 PM",
+    event_image: img2,
+  },
+  {
+    event_id: 901,
+    name: "Capture The Flag - Terminal Treasures",
+    description:
+      "Explore Linux systems through terminals and capture flag clues to reach the final destination.",
+    event_type: "Competition",
+    fee: "50",
+    student1: "Abhay KV",
+    s1_phone: "9995008670",
+    staff: "Divya K",
+    prize: true,
+    dept: "cse",
+    reg: true,
+    group: true,
+    venue: "2ND floor Hardware Lab",
+    time: "12:00PM - 1:30 PM",
+    event_image: img9,
   },
   {
     event_id: 904,
@@ -80,7 +102,7 @@ const CseEventData = [
     group: false,
     venue: "2ND S3 CSE B",
     time: "Full day",
-    event_image: img8,
+    event_image: img26,
   },
   {
     event_id: 905,
@@ -96,9 +118,27 @@ const CseEventData = [
     dept: "cse",
     reg: true,
     group: false,
-    venue: "2ND S3 CSE A",
+    venue: "Hardware Lab",
     time: "9:30 AM - 12:00 PM",
-    event_image: img5,
+    event_image: img21,
+  },
+  {
+    event_id: 918,
+    name: "WebTag - Web Designing",
+    description:
+      "Show off your HTML and CSS skills by replicating a pre-designed web page with precise styling.",
+    event_type: "Competition",
+    fee: "20",
+    student1: "Alan J Nobert",
+    s1_phone: "9400566149",
+    staff: "Rajitha KV",
+    prize: true,
+    dept: "cse",
+    reg: true,
+    group: false,
+    venue: "2ND NET LAB",
+    time: "12:00 PM - 1:00 PM",
+    event_image: img23,
   },
   {
     event_id: 906,
@@ -132,7 +172,7 @@ const CseEventData = [
     dept: "cse",
     reg: true,
     group: false,
-    venue: "2ND S5 CSE A",
+    venue: "Online",
     time: "Online",
     event_image: img7,
   },
@@ -150,9 +190,9 @@ const CseEventData = [
     dept: "cse",
     reg: true,
     group: false,
-    venue: "3RD LAB-9",
+    venue: "3RD Floor LAB-9",
     time: "--",
-    event_image: img8,
+    event_image: img24,
   },
   {
     event_id: 909,
@@ -169,24 +209,7 @@ const CseEventData = [
     group: false,
     venue: "2ND NET LAB",
     time: "10:30 AM - 11:30 AM",
-    event_image: img9,
-  },
-  {
-    event_id: 910,
-    name: "Logo Identification Quiz",
-    description: "Test your knowledge of popular tech company logos.",
-    event_type: "Competition",
-    fee: "20",
-    student1: "Anagha Nagesh",
-    s1_phone: "9495207775",
-    staff: "Sreeraji N",
-    prize: true,
-    dept: "cse",
-    reg: true,
-    group: true,
-    venue: "1ST Varikatt Hall",
-    time: "11:30 AM - 1:00 PM",
-    event_image: img1,
+    event_image: img22,
   },
 
   {
@@ -205,7 +228,7 @@ const CseEventData = [
     group: false,
     venue: "2ND Hardware Lab",
     time: "2:00 PM - 3:00 PM",
-    event_image: img2,
+    event_image: img23,
   },
   {
     event_id: 912,
@@ -223,7 +246,7 @@ const CseEventData = [
     group: false,
     venue: "2ND S5 CSE-C",
     time: "11:30 AM - 1:00 PM",
-    event_image: img3,
+    event_image: img6,
   },
   {
     event_id: 914,
@@ -241,7 +264,7 @@ const CseEventData = [
     group: false,
     venue: "2ND S3 CSE B",
     time: "10:30 AM - 12:30 PM",
-    event_image: img6,
+    event_image: img23,
   },
   {
     event_id: 915,
@@ -259,7 +282,7 @@ const CseEventData = [
     group: true,
     venue: "2ND Net Lab",
     time: "1:15 PM - 3:30 PM",
-    event_image: img5,
+    event_image: img3,
   },
   {
     event_id: 916,
@@ -277,7 +300,7 @@ const CseEventData = [
     group: true,
     venue: "3RD - LAB 9",
     time: "--",
-    event_image: img6,
+    event_image: img4,
   },
   {
     event_id: 917,
@@ -295,25 +318,7 @@ const CseEventData = [
     group: false,
     venue: "3RD - Lab 9",
     time: "--",
-    event_image: img7,
-  },
-  {
-    event_id: 918,
-    name: "WebTag - Web Designing",
-    description:
-      "Show off your HTML and CSS skills by replicating a pre-designed web page with precise styling.",
-    event_type: "Competition",
-    fee: "20",
-    student1: "Alan J Nobert",
-    s1_phone: "9400566149",
-    staff: "Rajitha KV",
-    prize: true,
-    dept: "cse",
-    reg: true,
-    group: false,
-    venue: "2ND NET LAB",
-    time: "12:00 PM - 1:00 PM",
-    event_image: img4,
+    event_image: img5,
   },
   {
     event_id: 919,
@@ -329,9 +334,9 @@ const CseEventData = [
     dept: "cse",
     reg: false,
     group: false,
-    venue: "GROUND Basket ball court",
+    venue: "S5 CSA",
     time: "Full day",
-    event_image: img9,
+    event_image: img1,
   },
   {
     event_id: 920,
@@ -349,7 +354,7 @@ const CseEventData = [
     group: true,
     venue: "2ND S3 CSE C",
     time: "11:30 AM - 1:00 PM",
-    event_image: img1,
+    event_image: img9,
   },
   {
     event_id: 921,
@@ -367,13 +372,13 @@ const CseEventData = [
     group: true,
     venue: "2ND S3 CSE C",
     time: "Full day",
-    event_image: img2,
+    event_image: img7,
   },
   {
     event_id: 922,
     name: "Eyecon - Hand Gesture Games",
     description: "Play games controlled by hand gestures.",
-    event_type: "Entertainment",
+    event_type: "Fun Games",
     fee: "0",
     student1: "Akhil CJ",
     s1_phone: "9188698023",
@@ -391,7 +396,7 @@ const CseEventData = [
     name: "Crazy Mirrors",
     description:
       "Television screens with webcams that distort and apply filters to images.",
-    event_type: "Entertainment",
+    event_type: "Fun Games",
     fee: "0",
     student1: "Amal Jerry",
     s1_phone: "8287089713",
@@ -402,13 +407,13 @@ const CseEventData = [
     group: false,
     venue: "2ND S5 CSE C",
     time: "Full day",
-    event_image: img4,
+    event_image: img6,
   },
   {
     event_id: 924,
     name: "Byte the Basket",
     description: "Play basketball where techies compete on the court.",
-    event_type: "Entertainment",
+    event_type: "Fun Games",
     fee: "0",
     student1: "Karthik",
     s1_phone: "9778257527",
@@ -419,7 +424,7 @@ const CseEventData = [
     group: false,
     venue: "GROUND Basket ball court",
     time: "Full day",
-    event_image: img5,
+    event_image: img8,
   },
 ];
 

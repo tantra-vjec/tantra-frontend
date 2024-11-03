@@ -32,6 +32,14 @@ const CardsData = [
     explore: "/me-events",
   },
   {
+    imgsrc: ECE,
+    gif: FG,
+    // title: "Artificial Intelligence And Data Science",
+    title: "Artificial Intelligence",
+    text: "Events conducted by Department of Artificial Intelligence and Data Science",
+    explore: "/ads-events",
+  },
+  {
     imgsrc: CE,
     gif: BG,
     title: "Civil Engineering",
@@ -60,14 +68,7 @@ const CardsData = [
     text: "Events conducted by EEE Department",
     explore: "/eee-events",
   },
-  {
-    imgsrc: ECE,
-    gif: FG,
-    // title: "Artificial Intelligence And Data Science",
-    title: "Artificial Intelligence",
-    text: "Events conducted by Department of Artificial Intelligence and Data Science",
-    explore: "/ads-events",
-  },
+
   {
     imgsrc: CSD,
     gif: GG,

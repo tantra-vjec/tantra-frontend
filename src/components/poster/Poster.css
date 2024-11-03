@@ -78,7 +78,7 @@
 
 .bouncing-game-container {
   position: absolute;
-  top: 46%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.64);
   width: 60%;
@@ -107,7 +107,7 @@
     height: 10%;
     max-width: 200px;
     max-height: 150px;
-    margin-top: -450px;
+    margin-top: -430px;
   }
   .Tantratitle {
     position: absolute;

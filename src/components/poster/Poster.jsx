@@ -73,7 +73,9 @@ function Poster() {
           <BouncingGame />
         </div>
       </div>
-      <div className="fade-text">Meet you on 8 Nov</div>
+      <div className="fade-text">
+        Meet you on <span className="text-gray-300 animate-pulse">8 Nov</span>
+      </div>
     </div>
   );
 }

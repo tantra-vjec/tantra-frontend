@@ -281,10 +281,22 @@ function RegisterB() {
                               />
                             </div>
                             <div className="mt-2">
-                              <label>Transaction ID: *</label>
+                              <label>
+                                Transaction ID (
+                                <span className="text-red-900">
+                                  Enter NA for free events
+                                </span>
+                                ): *
+                              </label>
+                              <span className="flex">
+                                Please enter Transaction ID{" "}
+                                <span className="text-red-600 pl-3 font-medium">
+                                  *Not upi id/number*
+                                </span>
+                              </span>
                               <input
                                 type="text"
-                                placeholder="Transaction ID"
+                                placeholder="Transaction ID: Eg 430#########"
                                 className="h-10 border mt-1 rounded px-4 w-full bg-white"
                                 {...register("tid")}
                                 required

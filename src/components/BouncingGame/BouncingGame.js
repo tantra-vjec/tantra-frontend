@@ -220,7 +220,7 @@ function BouncingGame() {
           overflow: "hidden",
           position: "relative",
         }}
-        className="max-sm:scale-y-100 max-sm:-mt-4"
+        className="max-sm:scale-y-100 max-sm:mt-5"
       >
         <div
           ref={gameAreaRef}

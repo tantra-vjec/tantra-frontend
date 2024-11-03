@@ -69,8 +69,11 @@ const Navbar = () => {
           >
             <h1>EVENTS</h1>
           </a>
-          <a className="link-items arca" href="/">
-            <h1>COMPETITION</h1>
+          <a
+            className="link-items arca"
+            onClick={() => handleEventsClick("musicBand")}
+          >
+            <h1>SHOWS</h1>
           </a>
           <a
             className="link-items arca"

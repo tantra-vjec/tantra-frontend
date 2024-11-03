@@ -104,7 +104,7 @@ const CseEventData = [
     event_id: 906,
     name: "Blockbuster Hunt",
     description:
-      "Solve puzzles and challenges inspired by films to escape the room within the time limit.",
+      "Solve puzzles and challenges inspired by films within the time limit.(Groups of 2)",
     event_type: "Competition",
     fee: "10",
     student1: "Amal Roy",

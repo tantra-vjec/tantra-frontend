@@ -16,12 +16,12 @@ function MusicBand() {
     // Intersection Observers for animations
     const observer = new IntersectionObserver(
       ([entry]) => setGifInView(entry.isIntersecting),
-      { threshold: 0.5 }, // Trigger when 50% of the GIF is in view
+      { threshold: 0.5 } // Trigger when 50% of the GIF is in view
     );
 
     const dateObserver = new IntersectionObserver(
       ([entry]) => setDateInView(entry.isIntersecting),
-      { threshold: 0.5 },
+      { threshold: 0.5 }
     );
 
     if (gifRef.current) observer.observe(gifRef.current);
@@ -67,7 +67,7 @@ function MusicBand() {
       </style>
 
       {/* Header Title */}
-      <h2 className="text-white font-arcade_classic text-3xl md:text-3xl pt-8 md:pt-16 mb-5 mt-20 md:mt-24">
+      <h2 className="text-white text-center font-arcade_classic max-sm:text-2xl md:text-3xl pt-8 md:pt-16 mb-5 mt-20 md:mt-24">
         VALLOPPILLY HALL
       </h2>
 

@@ -16,12 +16,12 @@ function MusicBand() {
     // Intersection Observers for animations
     const observer = new IntersectionObserver(
       ([entry]) => setGifInView(entry.isIntersecting),
-      { threshold: 0.5 } // Trigger when 50% of the GIF is in view
+      { threshold: 0.5 }, // Trigger when 50% of the GIF is in view
     );
 
     const dateObserver = new IntersectionObserver(
       ([entry]) => setDateInView(entry.isIntersecting),
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (gifRef.current) observer.observe(gifRef.current);
@@ -42,7 +42,7 @@ function MusicBand() {
   }, []);
 
   return (
-    <div className="bg-[#107800] flex flex-col items-center pt-5 md:min-h-screen relative">
+    <div className="bg-[#107800] flex flex-col items-center pt-28 md:min-h-screen relative">
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');

@@ -18,9 +18,6 @@ function Home() {
         {/* <img src={logo} /> */}
         <Poster />
       </section>
-      {/* <section id="description">
-        <Description />
-      </section> */}
       <section id="musicBand">
         <MusicBand />
       </section>

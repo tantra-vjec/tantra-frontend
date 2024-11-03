@@ -7,41 +7,12 @@ import mobilBg from "../../assets/music_band/music band back mobile.png";
 import green_1 from "../../assets/music_band/rounded colored 1.svg";
 import musicFile from "../../assets/music_band/music.mp3"; // Import your audio file
 
-
 function MusicBand() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 568);
   const [gifInView, setGifInView] = useState(false);
   const [dateInView, setDateInView] = useState(false);
   const gifRef = useRef(null);
   const dateRef = useRef(null);
-
-
-  useEffect(() => {
-    // Create an audio instance
-    const audio = new Audio(musicFile);
-    audio.loop = true;
-    audio.volume = 0.5;
-
-    // Function to play audio on user interaction
-    const playMusic = () => {
-      audio.play().catch((error) => {
-        console.error("Playback failed:", error);
-      });
-
-      // Remove the event listener after the audio starts
-      window.removeEventListener("click", playMusic);
-      window.removeEventListener("keydown", playMusic);
-    };
-
-    // Add event listeners for user interaction
-    window.addEventListener("click", playMusic);
-    window.addEventListener("keydown", playMusic);
-
-    // Cleanup function to remove event listeners if component unmounts
-    return () => {
-      window.removeEventListener("click", playMusic);
-      window.removeEventListener("keydown", playMusic);
-    };
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -64,7 +35,7 @@ function MusicBand() {
   }, []);
 
   return (
-    <div className="bg-[#107800] box-border w-full h-screen flex items-center justify-center relative">
+    <div className="bg-[#107800] box-border w-full h-screen flex flex-col items-center justify-center relative">
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -88,7 +59,6 @@ function MusicBand() {
         `}
       </style>
 
-
       <h2 className="text-white font-arcade_classic text-xl md:text-3xl pt-8 md:pt-16 mb-5 mt-20 md:mt-24">
         VALLOPALLY HALL
       </h2>
@@ -104,7 +74,7 @@ function MusicBand() {
         <div
           className="w-fit h-fit bg-center relative"
           style={{
-            backgroundImage: `url(${bg})`,
+            //backgroundImage: `url(${bg})`,
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
           }}
@@ -113,7 +83,9 @@ function MusicBand() {
             ref={gifRef}
             src={bandGif}
             alt="Animated Band"
-            className={`w-full object-contain ${gifInView ? "animate-fadeIn" : ""}`}
+            className={`w-full object-contain ${
+              gifInView ? "animate-fadeIn" : ""
+            }`}
           />
         </div>
 
@@ -121,12 +93,14 @@ function MusicBand() {
           ref={dateRef}
           src={date}
           alt="Event Date"
-          className={`sm:bottom-[4%] bottom-[34%] w-[17%] absolute ${
+          className={`max-sm:bottom-[-50%] sm:bottom-[4%] bottom-[34%] w-[17%] absolute ${
             dateInView ? "animate-slideUp" : ""
           }`}
         />
-
       </div>
+      {/* <div className="w-screen mt-8 lg:mt-4 p-0 m-0 mb-0">
+        <img src={green_1} alt="Image 1" className="w-full h-auto" />
+      </div> */}
     </div>
   );
 }

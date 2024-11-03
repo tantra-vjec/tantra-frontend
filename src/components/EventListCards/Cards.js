@@ -119,10 +119,19 @@ const GameCard = (props) => {
 
           {/* Combined Event Info */}
           <div className="relative top-[17%] left-[63%] max-sm:w-[200px] w-full z-40 transform -translate-x-1/2 -translate-y-1/2 max-sm:translate-x-0 max-sm:left-0 max-sm:ml-[12%]">
-            <div className="text-white font-arcade_classic text-[13px] w-max max-sm:w-[fit]">
+            {/* Time */}
+            <div className="text-white font-arcade_classic text-[13px] w-max max-sm:w-fit">
               {time}
             </div>
-            <div className="text-white font-arcade_classic text-[17px] mt-1 w-max ">
+
+            {/* Event Type with conditional font size */}
+            <div
+              style={{
+                fontSize: event_type.length > 15 ? "12px" : "17px", // Adjust font size based on event_type length
+                width: "85%",
+              }}
+              className="text-white font-arcade_classic break-words mt-1 w-max max-sm:w-fit"
+            >
               {event_type}
             </div>
           </div>

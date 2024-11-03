@@ -2,6 +2,8 @@ import React, { useRef, useEffect, useState } from "react";
 import bandGif from "../../assets/music_band/music.gif";
 import date from "../../assets/music_band/date.webp";
 import bg from "../../assets/music_band/bg.png";
+import mobilBg from "../../assets/music_band/music band back mobile.png";
+import green_1 from "../../assets/music_band/rounded colored 1.svg";
 
 function MusicBand() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);

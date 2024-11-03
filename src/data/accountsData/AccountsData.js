@@ -7,6 +7,7 @@ import CSD from "../../assets/qr/CSD.png";
 import ECE from "../../assets/qr/EC.png";
 import EEE from "../../assets/qr/EEE.png";
 import ME from "../../assets/qr/ME.png";
+import RR from "../../../src/pages/register/DummyQR.png";
 
 const AccountsData = {
   cse: {
@@ -64,6 +65,27 @@ const AccountsData = {
     ifsc: "SIBL0000078",
     bankName: "Bank South Indian bank, Thalassery",
     qr: AD,
+  },
+  ads: {
+    name: "HOD Artificial Intelligence",
+    accountNo: "0078053000079585",
+    ifsc: "SIBL0000078",
+    bankName: "Bank South Indian bank, Thalassery",
+    qr: AD,
+  },
+  csbs: {
+    name: "--",
+    accountNo: "--",
+    ifsc: "--",
+    bankName: "--",
+    qr: RR,
+  },
+  cscy: {
+    name: "--",
+    accountNo: "--",
+    ifsc: "--",
+    bankName: "--",
+    qr: RR,
   },
   // comm: {
   //   name: "ash",

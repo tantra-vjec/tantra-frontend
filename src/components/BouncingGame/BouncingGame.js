@@ -50,13 +50,13 @@ function BouncingGame() {
   // Modified random obstacle generation
   useEffect(() => {
     let spawnInterval;
-    const MIN_TIME_BETWEEN_OBSTACLES = 1200; 
-    let lastObstacleSpawnTime = Date.now(); 
-  
+    const MIN_TIME_BETWEEN_OBSTACLES = 1200;
+    let lastObstacleSpawnTime = Date.now();
+
     const trySpawnObstacle = () => {
       if (!gameOver) {
         const currentTime = Date.now();
-  
+
         if (
           canSpawnObstacle() &&
           Math.random() < 0.6 &&
@@ -67,12 +67,12 @@ function BouncingGame() {
             passed: false,
           };
           setObstacles((prev) => [...prev, newObstacle]);
-          lastObstacleSpawnTime = currentTime; 
+          lastObstacleSpawnTime = currentTime;
         }
         spawnInterval = setTimeout(trySpawnObstacle, 300);
       }
     };
-  
+
     // Initial spawn check
     spawnInterval = setTimeout(trySpawnObstacle, 300);
     return () => {
@@ -81,7 +81,6 @@ function BouncingGame() {
       }
     };
   }, [gameOver]);
-  
 
   useEffect(() => {
     if (!gameOver) {
@@ -97,7 +96,7 @@ function BouncingGame() {
       const rotationInterval = setInterval(() => {
         setBallRotation(
           (prev) =>
-            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360,
+            (prev + (ballVelocity < 0 ? ballSpeed * 2 : ballSpeed * 4)) % 360
         );
       }, 20);
 
@@ -178,7 +177,7 @@ function BouncingGame() {
     }
 
     setObstacles((prevObstacles) =>
-      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0),
+      prevObstacles.filter((obstacle) => obstacle.x + OBSTACLE_SIZE > 0)
     );
 
     obstacles.forEach((obstacle) => {
@@ -236,20 +235,7 @@ function BouncingGame() {
       {/* Tap to Play Overlay */}
       {tapToPlay && (
         <div
-          style={{
-            position: "absolute",
-            top: 50,
-            left: 0,
-            width: "800px",
-            height: "600px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "rgba(0, 0, 100, 1)",
-            color: "white",
-            fontSize: "80px",
-            zIndex: 5,
-          }}
+          className="mobile-only sm:hidden"
           onClick={() => {
             setTapToPlay(false);
             if (gameOver) {

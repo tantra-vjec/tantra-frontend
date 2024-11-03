@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="nav">
-          <img id="nav-logo" src={nav_logo} alt="Logo" />
+        <img id="nav-logo" src={nav_logo} alt="Logo" />
         <div className="menu-and-logo cursor-pointer">
           <img id="nav-btn" src={navm} alt="Menu" onClick={navToggle} />
         </div>
@@ -60,7 +60,10 @@ const Navbar = () => {
               onMouseLeave={changeSrcReal}
             />
           </div>
-          <a className="link-items arca" href="/">
+          <a
+            className="link-items arca"
+            onClick={() => handleEventsClick("home")}
+          >
             <h1>HOME</h1>
           </a>
           <a

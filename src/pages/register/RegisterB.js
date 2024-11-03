@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import "./style.css";
-import qr from "./DummyQR.png";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";

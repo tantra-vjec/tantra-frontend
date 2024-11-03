@@ -75,21 +75,21 @@ const CardsData = [
     text: "Events conducted by Department of Computer Science And Design",
     explore: "/csd-events",
   },
-  {
-    imgsrc: CSBS,
-    gif: AG,
-    title: "Computer Science And Business",
-    text: "Events conducted by Department of Computer Science And Business",
-    explore: "/csbs-events",
-  },
-  {
-    imgsrc: CSCY,
-    gif: BG,
-    // title: "Computer Science And Cyber Security",
-    title: "Computer Science And Cyber",
-    text: "Events conducted by Department of Computer Science And Cyber Secuirity",
-    explore: "/cscy-events",
-  },
+  // {
+  //   imgsrc: CSBS,
+  //   gif: AG,
+  //   title: "Computer Science And Business",
+  //   text: "Events conducted by Department of Computer Science And Business",
+  //   explore: "/csbs-events",
+  // },
+  // {
+  //   imgsrc: CSCY,
+  //   gif: BG,
+  //   // title: "Computer Science And Cyber Security",
+  //   title: "Computer Science And Cyber",
+  //   text: "Events conducted by Department of Computer Science And Cyber Secuirity",
+  //   explore: "/cscy-events",
+  // },
 ];
 
 export default CardsData;

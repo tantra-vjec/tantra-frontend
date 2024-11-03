@@ -39,6 +39,22 @@ const Navbar = () => {
     }
   };
 
+  setTimeout(()=>{
+    const toggleButton = document.getElementById('nav-logo');
+    const wheth = window.location.href.split("/");
+    if( wheth.length == 4){
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > window.innerHeight && window.scrollY < (window.innerHeight * 2.8)) {
+        toggleButton.style.display = 'none'; // Hide the button
+      } else {
+        toggleButton.style.display = 'block'; // Show the button
+      }
+    });
+    }
+
+  },500);
+
+
   return (
     <header>
       <nav className="nav">

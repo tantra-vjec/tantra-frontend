@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.67d5aee5.css",
-    "main.js": "/static/js/main.ff069ec7.js",
+    "main.css": "/static/css/main.61b58020.css",
+    "main.js": "/static/js/main.90845904.js",
     "static/media/ecgif.gif": "/static/media/ecgif.cddb797363d049097804.gif",
     "static/media/nintento.png": "/static/media/nintento.9aa56b7fc3800ffc944d.png",
     "static/media/mechtrans_.gif": "/static/media/mechtrans_.5b65c06d66b22bb85b2f.gif",
@@ -83,11 +83,11 @@
     "index.html": "/index.html",
     "static/media/Arrow.svg": "/static/media/Arrow.c4fec83188357033d771afb83a037d40.svg",
     "static/media/DropDownIcon.svg": "/static/media/DropDownIcon.3ba1ddb4652873871680.svg",
-    "main.67d5aee5.css.map": "/static/css/main.67d5aee5.css.map",
-    "main.ff069ec7.js.map": "/static/js/main.ff069ec7.js.map"
+    "main.61b58020.css.map": "/static/css/main.61b58020.css.map",
+    "main.90845904.js.map": "/static/js/main.90845904.js.map"
   },
   "entrypoints": [
-    "static/css/main.67d5aee5.css",
-    "static/js/main.ff069ec7.js"
+    "static/css/main.61b58020.css",
+    "static/js/main.90845904.js"
   ]
 }

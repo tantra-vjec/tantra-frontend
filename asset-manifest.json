@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.eae10f6b.css",
-    "main.js": "/static/js/main.3d9df546.js",
+    "main.js": "/static/js/main.a0dcbd67.js",
     "static/media/ecgif.gif": "/static/media/ecgif.cddb797363d049097804.gif",
     "static/media/nintento.png": "/static/media/nintento.9aa56b7fc3800ffc944d.png",
     "static/media/mechtrans_.gif": "/static/media/mechtrans_.5b65c06d66b22bb85b2f.gif",
@@ -47,6 +47,7 @@
     "static/media/11.png": "/static/media/11.2a55a12a1352c18ca737.png",
     "static/media/12.png": "/static/media/12.5b45d4e0ad3830ad3829.png",
     "static/media/9.png": "/static/media/9.0425a138e65938a08b70.png",
+    "static/media/CSCY.png": "/static/media/CSCY.939d1a6fc453e8596583.png",
     "static/media/4.png": "/static/media/4.857543e16ae8f9924b65.png",
     "static/media/23.png": "/static/media/23.ef52b14fd7ad60c31809.png",
     "static/media/ground.png": "/static/media/ground.980cc00c23fac32e9c8c.png",
@@ -67,6 +68,7 @@
     "static/media/potrait.mp4": "/static/media/potrait.1955d1523fb7026188de.mp4",
     "static/media/music band back mobile.png": "/static/media/music band back mobile.b224c37f85c4b8fd22b6.png",
     "static/media/music.gif": "/static/media/music.3eb002e531f2bf1f7f0b.gif",
+    "static/media/CSBS.png": "/static/media/CSBS.f0ac679dccd72e6a7eda.png",
     "static/media/ball.png": "/static/media/ball.42be8250f927ea2cfb4b.png",
     "static/media/landscape.mp4": "/static/media/landscape.8cf631d322929fdf7a29.mp4",
     "static/media/bg.png": "/static/media/bg.b554c2ecf5d42c510ed8.png",
@@ -85,10 +87,10 @@
     "static/media/Arrow.svg": "/static/media/Arrow.c4fec83188357033d771afb83a037d40.svg",
     "static/media/DropDownIcon.svg": "/static/media/DropDownIcon.3ba1ddb4652873871680.svg",
     "main.eae10f6b.css.map": "/static/css/main.eae10f6b.css.map",
-    "main.3d9df546.js.map": "/static/js/main.3d9df546.js.map"
+    "main.a0dcbd67.js.map": "/static/js/main.a0dcbd67.js.map"
   },
   "entrypoints": [
     "static/css/main.eae10f6b.css",
-    "static/js/main.3d9df546.js"
+    "static/js/main.a0dcbd67.js"
   ]
 }

@@ -19,7 +19,7 @@ const CseEventData = [
     event_id: 902,
     name: "TechWiz - Quiz Competition",
     description:
-      "Test your knowledge of science, technology, engineering, and maths through various rounds.",
+      "Test your knowledge of science, technology, engineering, and maths through various rounds. *Team size: 2*",
     event_type: "Competition",
     fee: "50",
     student1: "Ameesha P Joseph",
@@ -54,7 +54,7 @@ const CseEventData = [
   {
     event_id: 910,
     name: "Logo Identification Quiz",
-    description: "Test your knowledge of popular tech company logos.",
+    description: "Test your knowledge of popular tech company logos. *Team size: 2*",
     event_type: "Competition",
     fee: "20",
     student1: "Anagha Nagesh",

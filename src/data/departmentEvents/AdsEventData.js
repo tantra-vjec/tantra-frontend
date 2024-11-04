@@ -209,7 +209,7 @@ const AdsEventData = [
     description:
       "Battle Ground Mobile India tournament (team of 4) in collaboration with CSE and ADS.",
     event_type: "Group",
-    fee: "100",
+    fee: "200",
     student1: "Abhiram Indrajith",
     s1_phone: 9037110521,
     student2: "Gokul M",
@@ -284,13 +284,14 @@ const AdsEventData = [
   {
     event_id: 115,
     name: "MINI BASKETBALL",
-    description: "Mini basketball using a paper cup and ball.",
+    description: "Simple basketball game in virtual environment.",
     event_type: "Individual",
     fee: "10",
-    student1: "Vishnu Sathyakumar",
-    s1_phone: 7907811706,
-    student2: "Vinay Krishna",
-    s2_phone: 7306962609,
+
+    student1: "Vinay Krishna",
+    s1_phone: 7306962609,
+    student2: "Vishnu Sathyakumar",
+    s2_phone: 7907811706,
     staff: "Ms Vijina Vijayan",
     prize: true,
     dept: "ads",

@@ -101,7 +101,7 @@ const AdsEventData = [
     staff: "Mr Vyshak K V",
     prize: true,
     dept: "ads",
-    reg: true,
+    reg: false,
     group: false,
     venue: "Admin Block",
     time: "9:15 AM - 11:15 AM",

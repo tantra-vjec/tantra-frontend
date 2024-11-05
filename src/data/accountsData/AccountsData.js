@@ -67,13 +67,6 @@ const AccountsData = {
     bankName: "Bank South Indian bank, Thalassery",
     qr: AD,
   },
-  ads: {
-    name: "HOD Artificial Intelligence",
-    accountNo: "0078053000079585",
-    ifsc: "SIBL0000078",
-    bankName: "Bank South Indian bank, Thalassery",
-    qr: AD,
-  },
   csbs: {
     name: "HOD CSBS",
     // accountNo: "--",
@@ -88,12 +81,12 @@ const AccountsData = {
     // bankName: "--",
     qr: CSCY,
   },
-  // comm: {
-  //   name: "ash",
-  //   accountNo: "00",
-  //   ifsc: "ash",
-  //   bankName: "ash",
-  // },
+  comm: {
+    name: "",
+    accountNo: "",
+    ifsc: "",
+    bankName: "",
+  },
 };
 
 export default AccountsData;

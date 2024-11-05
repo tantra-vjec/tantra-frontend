@@ -91,6 +91,13 @@ const CardsData = [
     text: "Events conducted by Department of Computer Science And Cyber Secuirity",
     explore: "/cscy-events",
   },
+  {
+    imgsrc: CS,
+    gif: GG,
+    title: "Common Events",
+    text: "Events conducted by Department of Computer Science And Cyber Secuirity",
+    explore: "/com-events",
+  },
 ];
 
 export default CardsData;

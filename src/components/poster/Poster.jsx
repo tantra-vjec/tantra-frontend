@@ -16,8 +16,8 @@ function Poster() {
     const handleScroll = () => {
       const vh = window.innerHeight;
       const scrolled = window.scrollY;
-      const triggerPoint = vh * 0.5; // 20vh trigger point
-      const triggerPoint2 = vh * 0.5; // 20vh trigger point
+      const triggerPoint = vh * 0.25; // 20vh trigger point
+      const triggerPoint2 = vh * 0.2; // 20vh trigger point
       const opacity =
         scrolled >= triggerPoint
           ? Math.max(1 - (scrolled - triggerPoint) / (vh * 0.09), 0)

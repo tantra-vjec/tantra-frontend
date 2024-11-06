@@ -343,7 +343,7 @@ const CseEventData = [
     event_id: 920,
     name: "Unheard Echoes - Mobile Game",
     description:
-      "Solve a murder mystery with coding challenges. The first duo to crack the code wins.",
+      "Solve a murder mystery using logic and critical thinking. First duo to crack, wins. Get ready for a blend of detective work; only the sharp-witted will triumph!.",
     event_type: "Game",
     fee: "10",
     student1: "Rajalakshmi S",

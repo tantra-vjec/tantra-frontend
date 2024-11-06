@@ -526,7 +526,7 @@ const EeeEventData = [
     name: "Hunt For Glory",
     description: "Finding the treasure.",
     event_type: "Treasure hunt",
-    fee: "250",
+    fee: "150",
     student1: "Smera Sanil",
     s1_phone: "9037385919",
     staff: "Ms.Tintu George",

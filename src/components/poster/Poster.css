@@ -88,6 +88,7 @@
   min-width: 765px;
   min-height: 190px;
   z-index: 0;
+  margin-top: -6%;
 }
 
 @media screen and (max-width: 700px) {

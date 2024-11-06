@@ -91,7 +91,7 @@ const CseEventData = [
     event_id: 904,
     name: "Mystery Digits - Random Number Guess",
     description:
-      "Take 5 shots at guessing the random digit and climb the leaderboard.",
+      "Take 5 shots at guessing the random digit and climb the leaderboard.(ONLINE)",
     event_type: "Game",
     fee: "20",
     student1: "Ashish Joseph",
@@ -145,7 +145,7 @@ const CseEventData = [
     event_id: 906,
     name: "Blockbuster Hunt",
     description:
-      "Solve puzzles and challenges inspired by films within the time limit.(Groups of 2)",
+      "Solve puzzles and challenges inspired by films within the time limit as groups of two.(ONLINE)",
     event_type: "Competition",
     fee: "10",
     student1: "Amal Roy",

@@ -353,7 +353,7 @@ const CseEventData = [
     dept: "cse",
     reg: true,
     group: true,
-    venue: "2ND S3 CSE C",
+    venue: "2ND S5 CSE C",
     time: "11:30 AM - 1:00 PM",
     event_image: img9,
   },

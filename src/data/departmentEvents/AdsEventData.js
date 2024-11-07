@@ -139,7 +139,7 @@ const AdsEventData = [
     staff: "Ms Priya J",
     prize: true,
     dept: "ads",
-    reg: false,
+    reg: true,
     group: true,
     venue: "Software Lab, Admin Block, 1st floor",
     time: "11:30 AM -12:30 PM",

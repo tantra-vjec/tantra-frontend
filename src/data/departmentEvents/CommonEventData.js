@@ -14,7 +14,7 @@ const CommonEventData = [
     staff: "N/A",
     prize: false,
     dept: "comm",
-    reg; false,
+    reg: false,
     group: false,
     venue: "Valoppilly Hall",
     time: "09:00 AM",

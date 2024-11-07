@@ -63,7 +63,7 @@ const CseEventData = [
     staff: "Sreeraji N",
     prize: true,
     dept: "cse",
-    reg: true,
+    reg: false,
     group: true,
     venue: "1ST Varikatt Hall",
     time: "11:30 AM - 1:00 PM",

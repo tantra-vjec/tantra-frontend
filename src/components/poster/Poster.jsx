@@ -6,7 +6,7 @@ import desktopVideo from "../../assets/videos/landscape.mp4";
 import BouncingGame from "../BouncingGame/BouncingGame";
 import "./Poster.css";
 import Tantratitle from "../../assets/videos/pxArt.png";
-
+import newImage from "../../assets/popular.png"; // Import your new image
 function Poster() {
   const isMobileDevice = useMediaQuery({
     query: "(max-device-width: 500px)",
@@ -75,7 +75,16 @@ function Poster() {
       </div>
       <div className="fade-text">
         Meet you on <span className="text-gray-300 animate-pulse">8 Nov</span>
+        <div className="additional-content">
+          <div className="mb-16"></div>
+          <p className="sponsor-text">
+            <span className="text-base">Sponsored by</span>
+            <br />
+            <span className="large-text">Popular Agencies</span>
+          </p>
+        </div>
       </div>
+      {/* New Text and Image */}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2d450ba9.css",
-    "main.js": "/static/js/main.40b8bb26.js",
+    "main.js": "/static/js/main.968aa710.js",
     "static/media/ecgif.gif": "/static/media/ecgif.cddb797363d049097804.gif",
     "static/media/nintento.png": "/static/media/nintento.9aa56b7fc3800ffc944d.png",
     "static/media/mechtrans_.gif": "/static/media/mechtrans_.5b65c06d66b22bb85b2f.gif",
@@ -88,10 +88,10 @@
     "static/media/Arrow.svg": "/static/media/Arrow.0b1f738729e3e8db7dc65dea0583e192.svg",
     "static/media/DropDownIcon.svg": "/static/media/DropDownIcon.8cff6801c3eb9badfba5.svg",
     "main.2d450ba9.css.map": "/static/css/main.2d450ba9.css.map",
-    "main.40b8bb26.js.map": "/static/js/main.40b8bb26.js.map"
+    "main.968aa710.js.map": "/static/js/main.968aa710.js.map"
   },
   "entrypoints": [
     "static/css/main.2d450ba9.css",
-    "static/js/main.40b8bb26.js"
+    "static/js/main.968aa710.js"
   ]
 }

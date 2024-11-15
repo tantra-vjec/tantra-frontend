@@ -75,14 +75,6 @@ function Poster() {
       </div>
       <div className="fade-text">
         Meet you on <span className="text-gray-300 animate-pulse">8 Nov</span>
-        <div className="additional-content">
-          <div className="mb-16"></div>
-          <p className="sponsor-text">
-            <span className="text-base">Sponsored by</span>
-            <br />
-            <span className="large-text">Popular Agencies</span>
-          </p>
-        </div>
       </div>
       {/* New Text and Image */}
     </div>

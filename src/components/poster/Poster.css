@@ -80,7 +80,7 @@
 
 .bouncing-game-container {
   position: absolute;
-  top: 56%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.64);
   width: 60%;
@@ -104,7 +104,7 @@
   .bouncing-game-container {
     position: relative;
     left: 40%;
-    padding-top: 23px;
+    padding-top: 10px;
     scale: 0.8;
     width: 10%;
     height: 10%;

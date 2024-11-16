@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.930f33d5.css",
-    "main.js": "/static/js/main.5d2bfd63.js",
+    "main.css": "/static/css/main.9c15ac26.css",
+    "main.js": "/static/js/main.4de078a2.js",
     "static/media/ecgif.gif": "/static/media/ecgif.cddb797363d049097804.gif",
     "static/media/nintento.png": "/static/media/nintento.9aa56b7fc3800ffc944d.png",
     "static/media/mechtrans_.gif": "/static/media/mechtrans_.5b65c06d66b22bb85b2f.gif",
@@ -74,6 +74,8 @@
     "static/media/landscape.mp4": "/static/media/landscape.8cf631d322929fdf7a29.mp4",
     "static/media/bg.png": "/static/media/bg.b554c2ecf5d42c510ed8.png",
     "static/media/tantra.gif": "/static/media/tantra.78f1ab1f770f839a56bc.gif",
+    "static/media/me.jpeg": "/static/media/me.eb6d944662fc076f9046.jpeg",
+    "static/media/ashi.png": "/static/media/ashi.5d432bc9a75a614c1c79.png",
     "static/media/phone.svg": "/static/media/phone.9e792eb0e6ca649a6eebab64616f3840.svg",
     "static/media/404.svg": "/static/media/404.4bdda8dd24411dfcede99d5738335987.svg",
     "static/media/nav_menu.png": "/static/media/nav_menu.60a7b8b070977c54e446.png",
@@ -87,11 +89,11 @@
     "index.html": "/index.html",
     "static/media/Arrow.svg": "/static/media/Arrow.c4fec83188357033d771afb83a037d40.svg",
     "static/media/DropDownIcon.svg": "/static/media/DropDownIcon.3ba1ddb4652873871680.svg",
-    "main.930f33d5.css.map": "/static/css/main.930f33d5.css.map",
-    "main.5d2bfd63.js.map": "/static/js/main.5d2bfd63.js.map"
+    "main.9c15ac26.css.map": "/static/css/main.9c15ac26.css.map",
+    "main.4de078a2.js.map": "/static/js/main.4de078a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.930f33d5.css",
-    "static/js/main.5d2bfd63.js"
+    "static/css/main.9c15ac26.css",
+    "static/js/main.4de078a2.js"
   ]
 }

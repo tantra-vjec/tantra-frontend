@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9c15ac26.css",
-    "main.js": "/static/js/main.52c54211.js",
+    "main.js": "/static/js/main.669996b0.js",
     "static/media/ecgif.gif": "/static/media/ecgif.cddb797363d049097804.gif",
     "static/media/nintento.png": "/static/media/nintento.9aa56b7fc3800ffc944d.png",
     "static/media/mechtrans_.gif": "/static/media/mechtrans_.5b65c06d66b22bb85b2f.gif",
@@ -78,9 +78,10 @@
     "static/media/me.jpeg": "/static/media/me.eb6d944662fc076f9046.jpeg",
     "static/media/ani.png": "/static/media/ani.b088a9d08b516358d215.png",
     "static/media/ashi.png": "/static/media/ashi.b9d20fe0c1464fb35980.png",
+    "static/media/josh.png": "/static/media/josh.77fa35ddacf714c61ddc.png",
     "static/media/phone.svg": "/static/media/phone.9e792eb0e6ca649a6eebab64616f3840.svg",
     "static/media/404.svg": "/static/media/404.4bdda8dd24411dfcede99d5738335987.svg",
-    "static/media/josh.jpg": "/static/media/josh.b8f9fe82c03d5a9f7bba.jpg",
+    "static/media/nav.jpg": "/static/media/nav.3fee8a2bac63222351c9.jpg",
     "static/media/nav_menu.png": "/static/media/nav_menu.60a7b8b070977c54e446.png",
     "static/media/icon_real.png": "/static/media/icon_real.eb7713c7283b445ba9ad.png",
     "static/media/invert.png": "/static/media/invert.4d4075885d784e649762.png",
@@ -93,10 +94,10 @@
     "static/media/Arrow.svg": "/static/media/Arrow.c4fec83188357033d771afb83a037d40.svg",
     "static/media/DropDownIcon.svg": "/static/media/DropDownIcon.3ba1ddb4652873871680.svg",
     "main.9c15ac26.css.map": "/static/css/main.9c15ac26.css.map",
-    "main.52c54211.js.map": "/static/js/main.52c54211.js.map"
+    "main.669996b0.js.map": "/static/js/main.669996b0.js.map"
   },
   "entrypoints": [
     "static/css/main.9c15ac26.css",
-    "static/js/main.52c54211.js"
+    "static/js/main.669996b0.js"
   ]
 }

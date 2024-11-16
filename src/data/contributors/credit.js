@@ -1,20 +1,22 @@
 import ashi from "./ashi.png";
 import adi from "./adi.png";
 import ani from "./ani.png";
-import josh from "./josh.jpg";
+import josh from "./josh.png";
+import abhi from "./abhi.jpg";
 import bdwj from "./bdwj.jpg";
+import nav from "./nav.jpg";
 import me from "./me.jpeg"; // dummy
 
 const teamMembers = [
-    {
-      id: 1,
-      name: "Abhiram K",
-      title: "Web Team Lead",
-      image: me,
-      linkedin: "#",
-      github: "#",
-      instagram: "#",
-    },
+  {
+    id: 1,
+    name: "Abhiram K",
+    title: "Team Lead",
+    image: abhi,
+    linkedin: "https://www.linkedin.com/in/abhiram-krishna2002",
+    github: "https://github.com/Abhiramkris",
+    instagram: "https://www.instagram.com/abhiram.sus",
+  },
     {
       id: 2,
       name: "Adithya Chandran",
@@ -28,7 +30,7 @@ const teamMembers = [
     {
       id: 3,
       name: "Ashik Jhonson",
-      title: "aka Trinity",
+      title: "Dev",
       image: ashi,
       linkedin: "https://www.linkedin.com/in/ashikjhonson/",
       github: "https://github.com/ashikjhonson",
@@ -38,10 +40,10 @@ const teamMembers = [
       id: 4,
       name: "Navaneeth MV",
       title: "Dev",
-      image: me,
-      linkedin: "#",
-      github: "#",
-      instagram: "#",
+      image:nav,
+      linkedin: "https://www.linkedin.com/in/m-v-navaneeth",
+      github: "https://github.com/NavaneethMv",
+      instagram: "https://www.instagram.com/nav_neeth_mv",
     },
     {
       id: 5,

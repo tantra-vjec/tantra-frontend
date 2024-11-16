@@ -26,6 +26,7 @@ import {
 
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminHome from "./pages/admin/AdminHome";
+import Credits from "./pages/contributors/Credits";
 
 function App() {
   const user = localStorage.getItem("token");
@@ -50,6 +51,7 @@ function App() {
         <Route exact path="/thanks" element={<ThanksPage />} />
         {user && <Route path="/admin" exact element={<AdminHome />} />}
         <Route exact path="/admin" element={<AdminLogin />} />
+        <Route exact path="/credits" element={<Credits />} />
         <Route exact path="/*" element={<PageNotFound />} />
       </Routes>
       {/* </Router> */}

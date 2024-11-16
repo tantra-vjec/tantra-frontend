@@ -14,7 +14,7 @@ function Home() {
     const lastLoadTime = sessionStorage.getItem("lastLoadTime");
     const now = Date.now();
 
-    if (!lastLoadTime || now - lastLoadTime > 5 * 60 * 1000) {
+    if (!lastLoadTime || now - lastLoadTime > 10 * 60 * 1000) {
       setLoading(true);
       sessionStorage.setItem("lastLoadTime", now);
 

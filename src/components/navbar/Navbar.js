@@ -108,6 +108,12 @@ const Navbar = () => {
           >
             <h1>CONTACT US</h1>
           </a>
+          <a
+            className="link-items arca"
+            onClick={() => navigate("/credits")}
+          >
+            <h1>CONTRIBUTORS</h1>
+          </a>
         </div>
       </div>
     </header>

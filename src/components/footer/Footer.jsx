@@ -48,6 +48,9 @@ function Footer() {
             >
               EVENTS
             </a>
+            <a className="cursor-pointer" onClick={() => navigate("credits")}>
+              CONTRIBUTORS
+            </a>
           </div>
           <div className="text-white w-[50%] text-right text-[8px] text-sm-custom sm:text-sm md:text-sm lg:text-lg">
             <TypeAnimation
